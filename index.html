@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=0.47">
+	<title>Bay Area Older Adults</title>
+</head>
+<body>
+<div class="alert alert-warning alert-dismissible fade show" role="alert" style="font-family: Kulim Park; position: absolute; z-index: 1000001; margin-top: 2.5%; width: 80%; margin-left: 10%;">
+  <h4><strong>How to use our site:</strong></h4>
+  <p>Bay Area Older Adults (BAO) offers two programs:</p>
+  <p>BAO-Organized Group Events: BAO offers health education, lifelong learning and physical activity programs organized by us for you. We trek on nature trails, learn about different cultures, explore historic sites, experience new culinary flavors and help connect you to people with shared interests. If you're interested in this, click <a href="group.html">here</a></p>
+  <p>Do-It-Yourself Adventures: If you prefer going places on your own or with friends and family, we offer a detailed guide of regional outdoor, fitness, social and educational activities. Rather than having to search through different newspapers, newsletters, magazines and a host of different internet sites, we collect all of this information for you, in one convenient location with all the details you need to venture out with confidence. These features make it easier for you to fill your days with activities and make new friends. If you're interested in this, click <a href="selfguided.html">
+    here</a></p>
+    <p>Don't worry. You can always switch between our two offerings in the navigation bar up top.</p>
+  <a href="selfguided.html"><button type="button" class="close">
+    <span aria-hidden="true">&times;</span>
+  </button></a>
+</div>
+
+<div class="beginning" id="introanim">
+<nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000;">
+  <a class="navbar-brand" href="#">
+    <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
+  </a>
+  <form class="form-inline">
+    <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Join</button></a>
+    <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Donate</button></a>
+    <a href="group.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px; margin-right: 20px;">BAO-Organized Group Events</button></a>
+  </form>
+</nav>
+
+<div class="midsection row d-none d-lg-flex" style="width: 80%; margin-left: 10%; margin-top: 5%;">
+	<div class="col" style="margin-top: 5vh;">
+		<p style="margin-left: 20%; font-weight: bolder;">Choose</p>
+		<p style="margin-left: 20%; font-weight: bolder;">Your Next</p>
+		<div id="typed-strings" style="font-weight: bolder;"></div>
+	</div>
+	<div class="col" style="margin-top: -5vh;">
+		<form class="form1">
+  			<div class="form-group">
+    			<label for="exampleInputEmail1" style="margin-top: 10%;">Choose an Interest</label>
+    				<select multiple class="form-control" id="exampleFormControlSelect2" style="height: 19vh;">
+      				<option>Arts & History</option>
+      				<option>Sciences</option>
+      				<option>Fitness</option>
+      				<option>Volunteer</option>
+      				<option>Outdoors</option>
+      				<option>Food</option>
+   				 	</select>
+ 			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1" style="margin-top: 10%;">Select a Region</label>
+    				<select multiple class="form-control" id="exampleFormControlSelect2" style="height: 11vh;">
+      				<option>East Bay</option>
+      				<option>Peninsula</option>
+      				<option>South Bay</option>
+   				 	</select>
+  			</div>
+  			<button type="submit" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button>
+		</form>
+	</div>
+</div>
+
+<div class="midsection grid d-lg-none">
+	<p style="text-align: center; font-family: Kulim Park; color: #3CB371; font-size: 50px; margin-top: 5%; font-weight: bolder;">Choose Your Next </p>
+	<div class="center" style="display: flex; justify-content: center; font-weight: bolder;">
+	<div id="typed-strings1"></div>
+	</div>
+	<div class="center" style="display: flex; justify-content: center; margin-top: 5%;">
+	<form class="form1">
+  			<div class="form-group">
+    			<label for="exampleInputEmail1" style="margin-top: 10%;">Choose an Interest</label>
+    				<select multiple class="form-control" id="exampleFormControlSelect2" style="height: 19vh;">
+      				<option>Arts & History</option>
+      				<option>Sciences</option>
+      				<option>Fitness</option>
+      				<option>Volunteer</option>
+      				<option>Outdoors</option>
+      				<option>Food</option>
+   				 	</select>
+ 			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1" style="margin-top: 10%;">Select a Region</label>
+    				<select multiple class="form-control" id="exampleFormControlSelect2" style="height: 11vh;">
+      				<option>East Bay</option>
+      				<option>Peninsula</option>
+      				<option>South Bay</option>
+   				 	</select>
+  			</div>
+  			<button type="submit" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button>
+		</form>
+	</div>
+</div>
+
+
+<p class="d-none d-lg-block" style="font-family: Kulim Park; font-size: 40px; font-weight: bolder; margin-top: 40vh; margin-left: 10%;">Popular</p>
+<p class="d-lg-none" style="font-family: Kulim Park; font-size: 40px; font-weight: bolder; margin-top: 5vh; margin-left: 10%;">Popular</p>
+<div class="row" style="display: flex; justify-content: center;">
+    		<div class="card" style="width: 18rem;">
+  				<img src="default.jpg" class="card-img-top">
+  				<div class="card-body">
+    				<h5 class="card-title">Lorem Ipsum</h5>
+    				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+  				<img src="default.jpg" class="card-img-top">
+  				<div class="card-body">
+    				<h5 class="card-title">Lorem Ipsum</h5>
+    				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+  				<img src="default.jpg" class="card-img-top">
+  				<div class="card-body">
+    				<h5 class="card-title">Lorem Ipsum</h5>
+    				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+  				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+  				<img src="default.jpg" class="card-img-top">
+  				<div class="card-body">
+    				<h5 class="card-title">Lorem Ipsum</h5>
+    				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+  				</div>
+			</div>
+			
+</div>
+<div class="bottom row" style="display: flex; justify-content: center; margin-top: 5%; margin-left: 5%; width: 90%;">
+  <div class="col-4" style="font-family: Kulim Park;">
+    <p style="font-weight: bolder;">About:</p>
+    <p>About Us</p>
+    <p>Press</p>
+    <p>Partners</p>
+  </div>
+  <div class="col-4" style="font-family: Kulim Park;">
+    <p style="font-weight: bolder;">More:</p>
+    <p>Terms of Use</p>
+    <p>Privacy Policy</p>
+    <p>Governance & Finances</p>
+    <p>T-shirts</p>
+  </div>
+  <div class="col-4" style="font-family: Kulim Park;">
+    <p style="font-weight: bolder;">Contact Us:</p>
+    <p>(888)888-8888</p>
+    <p>baoa@gmail.com</p>
+    <p>4750 Almaden Expressway, San Jose, CA</p>
+  </div>
+  <p style="font-family: Kulim Park; font-size: 10px; margin-top: 10px;">© 2009 - 2019 Bay Area Older Adults Inc. All Rights Reserved.</p>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+  var typed = new Typed('#typed-strings', {
+    strings: ["Day Hike", "Local Event", "Day Outing", "Vacation", "Adventure"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+
+  });
+</script>
+<script>
+  var typed = new Typed('#typed-strings1', {
+    strings: ["_Day Hike_", "_Local Event_", "_Day Outing_", "_Vacation_", "_Adventure_"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: false,
+    showCursor: false,
+
+    
+
+  });
+</script>
+<script type="text/javascript">
+	var main = document.getElementById('introanim');
+	function brighten() {
+		main.classList.remove('beginning');
+	}
+</script>
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

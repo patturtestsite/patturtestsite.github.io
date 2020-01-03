@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=0.4">
+	<title>Bay Area Older Adults</title>
+</head>
+<body>
+	<div id="content">
+				
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+				
+		$('#button_save').click(function() {
+			var formObject = document.form_join;
+			var valid = false;
+
+			if (formObject.membershipType.value == "") {
+				alert("Please choose a membership type");
+			}else if(formObject.emailAddress.value == "") {
+				alert("Please enter your email address");
+				formObject.emailAddress.focus();
+			} else if (formObject.emailAddress.value != formObject.confirmEmailAddress.value) {
+				alert("Please confirm your email address");
+				formObject.confirmEmailAddress.focus();
+			} else if (!isValidEmail(formObject.emailAddress.value)) {
+				alert("Please enter a valid email address");
+				formObject.emailAddress.focus();
+			} else if (formObject.password.value == "") {
+				alert("Please enter a password");
+				formObject.password.focus();
+			} else if (formObject.password.value.length < 6) {
+				alert("Please enter a password of least 6 characters");
+				formObject.password.focus();
+			} else if (formObject.password.value != formObject.confirmPassword.value) {
+				alert("Please confirm your password");
+				formObject.confirmPassword.focus();
+			} else if (formObject.firstName.value == "") {
+				alert("Please enter your first name");
+				formObject.firstName.focus();
+			} else if (formObject.lastName.value == "") {
+				alert("Please enter your last name");
+				formObject.lastName.focus();
+			} else if (formObject.city.value == "") {
+				alert("Please enter your city");
+				formObject.city.focus();
+			} else if (formObject.zip.value == "") {
+				alert("Please enter your zip/postal code");
+				formObject.zip.focus();
+			} else if (/(^\d{5}$)|(^\d{5}-\d{4}$)/.test(formObject.zip.value)==false) {
+				alert("Please enter valid zip/postal code");
+				formObject.zip.focus();
+			} else if (formObject.gender.value == "") {
+				alert("Please enter your gender");
+				formObject.gender.focus();
+			} else {
+				valid = true;
+			}
+
+			if (valid)
+				formObject.submit();
+			else
+				return false;
+		});
+		
+		//runs email validation when user clicks off of email input
+		$('#emailAddress.input').on('blur',function(){
+			var formObject1 = document.form_join;
+			if(formObject1.membershipType.value === "") {
+				alert("Please enter a Membership Type");
+				document.getElementsByName('membershipType')[0].focus();
+			} else if(formObject1.emailAddress.value === "") {
+				document.getElementById('reg_error').innerHTML = '';	
+				alert("Please enter your email address");
+			} else if (!isValidEmail(formObject1.emailAddress.value)) {
+				alert("Please enter a valid email address");
+			} else if (formObject1.membershipType.value != "" && formObject1.emailAddress.value != ""){
+				checkEmail(formObject1.emailAddress.value,formObject1.membershipType.value);
+			};
+		});
+			
+	});
+	
+	//hides any registration error messages on refresh
+	$(window).on('load', function(){ 
+		document.getElementById('reg_error').innerHTML = '';	
+	});
+	
+	//checks to see if email already exists with real time post prior to form submit
+	function checkEmail(email,membershipType){
+		$.post("https://www.bayareaolderadults.org/action/join_email", {email: email, membershipType: membershipType}, function(data, status) {
+		$("#reg_error").load("join #reg_error");
+		});
+	}
+	
+	function reloadCaptcha()
+	{
+		document.getElementById('captcha').src = document.getElementById('captcha').src+ '?' +new Date();
+	}
+</script>
+<nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000;">
+  <a class="navbar-brand" href="#">
+    <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
+  </a>
+  <form class="form-inline">
+    <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Join</button></a>
+    <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Donate</button></a>
+    <div class="btn-group dropleft">
+  		<button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+    		More
+  		</button>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right: 10%;">
+    		<a class="dropdown-item" onclick="history.back()">Previous Webpage</a>
+    		<a class="dropdown-item" href="selfguided.html">Do-It-Yourself Adventures</a>
+    		<a class="dropdown-item" href="group.html">BAO-Organized Group Events</a>
+  		</div>
+</div>
+  </form>
+</nav>
+
+				<h1>Join Bay Area Older Adults (BAO)</h1>
+				<div class="choose">
+<div class="center" style="margin-top: 5vh;">
+<div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary group" id="templates" data-toggle="collapse" data-target="#templates1" aria-expanded="false" aria-controls="templates1" disabled onclick="switcher2()" >Basic Membership</button>
+  <button id="custom" type="button" class="btn btn-secondary group" data-toggle="collapse" data-target="#templates1" aria-expanded="false" aria-controls="templates1" onclick="switcher()">Premium Membership</button>
+</div>
+</div>
+</div>
+
+<div id="templates1" class="collapse show">
+<p>Basic membership is FREE. Basic Member Benefits include
+					</p><ul>
+						<li><u>Comprehensive Monthly Newsletter</u>: highlighting social outdoors, cultural and educational activities around the Bay Area and beyond.</li>
+						<li><u>Up to 25% Discount on BAO events</u></li>
+						<li><u>Automatic Enrollment in our GoMo Game: for the chance to win prizes!</u></li>
+						<li><u>Special Offers from our Partners</u></li>
+					</ul>
+				<p></p>
+</div>
+</div>
+
+<div id="templates1" class="collapse">
+<p>Become a Premium Member for only $25. Premium membership is good for 12 months from the day membership is activated. This pays for itself after three or fewer events!  In addition to Basic Member Benefits, Premium Members have access to
+					</p><ul>
+						<li><u>Special Free Events: These events are labeled **Premium Priority**.</u></li>
+						<li><u>Priority Reservations for Select Events</u></li>
+						<li><u>Up to 50% Discount on BAO events</u></li>
+					</ul>
+				<p></p>
+</div>
+
+<h2 style="text-align: center; margin-top: 5vh; margin-bottom: 2vh; color: #3CB371;">All members get access to:</h2>
+<div class="row member-access" style="display: flex; justify-content: center;">
+	<div class="col" style="display: flex; justify-content: center;">
+		<div class="card" style="width: 18rem;">
+ 	 		<img src="default.jpg" class="card-img-top">
+  			<div class="card-body">
+    			<h5 class="card-title">Lorem Ipsum</h5>
+    			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+  			</div>
+		</div>
+	</div>
+	<div class="col" style="display: flex; justify-content: center;">
+		<div class="card" style="width: 18rem;">
+ 	 		<img src="default.jpg" class="card-img-top">
+  			<div class="card-body">
+    			<h5 class="card-title">Lorem Ipsum</h5>
+    			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+  			</div>
+		</div>
+	</div>
+	<div class="col" style="display: flex; justify-content: center;">
+		<div class="card" style="width: 18rem;">
+ 	 		<img src="default.jpg" class="card-img-top">
+  			<div class="card-body">
+    			<h5 class="card-title">Lorem Ipsum</h5>
+    			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<div class="dropdown" style="display: flex; justify-content: center;">
+  <button class="btn btn-secondary dropdown-toggle btn-block" type="button"style="font-family: Kulim Park; height: 10vh; width: 70%; margin-top: 5vh;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Register Here!
+  </button>
+</div>
+
+<div class="collapse" id="collapseExample">		
+<div class="intro">
+	<h2>Member Registration</h2>
+	<p>To become a member, please fill out the information below. The asterisk (*) indicates that it is a required field.  Please click SUBMIT when you are finished.  Please see our <a href="https://www.bayareaolderadults.org/privacy-policy" target="_blank">privacy policy</a> that describes the protection of your personal information.  Please read the <a href="https://www.bayareaolderadults.org/terms-of-use" target="_blank">terms of use</a> to understand your rights and responsibilities regarding the use of the BAO Website.</p>
+</div>
+								
+				<!-- The code: if (isset($_SESSION['saved_user_info'])) echo $_SESSION['saved_user_info']['XXX']; was added to all the user info except password so it is saved the profile information so user does not have to re-enter if need to resend captcha to server if user made a math error-->
+				<form class="form_join" name="form_join" method="post" action="https://www.bayareaolderadults.org/action/join">
+
+				<div class="row">
+				<div class="col">
+				<p>Membership Type*</p>
+				<div class="form_field">
+					<input type="radio" name="membershipType" class="checkbox" value="basic"> <label>Basic (Free)</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="membershipType" class="checkbox" value="premium"> <label>Premium ($25)</label>
+				</div>
+				<div id="reg_error"></div>
+				<p><font color="green">Please note that AOL blocks BAO's automated emails so please use a non-AOL email address to join as a BAO member. This will ensure you receive BAO emails. Thank you!</font></p>
+				<div class="form_field">
+					<div class="left_col"><label for="emailAddress" style="font-weight: bolder;">Email Address*</label></div>
+					<div class="right_col"><input type="text" name="emailAddress" id="emailAddress" autocomplete="off" class="input" value=""></div>
+				</div>
+
+				<div class="form_field">
+					<div class="left_col"><label for="confirmEmailAddress" style="font-weight: bolder;">Confirm Email Address*</label></div>
+					<div class="right_col"><input type="text" name="confirmEmailAddress" id="confirmEmailAddress" class="input" value=""></div>
+				</div>
+
+				<div class="form_field">
+					<div class="left_col"><label for="password" style="font-weight: bolder;">Password*</label></div>
+					<div class="right_col"><input type="password" name="password" id="password" class="input"> (6+ characters)</div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="confirmPassword" style="font-weight: bolder;">Confirm Password*</label></div>
+					<div class="right_col"><input type="password" name="confirmPassword" id="confirmPassword" class="input"></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="firstName" style="font-weight: bolder;">First Name*</label></div>
+					<div class="right_col"><input type="text" name="firstName" id="firstName" class="input" value=""></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="lastName" style="font-weight: bolder;">Last Name*</label></div>
+					<div class="right_col"><input type="text" name="lastName" id="lastName" class="input" value=""></div>
+				</div>
+
+				<div class="form_field">
+					<div class="left_col"><label for="referredBy" style="font-weight: bolder;">Referred By</label></div>
+					<div class="right_col"><input type="text" name="referredBy" id="referredBy" class="input" value=""></div>
+				</div>
+
+				<p>Please Send Me</p>
+				<div class="form_field">
+					<input type="checkbox" name="calendarReminderOn" id="calendarReminderOn" class="checkbox" value="1"> <label for="calendarReminderOn">Email reminders for my calendar events </label>
+				</div>
+				<div class="form_field">
+					<input type="checkbox" name="discountInfoOn" id="discountInfoOn" class="checkbox" value="1"><label for="discountInfoOn">Information about discounts offered to BAO members </label>
+				</div>
+
+				<div class="form_field">
+					<div class="left_col"><label for="address" style="font-weight: bolder;">Street Address</label></div>
+					<div class="right_col"><input type="text" name="address" id="address" class="input" value=""></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="city" style="font-weight: bolder;">City*</label></div>
+					<div class="right_col"><input type="text" name="city" id="city" class="input" value=""></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="state" style="font-weight: bolder;">State/Province</label></div>
+					<div class="right_col">
+						<select name="state" class="input">
+							<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="AZ">Arizona</option>
+							<option value="AR">Arkansas</option>
+							<option value="CA" selected="">California</option>
+							<option value="CO">Colorado</option>
+							<option value="CT">Connecticut</option>
+							<option value="DE">Delaware</option>
+							<option value="DC">District Of Columbia</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="HI">Hawaii</option>
+							<option value="ID">Idaho</option>
+							<option value="IL">Illinois</option>
+							<option value="IN">Indiana</option>
+							<option value="IA">Iowa</option>
+							<option value="KS">Kansas</option>
+							<option value="KY">Kentucky</option>
+							<option value="LA">Louisiana</option>
+							<option value="ME">Maine</option>
+							<option value="MD">Maryland</option>
+							<option value="MA">Massachusetts</option>
+							<option value="MI">Michigan</option>
+							<option value="MN">Minnesota</option>
+							<option value="MS">Mississippi</option>
+							<option value="MO">Missouri</option>
+							<option value="MT">Montana</option>
+							<option value="NE">Nebraska</option>
+							<option value="NV">Nevada</option>
+							<option value="NH">New Hampshire</option>
+							<option value="NJ">New Jersey</option>
+							<option value="NM">New Mexico</option>
+							<option value="NY">New York</option>
+							<option value="NC">North Carolina</option>
+							<option value="ND">North Dakota</option>
+							<option value="OH">Ohio</option>
+							<option value="OK">Oklahoma</option>
+							<option value="OR">Oregon</option>
+							<option value="PA">Pennsylvania</option>
+							<option value="RI">Rhode Island</option>
+							<option value="SC">South Carolina</option>
+							<option value="SD">South Dakota</option>
+							<option value="TN">Tennessee</option>
+							<option value="TX">Texas</option>
+							<option value="UT">Utah</option>
+							<option value="VT">Vermont</option>
+							<option value="VA">Virginia</option>
+							<option value="WA">Washington</option>
+							<option value="WV">West Virginia</option>
+							<option value="WI">Wisconsin</option>
+							<option value="WY">Wyoming</option>
+						</select></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="zip" style="font-weight: bolder;">5 digit Zip/Postal Code*</label></div>
+					<div class="right_col"><input type="text" name="zip" id="zip" class="input" value=""></div>
+				</div>
+				<div class="form_field">
+					<div class="left_col"><label for="country" style="font-weight: bolder;">Country</label></div>
+					<div class="right_col"><input type="text" name="country" id="country" class="input" value=""></div>
+				</div>
+				<p>Age Range</p>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="0"> <label>&lt; 30</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="1"> <label>30 - 39</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="2"> <label>40 - 49</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="3"> <label>50 - 59</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="4"> <label>60 - 69</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="5"> <label>70 - 79</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="6"> <label>80 and over</label>
+				</div>
+				<!-- added new default choice of NA or no answer so if user does not choose an age range we get NA instead of 40-49 -->
+				<div class="form_field">
+					<input type="radio" name="ageRangeId" class="checkbox" value="7" checked=""> <label>NA</label>
+				</div>
+				</div>
+				<div class="col">
+				<p>It would help us to address your needs and provide you better service if you shared more information with us such as your interests (see below).   You are <span class="highlight">not</span> required to share this information to become a member. </p>
+				<p>Please check the topics that are of most interest to you.  Please check all that apply.  </p>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="1"> <label>Alternative medicine</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="2"> <label>Art</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="3"> <label>Brain fitness</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="4"> <label>Continuing education</label>
+																: what classes? <input type="text" name="interest_extra_education" id="interest_extra_education" class="input" size="40" value="">
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="5"> <label>Cooking &amp; recipes</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="6"> <label>Eating out	</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="7"> <label>Estate planning</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="8"> <label>Financial investments</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="9"> <label>Health insurance</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="10"> <label>History</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="11"> <label>Local entertainment &amp; events</label>
+																: what types? <input type="text" name="interest_extra_entertainment" id="interest_extra_entertainment" class="input" size="40" value="">
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="12"> <label>Nutrition</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="13"> <label>Outdoor activities</label>
+																: what types? <input type="text" name="interest_extra_outdoor" id="interest_extra_outdoor" class="input" size="40" value="">
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="14"> <label>Indoor physical fitness</label>
+																: what types? <input type="text" name="interest_extra_indoor" id="interest_extra_indoor" class="input" size="40" value="">
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="15"> <label>Retirement planning</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="16"> <label>Science and technology</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="17"> <label>Social networking</label>
+																: what types? <input type="text" name="interest_extra_social_networking" id="interest_extra_social_networking" class="input" size="40" value="">
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="18"> <label>Tax preparation</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="19"> <label>Travel</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="20"> <label>Volunteering</label>
+													</div>
+					</div>
+									<div class="form_field">
+						<div id="full_line"><input type="checkbox" name="userInterest[]" class="checkbox" value="21"> <label>Other</label>
+																, please specify<br><textarea name="interest_extra_other" id="interest_extra_other" class="input" rows="1" cols="1"></textarea>
+													</div>
+					</div>
+				
+				<p>Gender*</p>
+				<div class="form_field">
+					<input type="radio" name="gender" class="checkbox" value="male"> <label>Male</label>
+				</div>
+				<div class="form_field">
+					<input type="radio" name="gender" class="checkbox" value="female"> <label>Female</label>
+				</div>
+				<!-- initially, default choice of NA or no answer so if user does not choose male or female we get NA instead of female
+				removed this October 2016 in order to require accurate gender input/streamline manual work -->
+				<!-- <div class="form_field">
+					<input type="radio" name="gender" class="checkbox" value="na" checked/> <label>NA</label>
+				</div> -->
+
+				
+
+				<a name="captcha_hint"></a>
+				<p>For security purposes, please give the correct result for the math problem shown below.  Multiplication is indicated by an asterisk.</p>
+				<div class="form_field">
+					<img src="https://www.bayareaolderadults.org/content/math_captcha/image.php" alt="Click to reload image" title="Click to reload image" id="captcha" onclick="reloadCaptcha()">
+				</div>
+				<div class="form_field">
+					<input type="text" name="captcha_input" value="what's the result?" onclick="this.value=''">
+				</div>
+				</div>
+				</div>
+				<div class="form_buttons" style="width: 100%; margin-top: 5vh;"><input class="button btn btn-block" type="button" name="save" id="button_save" value="Register" style="background-color: #3CB371; color: white;"></div>
+				</form>
+</div>
+
+<div class="bottom row" style="display: flex; justify-content: center; margin-top: 5%; margin-left: 5%; width: 90%;">
+  <div class="col-4">
+    <p style="font-weight: bolder;">About:</p>
+    <p>About Us</p>
+    <p>Press</p>
+    <p>Partners</p>
+  </div>
+  <div class="col-4" style="font-family: Kulim Park;">
+    <p style="font-weight: bolder;">More:</p>
+    <p>Terms of Use</p>
+    <p>Privacy Policy</p>
+    <p>Governance & Finances</p>
+    <p>T-shirts</p>
+  </div>
+  <div class="col-4" style="font-family: Kulim Park;">
+    <p style="font-weight: bolder;">Contact Us:</p>
+    <p>(888)888-8888</p>
+    <p>baoa@gmail.com</p>
+    <p>4750 Almaden Expressway, San Jose, CA</p>
+  </div>
+  <p style="font-family: Kulim Park; font-size: 10px; margin-top: 10px;">© 2009 - 2019 Bay Area Older Adults Inc. All Rights Reserved.</p>
+</div>
+
+<script>
+	function switcher() {
+		var templates=document.getElementById('templates');
+		var custom=document.getElementById('custom');
+		templates.removeAttribute('disabled');
+		custom.setAttribute('disabled');
+
+	}
+	function switcher2() {
+		var templates=document.getElementById('templates');
+		var custom=document.getElementById('custom')
+		templates.setAttribute('disabled')
+		custom.removeAttribute('disabled');
+
+	}
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
