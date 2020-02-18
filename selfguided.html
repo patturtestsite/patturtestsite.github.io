@@ -4,24 +4,43 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=0.47">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<title>Bay Area Older Adults</title>
 </head>
 <body>
 
 
-<nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000;">
+<nav class="navbar navbar-light d-lg-flex d-none" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000; font-family: Roboto;">
+  <a class="navbar-brand" href="#">
+    <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
+  </a>
+  <form class="form-inline">
+    <a href="index.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Home</button></a>
+    <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Join</button></a>
+    <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Donate</button></a>
+    <a href="group.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px; margin-right: 20px;">BAO-Organized Group Events</button></a>
+  </form>
+</nav>
+<nav class="navbar navbar-light d-flex d-lg-none" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000; font-family: Roboto;">
   <a class="navbar-brand" href="#">
     <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
   </a>
   <form class="form-inline">
     <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Join</button></a>
     <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Donate</button></a>
-    <a href="group.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px; margin-right: 20px;">BAO-Organized Group Events</button></a>
+    <div class="btn-group dropleft">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+        More
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right: 10%;">
+        <a class="dropdown-item" onclick="history.back()">Previous Webpage</a>
+        <a class="dropdown-item" href="index.html">Home</a>
+        <a class="dropdown-item" href="group.html">BAO-Organized Group Events</a>
+      </div>
+</div>
   </form>
 </nav>
-
 <div class="midsection row d-none d-lg-flex" style="width: 80%; margin-left: 10%; margin-top: 5%;">
 	<div class="col" style="margin-top: 5vh;">
 		<p style="margin-left: 20%; font-weight: bolder;">Choose</p>
@@ -49,7 +68,7 @@
       				<option>South Bay</option>
    				 	</select>
   			</div>
-  			<button type="submit" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button>
+  			<a href="selfguide.html"><button type="button" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button></a>
 		</form>
 	</div>
 </div>
@@ -80,7 +99,7 @@
       				<option>South Bay</option>
    				 	</select>
   			</div>
-  			<button type="submit" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button>
+  			<a href="selfguide.html"><button type="button" class="btn btn-primary" style="width: 80%; margin-left: 10%;background-color: #3CB371; border-color: #3CB371; font-family: Kulim Park; margin-bottom: 10%;">Submit</button></a>
 		</form>
 	</div>
 </div>
@@ -94,7 +113,7 @@
   				<div class="card-body">
     				<h5 class="card-title">Lorem Ipsum</h5>
     				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black; font-family: Kulim Park;">Lorem Ipsum</a>
   				</div>
 			</div>
 			<div class="card" style="width: 18rem;">
@@ -102,7 +121,7 @@
   				<div class="card-body">
     				<h5 class="card-title">Lorem Ipsum</h5>
     				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black; font-family: Kulim Park;">Lorem Ipsum</a>
   				</div>
 			</div>
 			<div class="card" style="width: 18rem;">
@@ -110,7 +129,7 @@
   				<div class="card-body">
     				<h5 class="card-title">Lorem Ipsum</h5>
     				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black; font-family: Kulim Park;">Lorem Ipsum</a>
   				</div>
 			</div>
 			<div class="card" style="width: 18rem;">
@@ -118,7 +137,7 @@
   				<div class="card-body">
     				<h5 class="card-title">Lorem Ipsum</h5>
     				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-    				<a href="#" class="btn" style="background-color: #3CB371; color: black;">Lorem Ipsum</a>
+    				<a href="#" class="btn" style="background-color: #3CB371; color: black; font-family: Kulim Park;">Lorem Ipsum</a>
   				</div>
 			</div>
 			
@@ -126,16 +145,16 @@
 <div class="bottom row" style="display: flex; justify-content: center; margin-top: 5%; margin-left: 5%; width: 90%;">
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">About:</p>
-    <p>About Us</p>
-    <p>Press</p>
-    <p>Partners</p>
+    <a href="about.html" style="color: black;"><p>About Us</p></a>
+    <a href="press.html" style="color: black;"><p>Press</p></a>
+    <a href="about.html#partner" style="color: black;"><p>Partners</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">More:</p>
-    <p>Terms of Use</p>
-    <p>Privacy Policy</p>
-    <p>Governance & Finances</p>
-    <p>T-shirts</p>
+    <a href="terms.html" style="color: black;"><p>Terms of Use</p></a>
+    <a href="privacy.html" style="color: black;"><p>Privacy Policy</p></a>
+    <a href="about.html#governance" style="color: black;"><p>Governance & Finances</p></a>
+    <a href="index.html#shirt" style="color: black;"><p>T-Shirts</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">Contact Us:</p>
@@ -145,6 +164,7 @@
   </div>
   <p style="font-family: Kulim Park; font-size: 10px; margin-top: 10px;">© 2009 - 2019 Bay Area Older Adults Inc. All Rights Reserved.</p>
 </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>

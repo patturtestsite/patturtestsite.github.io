@@ -92,3 +92,9 @@ a.btn:hover {
 	opacity: 50%;
 }
 
+.card-hoverable: hover {
+	opacity: 50%;
+	border-width: 2%;
+	border-color: #d8d8d8;
+	border-style: solid;
+}

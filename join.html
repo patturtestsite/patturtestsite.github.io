@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=0.4">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<title>Bay Area Older Adults</title>
 </head>
 <body>
@@ -102,7 +102,7 @@
 		document.getElementById('captcha').src = document.getElementById('captcha').src+ '?' +new Date();
 	}
 </script>
-<nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000;">
+<nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000; font-family: Roboto;">
   <a class="navbar-brand" href="#">
     <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
   </a>
@@ -115,6 +115,7 @@
   		</button>
   		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right: 10%;">
     		<a class="dropdown-item" onclick="history.back()">Previous Webpage</a>
+    		<a class="dropdown-item" href="index.html">Home</a>
     		<a class="dropdown-item" href="selfguided.html">Do-It-Yourself Adventures</a>
     		<a class="dropdown-item" href="group.html">BAO-Organized Group Events</a>
   		</div>
@@ -477,16 +478,16 @@
 <div class="bottom row" style="display: flex; justify-content: center; margin-top: 5%; margin-left: 5%; width: 90%;">
   <div class="col-4">
     <p style="font-weight: bolder;">About:</p>
-    <p>About Us</p>
-    <p>Press</p>
-    <p>Partners</p>
+    <a href="about.html" style="color: black;"><p>About Us</p></a>
+    <a href="press.html" style="color: black;"><p>Press</p></a>
+    <a href="about.html#partner" style="color: black;"><p>Partners</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">More:</p>
-    <p>Terms of Use</p>
-    <p>Privacy Policy</p>
-    <p>Governance & Finances</p>
-    <p>T-shirts</p>
+    <a href="terms.html" style="color: black;"><p>Terms of Use</p></a>
+    <a href="privacy.html" style="color: black;"><p>Privacy Policy</p></a>
+    <a href="about.html#governance" style="color: black;"><p>Governance & Finances</p></a>
+    <a href="index.html#shirt" style="color: black;"><p>T-Shirts</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">Contact Us:</p>
@@ -496,6 +497,7 @@
   </div>
   <p style="font-family: Kulim Park; font-size: 10px; margin-top: 10px;">© 2009 - 2019 Bay Area Older Adults Inc. All Rights Reserved.</p>
 </div>
+
 
 <script>
 	function switcher() {

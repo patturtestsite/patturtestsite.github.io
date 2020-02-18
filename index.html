@@ -5,23 +5,25 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=0.47">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<title>Bay Area Older Adults</title>
 </head>
 <body style="font-family: Kulim Park;">
 
-<div class="bg" style="width: 100%; background-color: #d8d8d8;">
+<div class="bg" style="width: 100%; background-color: #d8d8d8; font-family: Roboto;">
 <nav class="navbar navbar-light" style="margin: 0; padding: 0; background-color: #d8d8d8; width: 100%; z-index: 100000; width: 100%;">
   <a class="navbar-brand" href="#">
     <img src="baoa.png" style="width: 200px; height: 120px; margin-left: 20px;">
   </a>
   <form class="form-inline">
-    <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Join</button></a>
-    <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px;">Donate</button></a>
+    <a href="join.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px; font-family: Roboto;">Join</button></a>
+    <a href="donate.html"><button class="btn btn-outline-dark" type="button" style="font-size: 20px; font-family: Roboto;">Donate</button></a>
     <div class="btn-group dropleft">
-      <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px; font-family: Roboto;">
         More
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-right: 10%;">
+        <a class="dropdown-item" onclick="history.back()">Previous Webpage</a>
         <a class="dropdown-item" href="selfguided.html">Do-It-Yourself Adventures</a>
         <a class="dropdown-item" href="group.html">BAO-Organized Group Events</a>
       </div>
@@ -125,6 +127,24 @@
 </div>
 </div>
 
+<div class="row" id="shirt" style="width: 80%; margin-left: 10%; margin-top: 5%;">
+  <div class="col-9">
+    <h1 style="font-weight: bolder;">BAO T-shirts</h1>
+    <p>We have had many inquiries about BAO T-shirts and have finally decided to take the plunge! Now you can choose from four different colors of high quality, durable 6 oz. cotton T-shirts in your preferred size for a reasonable price of only $25 (including delivery within the U.S.)!
+Why buy a BAO T-shirt?
+
+Stand out in a crowd!
+Wear your T-shirt to BAO events, and you will be entered to win discounts or prizes.
+Every T-shirt purchased supports programs designed with you in mind.
+It is a conversation starter - a way to find new friends and dates.
+Simply choose your T-shirt size and color, submit the form below and we will contact you when the order arrives (estimated to be 4-6 weeks). If you have questions, please contact us by phone at 408-774-0593 or email us at share@bayareaolderadults.org</p>
+  </div>
+  <div class="col-3">
+    <img src="default.jpg" class="card-img">
+  </div>
+</div>
+<button type="button" class="btn" style="width: 80%; margin-left: 10%; font-family: Kulim Park; background-color: #3CB371; color: white;">Buy Now!</button>
+
 <h1 style="text-align: center; margin-top: 5%; font-weight: bolder;">Ready? Choose Between...</h1>
 <p style="text-align: center; font-size: 10px;">Don't worry - You can always switch between the two.</p>
 <div class="row" style="width: 90%; margin-left: 5%; display: flex; justify-content: center;">
@@ -153,18 +173,18 @@
 
 
 <div class="bottom row" style="display: flex; justify-content: center; margin-top: 5%; margin-left: 5%; width: 90%;">
-  <div class="col-4" style="font-family: Kulim Park;">
+  <div class="col-4">
     <p style="font-weight: bolder;">About:</p>
-    <p>About Us</p>
-    <p>Press</p>
-    <p>Partners</p>
+    <a href="about.html" style="color: black;"><p>About Us</p></a>
+    <a href="press.html" style="color: black;"><p>Press</p></a>
+    <a href="about.html#partner" style="color: black;"><p>Partners</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">More:</p>
-    <p>Terms of Use</p>
-    <p>Privacy Policy</p>
-    <p>Governance & Finances</p>
-    <p>T-shirts</p>
+    <a href="terms.html" style="color: black;"><p>Terms of Use</p></a>
+    <a href="privacy.html" style="color: black;"><p>Privacy Policy</p></a>
+    <a href="about.html#governance" style="color: black;"><p>Governance & Finances</p></a>
+    <a href="index.html#shirt" style="color: black;"><p>T-Shirts</p></a>
   </div>
   <div class="col-4" style="font-family: Kulim Park;">
     <p style="font-weight: bolder;">Contact Us:</p>
