@@ -4,8 +4,13 @@ nav {
 	padding: 10;
 }
 
+
 a.nav-link {
 	color: black;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 .heads {
