@@ -20,3 +20,8 @@ button.btn-dark:hover {
 button.btn-block:hover {
 	opacity: 0.8;
 }
+
+.col-6 p {
+	font-family: Montserrat;
+	
+}
