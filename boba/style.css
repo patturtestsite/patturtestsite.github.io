@@ -23,5 +23,10 @@ button.btn-block:hover {
 
 .col-6 p {
 	font-family: Montserrat;
-	
+
+}
+
+a:hover {
+	opacity: 0.5;
+	text-decoration: none;
 }
