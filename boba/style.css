@@ -1,0 +1,22 @@
+body {
+	overflow-x: hidden;
+	font-family: Raleway;
+	color: black;
+}
+img.shopping:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+button.d-none {
+	border-radius: 0px; width: 10rem; border-width: 2px; border-color: black; background-color: white; color: black; font-family: Raleway; margin-right: 15px;
+}
+
+button.btn-dark:hover {
+	background-color: black;
+	color: white;
+}
+
+button.btn-block:hover {
+	opacity: 0.8;
+}
