@@ -30,3 +30,23 @@ a:hover {
 	opacity: 0.5;
 	text-decoration: none;
 }
+
+.list p {
+	margin: 2%;
+	font-family: Montserrat;
+}
+
+.tea p {
+	font-family: Montserrat;
+	font-weight: bolder;
+	margin: 2%;
+}
+
+.floatingNav {
+  box-shadow: 0px 6px 5px #999;
+}
+
+.tea h4 {
+	margin-top: 2.5%;
+}
+
