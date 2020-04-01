@@ -8,6 +8,10 @@ img.shopping:hover {
 	cursor: pointer;
 }
 
+img.logo:hover {
+	opacity: 1.0
+}
+
 button.d-none {
 	border-radius: 0px; width: 10rem; border-width: 2px; border-color: black; background-color: white; color: black; font-family: Raleway; margin-right: 15px;
 }
@@ -36,7 +40,7 @@ a:hover {
 	font-family: Montserrat;
 }
 
-.tea p {
+.tea button {
 	font-family: Montserrat;
 	font-weight: bolder;
 	margin: 2%;
@@ -50,3 +54,10 @@ a:hover {
 	margin-top: 2.5%;
 }
 
+.snipcart-cart--opened {
+	font-family: Raleway;
+}
+
+.snipcart-cart--opended a {
+	background-color: black;
+}
