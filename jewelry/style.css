@@ -1,0 +1,127 @@
+body {
+	overflow-x: hidden;
+	font-family: Jost;
+	background-color: #d8d8d8;
+}
+nav.top {
+	width: 100%;
+	margin: 0px;
+	color: white;
+	background-color: black;
+	position: fixed;
+	z-index: 10000;
+}
+
+nav.top2 {
+	width: 100%;
+	margin: 0px;
+	color: white;
+	background-color: black;
+	position: fixed;
+	z-index: 1;
+}
+
+nav.top3 {
+	width: 100%;
+	margin: 0px;
+	color: black;
+	background-color: black;
+	z-index: 1;
+}
+
+.topBar {
+	background-color: black;
+	height: 100vh;
+	width: 103%;
+}
+
+.topBar2 {
+	background-color: black;
+	height: 50vh;
+	width: 104%;
+}
+
+.secondBar {
+	background-color: white;
+	width: 104%;
+}
+
+nav.top a {
+	color: white;
+}
+
+nav.top2 a {
+	color: white;
+}
+
+.contact {
+	background-color: #d8d8d8;
+	width: 70%;
+	margin-left: 15%;
+}
+
+button.btn-outline-transparent {
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: white;
+}
+
+button.btn-outline-transparent:hover {
+	color: gray;
+	text-decoration: underline;
+}
+
+form.mobile a {
+	margin-left: 5%;
+	font-size: 1.5rem;
+}
+
+button.navbar-toggler img:hover {
+	opacity: 0.5;
+}
+
+.col-6 h1 {
+	font-family: Jost;
+	font-weight: bolder;
+	color: white;
+	font-size: 7rem;
+	margin-left: 10%;
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke: 2px black;
+}
+
+.fascinating p {
+	font-family: Mrs Saint Delafield;
+	font-weight: bolder;
+	color: white;
+	font-size: 5rem;
+	margin-left: 10%;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px black;
+}
+
+p.highlight span {
+	background-color: #CD853F;
+	color: black;
+	font-weight: bolder; 
+	-webkit-text-outline: 5px #CD853F;
+}
+
+@font-face {
+  font-family: boldest;
+  src: url(BoldestPersonalUse-0Wld9.ttf);
+}
+
+@font-face {
+  font-family: gobsmacked;
+  src: url(GobsmackedDemoRegular-JRmwE.otf);
+}
+
+@font-face {
+  font-family: streetroad;
+  src: url(Streetroad-K701p.ttf);
+}
+
+.bottom a {
+	color: white;
+}
