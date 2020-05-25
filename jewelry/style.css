@@ -21,6 +21,11 @@ nav.top2 {
 	z-index: 1;
 }
 
+li.nav-item a:hover
+{
+	text-decoration: underline;
+}
+
 nav.top3 {
 	width: 100%;
 	margin: 0px;
@@ -94,6 +99,16 @@ button.navbar-toggler img:hover {
 	-webkit-text-stroke: 2px black;
 }
 
+.header h1 {
+	font-family: Jost;
+	font-weight: bolder;
+	color: white;
+	font-size: 7rem;
+	margin-left: 10%;
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke: 2px black;
+}
+
 .fascinating p {
 	font-family: Mrs Saint Delafield;
 	font-weight: bolder;
@@ -109,6 +124,28 @@ p.highlight span {
 	color: black;
 	font-weight: bolder; 
 	-webkit-text-outline: 5px #CD853F;
+}
+
+h4 {
+	margin-top: 5%;
+	font-weight: bolder;
+}
+
+button.buy-button:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+button.faq:active {
+	border: 1px solid #d8d8d8;
+}
+
+.product {
+	margin-top: 2%;
+}
+
+a.side {
+	color: #CD853F;
 }
 
 @font-face {
@@ -129,3 +166,4 @@ p.highlight span {
 .bottom a {
 	color: white;
 }
+
