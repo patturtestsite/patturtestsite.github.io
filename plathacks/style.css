@@ -36,7 +36,11 @@ button.btn-outline-transparent {
 	font-size: 25px;
 }
 
-button.register {
+button.btn-outline-transparent a {
+	color: black;
+}
+
+.register {
 	font-weight: bolder;
 	font-size: 25px;
 	background-color: #b76e79;
@@ -44,8 +48,16 @@ button.register {
 	color: white;
 }
 
-button.register:hover {
+.register:hover {
 	background-color: #d8d8d8;
+	color: black;
+}
+
+.register a {
+	color: white;
+}
+
+.register a:hover {
 	color: black;
 }
 
