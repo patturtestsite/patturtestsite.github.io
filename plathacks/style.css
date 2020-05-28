@@ -1,0 +1,66 @@
+body {
+	overflow-x: hidden;
+	font-family: Jost;
+	background-color: white;
+}
+nav.top {
+	width: 100%;
+	margin: 0px;
+	color: black;
+	background-color: white;
+	z-index: 10000;
+}
+
+nav.top2 {
+	width: 100%;
+	margin: 0px;
+	color: black;
+	background-color: white;
+	z-index: 1;
+}
+
+nav.top3 {
+	width: 100%;
+	margin: 0px;
+	color: black;
+	background-color: white;
+	z-index: 1;
+}
+
+nav {
+	font-weight: bolder;
+}
+
+button.btn-outline-transparent {
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+button.register {
+	font-weight: bolder;
+	font-size: 25px;
+	background-color: #b76e79;
+	margin-left: 10px;
+	color: white;
+}
+
+button.register:hover {
+	background-color: #d8d8d8;
+	color: black;
+}
+
+li a {
+	color: black;
+}
+
+.header {
+	background-color: #b76e79;
+	height: 80vh;
+	color: white;
+}
+
+.pink p {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
