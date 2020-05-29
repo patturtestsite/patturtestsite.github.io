@@ -1,0 +1,100 @@
+body {
+	overflow-x: hidden;
+}
+
+.beginning {
+	opacity: 30%;
+}
+
+nav, button {
+	margin: 10px;
+	font-family: Roboto;
+	font-weight: bolder;
+}
+
+.col {
+	font-size: 70px;
+	font-family: Kulim Park;
+	color: #3CB371;
+	height: 30vh;
+}
+div#typed-strings {
+	margin-left: 22%;
+	display: inline;
+	font-family: Kulim Park;
+	font-size: 55px;
+	text-decoration: underline;
+}
+div#typed-strings1 {
+	display: inline;
+	font-family: Kulim Park;
+	font-size: 40px;
+	text-decoration: underline;
+	color: #3CB371;
+}
+
+form.form1 {
+	color: white;
+	font-size: 25px;
+	background-color: black;
+	border-radius: 5px;
+	width: 80%;
+	font-family: Kulim Park;
+}
+
+.form-group {
+	width: 80%;
+	height: 26vh;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+select:active 
+{
+	outline-color: #3CB371;
+}
+
+label {
+	font-size: 30px;
+}
+
+button:hover {
+	opacity: 50%;
+}
+
+.end {
+	background-color: #F5F5F5;
+	margin-top: 40vh;
+}
+
+.end1 {
+	background-color: #F5F5F5;
+}
+
+
+
+.carousel-item .row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	margin: 1%;
+}
+
+h5.card-title {
+	font-family: Kulim Park;
+	font-weight: bolder;
+}
+
+a.btn:hover {
+	opacity: 50%;
+}
+
+.card-hoverable: hover {
+	opacity: 50%;
+	border-width: 2%;
+	border-color: #d8d8d8;
+	border-style: solid;
+}

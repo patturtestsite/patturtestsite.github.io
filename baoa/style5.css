@@ -1,0 +1,48 @@
+body {
+	font-family: Kulim Park;
+	overflow-x: hidden;
+}
+nav, button {
+	margin: 10px;
+	font-family: Roboto;
+	font-weight: bolder;
+}
+
+h1 {
+	font-weight: bolder;
+	color: black;
+	margin-top: 5vh;
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 5vh;
+}
+
+button.group {
+	font-family: Kulim Park;
+	font-size: 20px;
+	margin: 0px;
+	margin-top: 2vh;
+}
+
+button.btn-color {
+	background-color:  #3CB371;
+}
+
+h5 {
+	font-weight: bolder;
+}
+
+p {
+	font-weight: normal;
+}
+
+img:hover {
+	opacity: 50%;
+}
+
+.row-card {
+	margin-top: 10px;
+}
