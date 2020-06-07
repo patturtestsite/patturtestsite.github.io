@@ -1,0 +1,118 @@
+body {
+	background-color: #7D7D7D
+}
+
+div#navbar {
+	font-family: staatliches;
+	background-color: #7D7D7D;
+	font-size: 25px;
+
+}
+
+a.nav-link {
+	color: white;
+}
+
+a.nav-link:hover {
+	color: black;
+}
+
+a.nav-link:active {
+	color: black;
+}
+div#what {
+	background-color: #7D7D7D;
+	color: black;
+	font-family: staatliches;
+	margin-top: 100px;
+	position: fixed;
+
+	
+}
+
+p.intro {
+	display: flex;
+	justify-content: center;
+	margin-left: 100px;
+    
+}
+
+
+
+button.btn:hover {
+	color: white;
+
+}
+
+div#why {
+	background-color: #DEE4E7;
+
+	font-family: Karla;
+	font-size: 70px;
+	 z-index: 1; 
+	 position:relative;
+	 font-weight: bolder;
+	 margin-top:800px;
+}
+
+
+p.header {
+	margin-left: 100px;
+} 
+
+h1 {
+	font-family: staatliches;
+	margin-top: 20px;
+}
+
+p.info {
+	font-family: montserrat;
+	font-size: 16px;
+	margin-right: 20px;
+
+}
+
+div.col {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+p.infos {
+	font-size: 20px;
+	margin-left: 100px;
+	font-family: montserrat;
+	margin-right: 40px;
+}
+img {
+	margin-top: 20px;
+	height: 150px;
+	width: 150px;
+	margin-left: 70px;
+}
+
+div#use {
+	background-color: #DEE4E7;
+
+	font-family: Karla;
+	font-size: 70px;
+	 z-index: 1; 
+	 position:relative;
+	 font-weight: bolder;
+	 margin-top:800px;
+}
+
+button#analyze {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+button#analyze:hover {
+	color: white;
+}
+
+div.followimg {
+	display: flex;
+	flex-direction: row;
+}
+
+

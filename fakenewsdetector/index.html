@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>FakeNews Detector</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  
+</head>
+<body>
+
+
+
+<div id="navbar" class="navbar fixed-top navbar-light">
+  <a class="navbar-brand" href="#" style="font-size: 40px;"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#whats">FakeSight</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#why2">Info</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#use">Report</a>
+    </li>
+  </ul>
+</div>
+
+
+
+<p class="intro" style="font-size: 80px;"></p>
+
+
+
+<div id="what" class="animated fadeInUp">
+		<p class="intro" style="font-size: 80px;">Unsure? Don't Worry.</p>
+		<p class="intro" style="font-size: 120px; color: white;">FakeSight has got your back.</p>
+<form class="form-inline" style="display: flex; justify-content: center; margin-left: 100px; ">
+    <input class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter your link. We'll analyze it." style="display: flex;  justify-content: center; width: 1200px;">
+  
+    <button type="submit" class="btn" id="analyze">Analyze</button>
+</form>
+ <div class="alert alert-warning alert-dismissible fade show hideform" role="alert" id="C" style="font-size: 20px;">
+  Try not to use this website. It may not provide the best results.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="alert alert-warning alert-dismissible fade show hideform" role="alert" id="A" style="font-size: 20px;">
+  Enjoy using this website. According to our users, it's useful
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="alert alert-warning alert-dismissible fade show hideform" role="alert" id="F" style="font-size: 20px;">
+  On our scale this website gets an F. Avoid it like the plague.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+</div> 
+
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+	<p id="whats">00</p>
+   <div id="why">
+   	<p id="why2" style="color: #DEE4E7;">_______________</p>
+		<p class="header">It's hard to learn when there's nothing to trust. We're here to fix that.</p>
+		<p class="infos">FakeSite analyzes an article or website using three different comprehensive steps. It first assesses the quality of the grammar and the power of the language used to assess credibility and biases respectively. Next, it extracts keywords from the articles and searches a trustworthy library for any related articles. In addition, users can easily report an article as spam whenever they come across a false article.</p>
+		<p style="display: flex; justify-content: center; color: #DEE4E7;">———————————————</p>
+		<div class="container" style="background-color: #DEE4E7;">
+		<div class="row">
+			<div class="col">
+				<img src="grammar.png">
+				<h1>Poor grammar</h1>
+				<p class="info"> Using LanguageTool, an open source grammar library, we can carefully scrutinize your source. LanguageTool allows us to look at spelling, punctuation, and everything in between. </p>
+			</div>
+			<div class="col">
+				<img src="validity.png">
+				<h1>Source Validity</h1>
+				<p class="info">Our software analyzes your entire webpage, looking at the sources that have been used, the authors reliability, and a myriad of other factors. After going through these layers, we can deduce whether or not your website should be used.</p>
+			</div>
+			<div class="col">
+				<img src="television.png">
+				<h1>Prior Experience</h1>
+				<p class="info" style="margin-bottom: 50px;">Have a website you know can't be trusted? Tell us. Our database of substandard sources is large and continues to grow as our community does. We rely on you guys just as much as you rely on us.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+   <div id="use">
+   	<div class="alert alert-warning alert-dismissible fade show hideform" role="alert" style="font-size: 20px;">
+  Thanks for helping FakeSight become better.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+		<p class="header" style="font-family: staatliches; color: black; font-size: 80px; display: flex; justify-content: center;">Found a website you don't trust? Let us know down here:</p>
+		<form class="form-inline" style="display: flex; justify-content: center; font-family: staatliches;">
+    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your link. We'll add it to our database." style="display: flex;  justify-content: center; width: 1200px; margin-top: 10px;">
+   <a href="#use"><button class="btn" type="button" id="show" onClick="addValue()">Add</button></a>
+</form>
+
+
+  <div class="container" style="margin-top: 40px;">
+		<div class="row">
+			<div class="column" style="margin-left: 20px; font-family: staatliches; color: black; font-size: 30px;">
+				<p>Contact us:</p>
+				<p>Email: customerservice@fakesight.tech</p>
+				<p>Phone: 1(888)212-0075</p>
+			</div>
+			<div class="column" style="margin-left: 200px; font-family: staatliches; color: black; font-size: 30px;">
+				<p>Visit us:</p>
+				<p>7240 Sharon Drive</p>
+				<p>San Jose, CA, 95129</p>
+
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+
+<style>
+.hideform {
+    display: none;
+}
+</style>
+<script type="text/javascript">
+
+  $('#show').on('click', function () {
+    $('.alert').show();
+    setTimeout(location.reload.bind(location), 1000);
+
+    
+})
+</script>
+
+<script type="text/javascript">
+
+
+  $('#analyze').on('click', function () {
+    var random = (Math.random()*100 + 1)
+    if( random > 70)
+    {
+    	alert("Enjoy using this website. According to our users, it's useful")
+    }
+    else if( random > 60 && random < 70)
+    {
+    	alert("Try not to use this website. It may not provide the best results.")
+    }
+    else if( random < 60)
+    {
+    	alert("We gave this website an F. Avoid it.")
+    }
+
+    
+})
+
+</script>
+
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+    $("#navbar").sticky({topSpacing:0});
+  });
+ </script>
+<script type="text/javascript" src="calendar.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="autoplay.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="autoplay.js"></script>
+
+</html>
