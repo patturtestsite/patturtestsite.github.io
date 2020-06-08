@@ -21,6 +21,8 @@ $( document ).ready(function() {
 					let dataURL = reader.result;
 					$("#selected-image").attr("src", dataURL);
 					$("#selected-image").addClass("col-12");
+					$("#selected-image2").attr("src", dataURL);
+					$("#selected-image2").addClass("col-12");
 				}
 				let file = this.files[0];
 				reader.readAsDataURL(file);
@@ -30,6 +32,8 @@ $( document ).ready(function() {
 				label.innerHTML = labelVal;
 				$("#selected-image").attr("src", '');
 				$("#selected-image").removeClass("col-12");
+				$("#selected-image2").attr("src", '');
+				$("#selected-image2").removeClass("col-12");
 				$("#arrow-right").addClass("fa-arrow-right");
 				$("#arrow-right").removeClass("fa-check");
 				$("#arrow-right").removeClass("fa-spinner fa-spin");
