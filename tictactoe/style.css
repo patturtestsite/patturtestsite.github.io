@@ -1,10 +1,11 @@
 body {
-   height: 100vh;
    background: black;
        color: #fff;
        font-family: Mansalva;
    font-weight: bold;
    text-align:center;
+   display: flex;
+   align-items: center;
 }
  
 h1 {
