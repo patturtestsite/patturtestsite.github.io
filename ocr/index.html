@@ -90,22 +90,22 @@
 					</div>
 				  </div>
 				  <div class="col-12" style="display: flex; justify-content: center; margin-top: 5%; margin-bottom: 5%;">
-						<div class="box" style="display: flex; justify-content: center;">
+						<div class="box" style="display: flex; justify-content: center;" >
 							<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple / >
 							<label for="file-1"><span>Choose An Image File Choose </span></label>
 						</div>
 				  </div>
 			  </div>
 
-			  <div class="row row-hidden" id="hidden" style="margin-top: 5%; margin-bottom: 0%;">
+			  <div class="row row-hidden" id="hidden" style="margin-top: 5%; margin-bottom: 0%; display: none;">
 				  <div class="col-12 col-lg-6" style="border-radius: 10px; display: flex; justify-content: center; align-items: center; border-radius: 10px; margin-bottom: 5%;">
-					<div class="image-container" style="border-radius: 10px;"><img id="selected-image"  src="default.jpg" class="col-12 p-0 card-img d-none d-lg-block" style="height: 40vh;" /><img id="selected-image2"  src="default.jpg" class="col-12 p-0 card-img d-lg-none d-block" style="width: 90vw;" /></div>
+					<div class="image-container" style="border-radius: 10px;"><img id="selected-image"  class="col-12 p-0 card-img d-none d-lg-block" style="height: 40vh; border: none;" /><img id="selected-image2"  class="col-12 p-0 card-img d-lg-none d-block" style="width: 90vw; border: none;" /></div>
 				  </div>
 				  <div class="col-12 col-lg-6" style="margin-bottom: 5%;">
 					<div id="log" style="background-color: white; border-radius: 10px;">
 							<span id="startPre" style="height: 40vh; border: 1px #d8d8d8; background-color: white; border-radius: 10px; display: flex; align-items: center; text-align: center;">	
 								<div>
-									<h3 style="font-weight: bolder;">Choose Your Own Image And We'll Read The Text Off Of It</h3>
+									<h6 style="font-weight: bolder;">Text Displayed Here</h6>
 								</div>
 							</span>
 					</div>
@@ -116,5 +116,28 @@
 	  </main>
 
 	  <script src="js/tesseract-ocr.js"></script>
+	  <script type="text/javascript">
+	  	function myFunction() {
+		  var x = document.getElementById("hidden");
+		  if (x.style.display === "none") {
+		    x.style.display = "flex";
+		  } else {
+		    x.style.display = "none";
+		  }
+		}
+	  </script>
+	  <script type="text/javascript">
+	  	var fileInput = document.getElementById('file-1')
+		fileInput.addEventListener('change', function () {
+		  var x = document.getElementById("hidden");
+		  console.log("Hi");
+		  if (x.style.display === "flex") {
+		  	console.log("Hi");
+		  } else {
+		  	console.log(x.style.display);
+		    x.style.display = "flex";
+		  }
+		}, false);
+	  </script>
 	</body>
 </html>
