@@ -52,7 +52,9 @@ $( document ).ready(function() {
 
 $("#startLink").click(function () {
 	var img = document.getElementById('selected-image');
+	var img2 = document.getElementById('selected-image2');
 	startRecognize(img);
+	startRecognize(img2);
 });
 
 function startRecognize(img){
@@ -61,6 +63,14 @@ function startRecognize(img){
 	$("#arrow-down").removeClass("fa-arrow-down");
 	$("#arrow-down").addClass("fa-spinner fa-spin");
 	recognizeFile(img);
+}
+
+function startRecognize(img2){
+	$("#arrow-right").removeClass("fa-arrow-right");
+	$("#arrow-right").addClass("fa-spinner fa-spin");
+	$("#arrow-down").removeClass("fa-arrow-down");
+	$("#arrow-down").addClass("fa-spinner fa-spin");
+	recognizeFile(img2);
 }
 
 function progressUpdate(packet){
