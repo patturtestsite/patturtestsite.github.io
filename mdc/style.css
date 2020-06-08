@@ -142,3 +142,69 @@ p span {
 	justify-content: center;
 	align-items: center;
 }
+
+.row-register {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 2.5%;
+}
+
+.row-register .col-4, .col-12 {
+	display: flex;
+	align-items: center;
+}
+
+.secondfaq {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.row-form {
+	width: 80%; 
+	margin-left: 10%;
+	border-radius: 10px;
+	border: 1px solid gray;
+	border-top: 10px solid #FF665A;
+	margin-top: 5%;
+}
+
+.row-innerform {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.row-innerform h3 {
+	font-weight: bolder;
+}
+
+label.padding {
+	padding-top: 3%;
+}
+
+.form-check {
+	padding-top: 2%;
+}
+
+input.form-check-input {
+	padding-top: 2%;
+}
+
+button.btn-submit {
+	background-color: #FF665A;
+	margin-top: 3%;
+	color: white;
+	font-weight: bolder;
+}
+
+button.btn-submit:hover {
+	opacity: 0.7;
+	color: white;
+}
+
+div.center {
+	display: flex;
+	justify-content: center;
+}
+
+
