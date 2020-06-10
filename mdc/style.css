@@ -207,4 +207,20 @@ div.center {
 	justify-content: center;
 }
 
+.row-archives {
+	background-color: #d8d8d8;
+	display: flex;
+	justify-content: center;
+	padding-top: 5%;
+	padding-bottom: 0%;
+}
+
+h1#year {
+	font-weight: bolder;
+}
+
+.card-body .side {
+	color: black;
+}
+
 
