@@ -307,8 +307,7 @@ img.gallery-img {
 }
 
 .row-card .card {
-	width: 70%;
-	margin-left: 15%;
+	width: 100%;
 }
 
 .row-card {
@@ -350,4 +349,14 @@ a.btn-primary {
 
 a.btn-primary:hover {
 	background-color: #FF665A;
+}
+
+.choose {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.collapse-links {
+	width: 80%;
+	margin-left: 10%;
 }
