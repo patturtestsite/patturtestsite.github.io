@@ -41,6 +41,8 @@ nav {
 
 a.nav-link {
 	color: black;
+	background-color: #FF665A;
+	border: none;
 }
 
 a.nav-link:hover {
@@ -223,4 +225,129 @@ h1#year {
 	color: black;
 }
 
+.containercalendar {
+      box-sizing: border-box;
+      font-size: 17.50px;
+    }
 
+    .containercalendar {
+      font-family: Montserrat;
+      color: black;
+      font-size: 1.6rem;
+      background-color: #FAFAFA;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .logo {
+      margin: 1.6rem auto;
+      text-align: center;
+    }
+
+    .containercalendar a,
+    .containercalendar a:visited {
+      color: #cc4125;
+    }
+
+    .containercalendar {
+      width: 96%;
+      margin: 1.6rem auto;
+      max-width: 42rem;
+      text-align: center;
+    }
+
+    .demo-picked {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .demo-picked span {
+      font-weight: bold;
+    }
+
+.main-cal {
+	margin-top: 5%;
+}
+
+.main-cal .col-xl-6 h3 {
+	font-weight: bolder;
+	text-align: center;
+}
+
+.main-cal .col-lg-6 {
+	display: flex;
+	align-items: center;
+}
+
+.gallery {
+	background-color: #d8d8d8;
+	padding-bottom: 5%;
+	margin-top: -1%;
+	padding-top: 1%;
+}
+
+.gallery .row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+img.gallery-img {
+	height: 15rem;
+	margin-top: 3vh;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.choose-container .choose {
+	display: flex;
+	justify-content: center;
+}
+
+.choose-container h1 {
+	text-align: center;
+}
+
+.row-card .card {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.row-card {
+	margin-top: 2.5%;
+}
+
+.choose-container h1 {
+	font-weight: bolder;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+.row-units {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.row-units .card {
+	padding: 1%;
+	margin: 2.5%;
+}
+
+.row-units .card-img-top {
+	height: 10rem;
+	object-fit: cover;
+}
+
+#units h1 {
+	font-weight: bolder;
+	margin-top: 2.5%;
+	text-align: center;
+}
+
+a.btn-primary {
+	background-color: gray;
+	border: none;
+}
+
+a.btn-primary:hover {
+	background-color: #FF665A;
+}

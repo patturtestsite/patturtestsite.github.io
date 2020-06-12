@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MDC</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Jost|Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="faq.css">
+</head>
+<body>
+	<nav class="navbar top d-none d-xl-flex">
+  		<a class="navbar-brand" style="font-family: Mrs Saint Delafield; text-align: center; font-size: 2rem; margin-left: 0%;" href="index.html"><img src="mdc.png" style="width: 100px;" class="logo"></a>
+  		<form class="form-inline">
+    		<button class="btn btn-outline-transparent my-2 my-sm-0"><a href="index.html">Home</a></button>
+    		<button class="btn btn-outline-transparent my-2 my-sm-0"><a href="about.html">About</a></button>
+    		<button class="btn btn-outline-transparent my-2 my-sm-0"><a href="register.html">Register + FAQ</a></button>
+    		<button class="btn btn-outline-transparent my-2 my-sm-0"><a href="archives.html">Archives</a></button>
+    		<button class="btn btn-outline-transparent my-2 my-sm-0"><a href="points.html">Points</a></button>
+        <button class="btn btn-outline-transparent my-2 my-sm-0"><a href="events.html">Events</a></button>
+        <button class="btn btn-outline-transparent my-2 my-sm-0"><a href="links.html">Links</a></button>
+        <button class="btn btn-outline-transparent my-2 my-sm-0"><a href="units.html">Units</a></button>
+  		</form>
+	</nav>
+	<nav class="navbar top2 d-xl-none d-flex">
+  		<a class="navbar-brand" style="font-family: Jost; transform:font-weight: bolder; text-align: center; font-size: 2rem; margin-top: 5px; color: black;" href="index.html"><span><img src="mdc.png" style="width: 100px;" class="logo"></span></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<img src="hamburger.png" width="50px;">
+  		</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="register.html">Register + FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="archives.html">Archives</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="points.html">Points</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="links.html">Links</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="units.html">Units</a>
+      </li>
+    </ul>
+  </div>
+	</nav>
+
+  <div id="units">  
+    <h1>Lynbrook MDC's Curriculum</h1>
+    <div class="row row-units">
+      <div class="card" style="width: 18rem;">
+        <img src="machine.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Machine Learning</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="fire.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Firebase</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="monaca.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Monaca</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="links" class="choose-container">
+    <h1>Useful Links</h1>
+    <div>
+      <div class="choose">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" id="templates" data-toggle="collapse" data-target="#templates1" aria-expanded="false" aria-controls="templates1" disabled onclick="switcher2()">Additional Info</button>
+        <button id="custom" type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#templates1" aria-expanded="false" aria-controls="templates1" onclick="switcher()">Miscallaneous</button>
+        </div>
+      </div>
+      <div id="templates1" class="collapse show">
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Additional</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Additional</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Additional</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Additional</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="templates1" class="collapse">
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Misc</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Misc</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Misc</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-card">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Misc</strong></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="bottom row d-lg-flex d-none" style="width: 104vw; margin-top: 5vh;">
+  <div class="col-4">
+    <img src="mdc.png" class="logo" width="100">
+  </div>
+  <div class="col-4">
+    <div style="display: block;">
+      <p><span>Contact:</span></p>
+      <p>Email: efsj@fsiej.com</p>
+    </div>
+  </div>
+  <div class="col-4" style="text-align: center;">
+    <p><span>Designed By</span><br><a href="" class="nav-link" style="background-color: #FF665A;">Pattur Web Design</a></p>
+  </div>
+</div>
+
+<div class="bottom row d-flex d-lg-none" style="width: 104vw; padding: 0px; margin-top: 5vh; padding-top: 5vh;">
+  <div class="col-6">
+    <div style="display: block; text-align: center;">
+      <p><span>Contact</span></p>
+      <p>mobiledev@ mobiledev.com</p>
+    </div>
+  </div>
+  <div class="col-6" style="text-align: center;">
+    <p><span>Designed By</span><br><a href="" class="nav-link" style="background-color: #FF665A;">Pattur Web Design</a></p>
+  </div>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  function switcher() {
+    var templates=document.getElementById('templates');
+    var custom=document.getElementById('custom');
+    templates.removeAttribute('disabled');
+    custom.setAttribute('disabled');
+
+  }
+  function switcher2() {
+    var templates=document.getElementById('templates');
+    var custom=document.getElementById('custom')
+    templates.setAttribute('disabled')
+    custom.removeAttribute('disabled');
+
+  }
+</script>
+</body>
+</html>
