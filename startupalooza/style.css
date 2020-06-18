@@ -17,7 +17,7 @@ body {
 
 nav.top {
 	background-color: white;
-	width: 85%;
+	width: 100%;
 }
 
 img.navbar-brand {
@@ -77,7 +77,7 @@ a.nav-link:hover {
 }
 
 h1 span {
-	color: gray;
+	color: #E4CD05;
 }
 
 .raise {
@@ -89,6 +89,10 @@ h1 span {
 	z-index: 0;
 }
 
+.card-info {
+	background-color: #d8d8d8;
+}
+
 .raise h1 {
 	font-weight: bold;
 }
@@ -97,8 +101,14 @@ h1 span {
 	padding: 4%;
 }
 
+
 .raise .col-4 .card-body {
 	padding: 10%;
+}
+
+.raise .card-testimonial {
+	background-color: #152238;
+	color: white;
 }
 
 .card-title {
@@ -253,4 +263,13 @@ p.date {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
+.btn-primary {
+	background-color: #EFFD5F;
+	color: black;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #152238;
 }
