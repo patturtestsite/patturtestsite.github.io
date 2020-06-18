@@ -442,9 +442,13 @@
 				<form>
 				  <div class="form-group">
 				    <h3 for="exampleInputEmail1" style="font-weight: 600;">Sign Up For Our Newsletter:</h3><br>
-				    <div class="form-inline" style="display: flex; justify-content: space-between;">
+				    <div class="form-inline d-lg-flex d-none" style="display: flex; justify-content: space-between;">
 				    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 75%;">
 				    	<button type="submit" class="btn btn-primary newsletter" style="width: 20%;">Submit</button>
+				    </div>
+				    <div class="form-inline d-lg-none d-flex" style="display: flex; justify-content: space-between;">
+				    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 100%;">
+				    	<button type="submit" class="btn btn-primary newsletter" style="width: 100%; margin-top: 2vh;">Submit</button>
 				    </div>
 				  </div>
 				</form>
