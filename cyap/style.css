@@ -1,0 +1,209 @@
+body {
+	font-family: Montserrat;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+img.hamburger {
+	width: 30px;
+}
+
+img.hamburger:hover {
+	opacity: 0.6;
+}
+
+nav {
+	background-color: white;
+	width: 90%;
+	margin-left: 5%;
+}
+
+a.nav-link {
+	font-weight: 400;
+	color: black;
+}
+
+a.active {
+	color: gray;
+}
+
+a.nav-link:hover {
+	color: gray;
+}
+
+ul.d-xl-flex {
+	width: 100%;
+}
+
+.parallax {
+	height: 90vh;
+	background-color: rgba(10, 10, 10, 0.5);
+	background-image: url("backgroundtemp.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.centered h1 {
+	font-weight: bolder;
+	font-size: 5rem;
+	text-align: center;
+	-webkit-text-stroke: 5px #28a745;
+}
+
+.centered h5 {
+	text-align: center;
+	color: green;
+	word-break: break-all;
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.center-element {
+	display: flex;
+	justify-content: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.info {
+	background-color: #d8d8d8;
+	padding: 5%;
+}
+
+
+img.aboutimg {
+	width: 90%;
+	margin-left: 5%;
+	object-fit: cover;
+}
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about h1 {
+	color: #28a745;
+	font-weight: bolder;
+	text-align: center;
+	-webkit-text-stroke: 2px #28a745;
+}
+
+.about p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.activities {
+	padding-top: 7vh;
+}
+
+.activities .text {
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.activities .text h1 {
+	color: #28a745;
+	font-weight: bolder;
+	-webkit-text-stroke: 2px #28a745;
+}
+
+.activities .text p {
+	font-size: 20px;
+}
+
+.moreactivities {
+	margin-top: 5vh;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.moreactivities .card {
+	width: 100%;
+	margin-top: 2vh;
+}
+
+.social {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10vh;
+}
+
+.moreactivities .card-body {
+	padding: 7.5%;
+}
+
+.moreactivities .card-title {
+	font-weight: bolder;
+}
+
+@media (max-width: 999px) {
+    .info .about, .about h1 {
+        background: #d8d8d8; 
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .info .about, .about h1 {
+        background: white;
+    }
+}
+
+.blogs {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5vh;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.blogs .card-title {
+	font-weight: bold;
+}
+
+.blogs .card {
+	margin-top: 4vh;
+}
+
+.contact-container {
+	margin-top: 7vh;
+	background-color: #d8d8d8;
+	width: 100%;
+}
+
+img.contact {
+	width: 100%;
+}
+
+.footer {
+	margin-top: 7vh;
+}
+
+.footer h1 {
+	font-weight: bolder;
+	-webkit-text-stroke: 2px black;
+}
+
+.footer h6 {
+	font-weight: 600;
+}
+
+.footer p:hover {
+	text-decoration: underline;
+}
