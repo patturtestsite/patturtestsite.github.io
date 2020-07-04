@@ -17,7 +17,7 @@ body {
 	header.hidden-nav ul.nav li{
 		position: relative;
 		float: left;
-		width: 20%;
+		width: auto;
 	}
 	header.hidden-nav ul.nav li a{
 		display: block;
@@ -73,7 +73,7 @@ body {
 		left: calc(50% - 30px);
 		width: 60px;
 		height: 35px;
-		background-color: #38a6a6;
+		background-color: #e85858;
 		font: 400 1.2em 'Poppins', serif;
 		color: #fff;
 		border: none;
@@ -103,7 +103,7 @@ body {
 
 	header.hidden-nav.active button.toggle-nav{
 		top: 120px;
-		background-color: #256f6f;
+		background-color: #5ab3f2;
 	}
 	header.hidden-nav.active button.toggle-nav span{
 		-webkit-transform: rotate(270deg);
@@ -112,13 +112,14 @@ body {
 
 	@media screen and (max-width: 600px){
 		button.toggle-nav{
-				top: 0;
-				left: 15px;
+			top: 0;
+			left: 15px;
 		}
 		header.hidden-nav.active button.toggle-nav{
-				top: 305px;
+				top: 61px;
 		}
 	}
+
 /* End of Hidden Nav Bar */
 
 .topbar {
