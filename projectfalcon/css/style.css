@@ -146,13 +146,15 @@ body {
 
 .hero {
 	width: 100%;
-	height: 70vh;
+	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .hero .text {
+	margin-top: 10%;
+	margin-bottom: auto;
 	color: white;
 	text-align: center;
 }
@@ -162,6 +164,47 @@ body {
 	font-size: 5rem;
 	-webkit-text-stroke: 2px white;
 }
+
+/* Partners */
+div.scroll-partners::-webkit-scrollbar {
+	display: none; /*  Hides Scrollbar */
+}
+
+div.scroll-partners {
+	background-color: #fff;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+  
+div.scroll-partners img {
+	display: inline-block;
+	padding: 0px;
+	margin-right: 8vw;
+	margin-left: 8vw;
+	transition: transform .2s; /* Animation */
+}
+
+div.scroll-partners img.large {
+	transform: scale(0.8)
+}
+
+div.scroll-partners img.small {
+	transform: scale(1.2)
+}
+  
+div.scroll-partners img:hover {
+	transform: scale(1.2);
+}
+
+div.scroll-partners img.large:hover {
+	transform: scale(1)
+}
+
+div.scroll-partners img.small:hover {
+	transform: scale(1.4)
+}
+/* End of Partners */
 
 .row-logos {
 	width: 100%;
