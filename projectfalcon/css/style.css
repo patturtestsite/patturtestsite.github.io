@@ -119,7 +119,6 @@ body {
 				top: 61px;
 		}
 	}
-
 /* End of Hidden Nav Bar */
 
 .topbar {
@@ -150,6 +149,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 5%;
 }
 
 .hero .text {
@@ -157,6 +157,10 @@ body {
 	margin-bottom: auto;
 	color: white;
 	text-align: center;
+}
+
+.hero img {
+	width: 100%;
 }
 
 .hero .text h1 {
@@ -228,7 +232,6 @@ img.logo {
 	width: 90%;
 	margin-left: 5%;
 	color: white;
-	margin-top: 7%;
 }
 
 .row-info .col-lg-4, .row-info .col-lg-8 {
