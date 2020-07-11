@@ -1,0 +1,319 @@
+body {
+	font-family: poppins;
+	overflow-x: hidden;
+}
+
+a.navbar-brand {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.hero {
+	height: 90vh;
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('techbackground.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero h1 {
+	color: white;
+	font-weight: bolder;
+	font-size: 7rem;
+	text-align: center;
+}
+
+.hero h3 {
+	color: white;
+	text-align: center;
+	font-weight: 600;
+}
+
+.about {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.about .left {
+	display: flex;
+	align-items: center;
+}
+
+.left h1 {
+	font-weight: bolder;
+	color: black;
+	text-align: center;
+	font-size: 3rem;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.right p {
+	font-size: 18px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+h1 span {
+	color: #192841;
+}
+
+#reviews {
+	background-color: #192841;
+	padding-top: 10vh; 
+	padding-bottom: 5vh;
+}
+
+#reviews h1 {
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+}
+
+#reviews h6 {
+	color: gray;
+	text-align: center;
+}
+
+#reviews p {
+	color: gray;
+}
+
+#reviews img.student {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+#reviews .students {
+	display: flex;
+	justify-content: center;
+}
+
+#reviews .name {
+	text-align: center;
+}
+
+#reviews .name h5 {
+	color: white;
+	font-weight: 600;
+}
+
+#reviews .row {
+	padding-top: 2vh;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#reviews .col-2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.main {
+	background-color: #ADD8E6;
+	border-radius: 10px;
+	color: black;
+}
+
+#classes {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin-left: 5%;
+	padding-bottom: 5vh;
+}
+
+#classes .col-lg-3 {
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(default.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px solid white;
+	height: 400px;
+}
+
+#classes .col-lg-3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#classes .col-lg-3 h2 {
+	font-weight: bolder;
+	color: white;
+}
+
+.center-text {
+	text-align: center;
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+}
+
+.center-text h1 {
+	font-weight: bolder;
+	color: #192841;
+}
+
+.btn-primary {
+	background-color: #192841;
+	border: 0px;
+}
+
+#footer .row {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#footer {
+	background-color: #192841;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+#footer a, #footer p {
+	color: white;
+	font-weight: 100;
+}
+
+#footer h6 {
+	color: gray;
+	font-weight: 600;
+}
+
+#footer .col-lg-3 {
+	display: block;
+}
+
+#footer a {
+	display: block;
+}
+
+.python {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.python .col-xl-8 {
+	display: flex;
+	align-items: center;
+}
+
+.python .col-xl-8 h1 {
+	font-weight: bolder;
+	color: #192841;
+}
+
+.python .col-xl-8 p {
+	font-size: 20px;
+}
+
+.python .col-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.python .col-4 img {
+	width: 80%;
+}
+
+h1.title {
+	text-align: center;
+	padding-top: 10vh;
+	font-weight: bolder;
+}
+
+.team {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.team .col-5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team .col-7 {
+	display: flex;
+	align-items: center;
+}
+
+.team .col-7 h2 {
+	font-weight: bolder;
+}
+
+.team .col-7 h5 {
+	color: gray;
+	font-weight: normal;
+}
+
+.team .col-7 p {
+	font-weight: 300;
+}
+
+.team img {
+	width: 300px;
+	border-radius: 10px;
+}
+
+.instructors .card h5 {
+	font-weight: bolder;
+}
+
+.instructors .card h6 {
+	color: gray;
+	font-weight: normal;
+}
+
+.instructors .card p {
+	font-weight: 300;
+}
+
+.programs {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.programs .card-body h5 {
+	font-weight: bolder;
+}
+
+
+@media (min-width: 1200px) {
+	.courses {
+		border-right: 1px solid #d8d8d8;
+		padding-right: 5vh;
+	}
+	.prices {
+		padding-left: 5vh;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+}
+
+.disabled:hover {
+	cursor: pointer;
+}
