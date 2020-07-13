@@ -1,0 +1,74 @@
+body {
+	font-family: Quicksand;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.complete {
+	height: 100vh;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.title {
+	margin-top: 5vh;
+}
+
+.title img {
+	display: inline;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.title h1 {
+	display: inline;
+}
+
+.title h1 span {
+	font-weight: bolder;
+}
+
+.tracker, .activity {
+	background-color: #e5e5e5;
+	height: 40vh;
+	border-radius: 10px;
+	border: 5px solid white;
+}
+
+.dashboard {
+	margin-top: 5vh;
+}
+
+.col-xl-3 {
+	background-color: #e5e5e5;
+	padding: 5vh;
+	padding-left: 6vh;
+	padding-right: 2vh;
+}
+
+.col-xl-9 {
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
+
+.main {
+	margin-top: 25vh;
+}
+
+.custom-switch {
+	display: flex;
+	justify-content: center;
+}
+
+.dashboard h5 {
+	text-align: center;
+	margin-top: 2vh;
+	font-weight: bold;
+}
+
+.gray {
+	color: gray;
+}
