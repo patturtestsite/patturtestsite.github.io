@@ -208,3 +208,68 @@ button.menu {
 	font-size: 6.5rem;
 }
 
+.portion {
+	height: 90vh;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.portion .titles p {
+	color: gray;
+}
+
+.portion .titles h1 {
+	color: white;
+	font-family: boldFont;
+}
+
+.portion .description {
+	display: flex;
+	align-items: flex-end;
+	height: 80vh;
+}
+
+.portion .description h2 {
+	font-weight: bolder;
+	color: #ffb997;
+}
+
+.portion .description p {
+	color: #d8d8d8;
+	font-size: 20px;
+	font-weight: 100;
+	color: white;
+}
+
+.portion .col-5 {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.side-image {
+	background-image: url(website.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.numbers .number1 {
+	background-color: #ffb997;
+	border-radius: 10px;
+}
+
+.numbers .number2 {
+	background-color: #f67e7d;
+	border-radius: 10px;
+}
+
+.numbers .number3 {
+	background-color: #843b62;
+	border-radius: 10px;
+}
+
+.visibility-hidden {
+	visibility: hidden;
+}
