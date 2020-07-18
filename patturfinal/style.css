@@ -114,6 +114,7 @@ ul.space-between .flex-item h5 {
 	height: 100vh;
 	background-color: #FFF9E3;
 	padding-left: 10px;
+	overflow-y: scroll;
 }
 
 .vertical-menu a {
@@ -196,23 +197,27 @@ button.menu {
 	margin-left: 10%;
 }
 
+.mobile-nav {
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+	margin-left: 5%;
+}
+
+button.menu-mobile {
+	margin-top: 20px;
+	border-radius: 0px;
+	font-family: boldFont;
+	margin-bottom: 10vh;
+}
+
 .hero {
 	height: 80vh;
 	display: flex;
 	align-items: center;
 }
 
-.hero h1 {
-	font-family: boldFont;
-	color: #FFF9E3;
-	font-size: 6.5rem;
-}
 
-.portion {
-	height: 90vh;
-	width: 95%;
-	margin-left: 2.5%;
-}
 
 .portion .titles p {
 	color: gray;
@@ -221,12 +226,6 @@ button.menu {
 .portion .titles h1 {
 	color: white;
 	font-family: boldFont;
-}
-
-.portion .description {
-	display: flex;
-	align-items: flex-end;
-	height: 80vh;
 }
 
 .portion .description h2 {
@@ -242,7 +241,6 @@ button.menu {
 }
 
 .portion .side-image {
-	height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -291,6 +289,25 @@ button.menu {
 .sidepanel .web-example:hover {
 	transform: translateX(-5px);
 	transition-duration: 1s;
+}
+
+.row-website-examples-mobile {
+	width: 90%;
+	margin-left: 5%
+}
+
+.web-example-mobile {
+	border-radius: 10px;
+	background-color: #ffb997;
+	color: black;
+	width: 100%;
+	padding: 10px;
+	padding-top: 20px;
+	margin-top: 3vh;
+}
+
+.web-example-mobile h4 {
+	font-weight: 900;
 }
 
 .sidepanel .web-example {
@@ -375,6 +392,11 @@ button.menu {
 table.index {
 	width: 100%;
 	border-radius: 10px;
+	overflow-x: auto;
+}
+
+div.fulltable::-webkit-scrollbar {
+	display: none; /*  Hides Scrollbar */
 }
 
 .asterisk {
@@ -382,3 +404,112 @@ table.index {
 	font-size: 10px;
 	font-weight: 100;
 }
+
+button.learn {
+	border: 0px;
+	color: black;
+	font-family: boldFont;
+}
+
+button.learn:hover {
+	color: #d8d8d8;
+}
+
+button.newsletter {
+	background-color: #141618;
+	color: white;
+	border: 0px;
+	font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+	  .portion .description {
+		display: flex;
+		align-items: flex-end;
+		height: 80vh;
+	}
+}
+
+@media (max-width: 1200px) {
+	  .portion {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media (min-width: 1200px) {
+		.hero h1 {
+		font-family: boldFont;
+		color: #FFF9E3;
+		font-size: 6.5rem;
+	}
+}
+
+@media (max-width: 1200px) {
+		.hero h1 {
+		font-family: boldFont;
+		color: #FFF9E3;
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 1200px) {
+		.hero {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1200px) {
+	.small-hidden {
+		visibility: visible;
+	}
+}
+
+@media (max-width: 1200px) {
+	.small-hidden {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 1200px) {
+	.tab-content {
+		margin-top: 5vh;
+	}
+}
+
+@media(min-width: 1200px) {
+	.portion {
+		height: 90vh;
+		width: 95%;
+		margin-left: 2.5%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.index {
+		margin-top: 5vh;
+	}
+}
+
+@media (min-width: 1200px) {
+	.portion .side-image {
+		height: 90vh;
+	}
+}
+
+@media (max-width: 1200px) {
+	.portion .side-image {
+		margin-top: 2vh;
+	}
+}
+
+/*@media (max-width: 1200px) {
+	.hero {
+		background-image: radial-gradient(#f67e7d 20%, transparent 20%);
+		background-position: 50px 50px;
+		background-size: 4px 4px;
+	}
+}*/
+
+/**/
+

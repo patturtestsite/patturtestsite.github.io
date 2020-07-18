@@ -86,7 +86,7 @@
 		<div class="col-xl-1 d-xl-block d-none">
 		</div>
 		<div class="col-xl-11 col-12 main-content">
-			<div class="row nav">
+			<div class="row nav d-lg-flex d-none">
 				<div class="col-3 main-nav">
 					<div class="nav-item">
 						<a href="#" class="hvr-overline-from-left">Location: Home</a>
@@ -117,12 +117,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="row mobile-nav d-lg-none d-flex">
+				<button class="btn btn-light menu-mobile" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+			</div>
 			<div class="hero">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-xl-4 d-xl-flex d-none">
 					</div>
-					<div class="col-8">
-						<h1>Pattur Web Design</h1>
+					<div class="col-xl-8 col-12">
+						<h1 class="text-center text-xl-left">Pattur Web Design</h1>
 					</div>
 				</div>
 			</div>
@@ -130,23 +133,24 @@
 			</div>
 			<div class="portion who" id="who">
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-xl-7 col-12">
 						<div class="row">
-							<div class="col-6 titles">
+							<div class="col-xl-6 col-12 titles">
 								<p>01 - Who We Are</p>
 								<h1><strong>Lorem Ipsum Dior</strong></h1>
 							</div>
-							<div class="col-6 description">
+							<div class="col-xl-6 col-12 description">
 								<div class="inside">
 									<h2>Lorem Ipsum Dior</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+									quis nostrud exercitation ullamco</p>
+									<button class="btn learn btn-light" style="background-color: #ffb997;">Learn More</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-5 side-image">
+					<div class="col-xl-5 col-12 side-image">
 						<div class="numbers" style="width: 100%;">
 							<div class="row">
 								<div class="col-6 number1">
@@ -183,7 +187,7 @@
 								</div>
 								<div class="col-6 number3">
 									<h3><strong>10</strong></h3>
-									<p>Notable Clients</p>
+									<p>Different Clients</p>
 								</div>
 								<div class="col-3">
 								</div>
@@ -196,11 +200,11 @@
 			</div>
 			<div class="portion work" id="work">
 				<div class="row">
-					<div class="col-xl-5 sidepanel">
+					<div class="col-xl-5 d-xl-flex d-none sidepanel">
 						<div style="width: 100%;">
 							<div class="web-example" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
 								<h4>Cicero's Pizza</h4>
-								<p>A celebrated local pizzeria</p>
+								<p>A Celebrated Local Pizzeria</p>
 							</div>
 							<div class="web-example" style="width: 70%; background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
 								<h4>Plathacks</h4>
@@ -220,20 +224,50 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-7">
+					<div class="col-xl-7 col-12">
 						<div class="row">
-							<div class="col-6 description">
+							<div class="col-xl-6 col-12 description d-none d-xl-flex">
 								<div class="inside">
-									<h2 style="color: #f67e7d">Lorem Ipsum Dior</h2>
+									<h2 style="color: #f67e7d;">Lorem Ipsum Dior</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+									quis nostrud exercitation ullamco laboris</p>
+									<button class="btn learn btn-light" style="background-color: #f67e7d;">Learn More</button>
 								</div>
 							</div>
-							<div class="col-6 titles">
+							<div class="col-xl-6 col-12 titles">
 								<p>02 - Our Work</p>
 								<h1><strong>Lorem Ipsum Dior</strong></h1>
 							</div>
+							<div class="col-xl-6 col-12 description d-flex d-xl-none">
+								<div class="inside">
+									<h2 style="color: #f67e7d;">Lorem Ipsum Dior</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris</p>
+									<button class="btn learn btn-light" style="background-color: #f67e7d;">Learn More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 d-xl-none d-flex">
+						<div class="row row-website-examples-mobile">
+								<div class="web-example-mobile" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
+									<h4>Cicero's Pizza</h4>
+									<p>A Celebrated Local Pizzeria</p>
+								</div>
+								<div class="web-example-mobile" style="background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
+									<h4>Plathacks</h4>
+									<p>A High School Hackathon</p>
+								</div>
+								<div class="web-example-mobile" style="background-color: #843b62;" data-trigger="hover" data-toggle="popover" data-img="stac.png">
+									<h4>STAC Programming</h4>
+									<p>A Programming School</p>
+								</div>
+								<div class="web-example-mobile" style="background-color: #251e3e;" data-trigger="hover" data-toggle="popover" data-img="projectfalcon.png">
+									<h4>ETF Project Falcon</h4>
+									<p>A Non-Profit Initiative</p>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -242,23 +276,24 @@
 			</div>
 			<div class="portion services" id="services">
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-xl-7 col-12">
 						<div class="row">
-							<div class="col-6 titles">
+							<div class="col-xl-6 col-12 titles">
 								<p>03 - What We Do</p>
 								<h1><strong>Lorem Ipsum Dior</strong></h1>
 							</div>
-							<div class="col-6 description">
+							<div class="col-xl-6 col-12 description">
 								<div class="inside">
 									<h2 style="color: #843b62;">Lorem Ipsum Dior</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+									<button class="btn learn btn-light" style="background-color: #843b62;">Learn More</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-5 sidepanel">
+					<div class="col-xl-5 col-12 sidepanel">
 						<div class="container">
 						    <div class="row">
 						        <div class="col-12">
@@ -345,7 +380,24 @@
 			</div>
 			<div class="portion prices" id="prices">
 				<div class="row">
-					<div class="col-xl-7 sidepanel">
+					<div class="col-xl-5 col-12 d-flex d-xl-none">
+						<div class="row">
+							<div class="col-12 titles description" style="align-items: center;">
+								<div>
+									<p style="color: gray;">04 - Pricing</p>
+									<h1><strong>Lorem Ipsum Dior</strong></h1><br class="d-xl-block d-none">
+									<div class="inside">
+										<h2 style="color: #251e3e">Lorem Ipsum Dior</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+										<button class="btn learn btn-light" style="background-color: #251e3e;">Learn More</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-7 col-12 sidepanel fulltable" style="overflow-x: scroll;">
 						<div>
 							<!--Table-->
 							<table id="tablePreview" class="index table">
@@ -413,19 +465,21 @@
 							  <!--Table body-->
 							</table>
 							<!--Table-->
+							<p class="asterisk d-xl-none d-block">* - $50+ price is in reference to our most expensive service | ** - Website Builders include services like Wix & Squarespace; 20$+/month price is in reference to average costs | *** - Web Developer Prices were found online and are in reference to average costs | **** Domain/Hosting costs generally come out to around $2-5/month</p>
 						</div>
 					</div>
-					<div class="col-xl-5">
+					<div class="col-xl-5 col-12 d-xl-flex d-none">
 						<div class="row">
 							<div class="col-12 titles description" style="align-items: center;">
 								<div>
-									<p>04 - Pricing</p>
+									<p style="color: gray;">04 - Pricing</p>
 									<h1><strong>Lorem Ipsum Dior</strong></h1><br>
 									<div class="inside">
 										<h2 style="color: #251e3e">Lorem Ipsum Dior</h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 										quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+										<button class="btn learn btn-light" style="background-color: #251e3e;">Learn More</button>
 									</div>
 								</div>
 							</div>
@@ -436,114 +490,114 @@
 			</div>
 		</div>
 	</div>
-<div class="footer">
-	<div class="center-element" style="margin-top: 10vh;">
-		<div class="row contact">
-			<div class="col-xl-6 col-12">
-				<h1>Get In Touch</h1>
-				<h6>Phone:</h6>
-				<h3>+1 (888) 888 8888</h3>
-				<h6>Email:</h6>
-				<h3>email@domain.com</h3>
-			</div>
-			<div class="col-xl-6 col-12">
-				<h1 class="visibility-hidden">Hidden</h1>
-				<form>
-				  <div class="form-group">
-				    <h3 for="exampleInputEmail1" style="font-weight: 600;">Sign Up For Our Newsletter:</h3><br>
-				    <div class="form-inline d-lg-flex d-none newsletter" style="display: flex; justify-content: space-between;">
-				    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 75%;">
-				    	<button type="submit" class="btn btn-light newsletter" style="width: 20%;">Submit</button>
-				    </div>
-				    <div class="form-inline d-lg-none d-flex" style="display: flex; justify-content: space-between;">
-				    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 100%;">
-				    	<button type="submit" class="btn btn-light newsletter" style="width: 100%; margin-top: 2vh;">Submit</button>
-				    </div>
-				  </div>
-				</form>
+	<div class="footer">
+		<div class="center-element" style="margin-top: 10vh;">
+			<div class="row contact">
+				<div class="col-xl-6 col-12">
+					<h1>Get In Touch</h1>
+					<h6>Phone:</h6>
+					<h3>+1 (888) 888 8888</h3>
+					<h6>Email:</h6>
+					<h3>email@domain.com</h3>
+				</div>
+				<div class="col-xl-6 col-12">
+					<h1 class="visibility-hidden">Hidden</h1>
+					<form>
+					  <div class="form-group">
+					    <h3 for="exampleInputEmail1" style="font-weight: 600;">Sign Up For Our Newsletter:</h3><br>
+					    <div class="form-inline d-lg-flex d-none newsletter" style="display: flex; justify-content: space-between;">
+					    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 75%;">
+					    	<button type="submit" class="btn btn-light newsletter" style="width: 20%;">Submit</button>
+					    </div>
+					    <div class="form-inline d-lg-none d-flex" style="display: flex; justify-content: space-between;">
+					    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" style="width: 100%;">
+					    	<button type="submit" class="btn btn-light newsletter" style="width: 100%; margin-top: 2vh;">Submit</button>
+					    </div>
+					  </div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="center-element" style="padding-top: 10vh;">
-		<div class="row contacttwo d-xl-flex d-none" style="width: 85%;">
-			<div class="col-xl-3 col-12">
-				<div>
-					<h6>Random</h6>
-					<p>Directory</p>
-					<p>Events</p>
-					<p>Our Investors</p>
-					<p>Blog</p>
+		<div class="center-element" style="padding-top: 10vh;">
+			<div class="row contacttwo d-xl-flex d-none" style="width: 85%;">
+				<div class="col-xl-3 col-12">
+					<div>
+						<h6>Random</h6>
+						<p>Directory</p>
+						<p>Events</p>
+						<p>Our Investors</p>
+						<p>Blog</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-3 col-4">
-				<div>
-					<h6>Pages</h6>
-					<p>About Us</p>
-					<p>Events</p>
-					<p>Our Investors</p>
-					<p>Blog</p>
-					<p>Contact Us</p>
+				<div class="col-xl-3 col-4">
+					<div>
+						<h6>Pages</h6>
+						<p>About Us</p>
+						<p>Events</p>
+						<p>Our Investors</p>
+						<p>Blog</p>
+						<p>Contact Us</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-3 col-4">
-				<div>
-					<h6>Events</h6>
-					<p>Boston: Pitch</p>
-					<p>New York: Workshop</p>
-					<p>DC: Pitch</p>
+				<div class="col-xl-3 col-4">
+					<div>
+						<h6>Events</h6>
+						<p>Boston: Pitch</p>
+						<p>New York: Workshop</p>
+						<p>DC: Pitch</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-3 col-4">
-				<div>
-					<h6>Social</h6>
-					<p>Facebook</p>
-					<p>Twitter</p>
-					<p>Google+</p>
-					<p>Meetup</p>
-					<p>Eventbrite</p>
+				<div class="col-xl-3 col-4">
+					<div>
+						<h6>Social</h6>
+						<p>Facebook</p>
+						<p>Twitter</p>
+						<p>Google+</p>
+						<p>Meetup</p>
+						<p>Eventbrite</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="center-element" style="padding-top: 0vh;">
-		<div class="row contacttwo d-xl-none d-flex" style="width: 85%;">
-			<div class="col-xl-3 col-12" style="height: 1vh;">
-				<p style="visibility: hidden;">start</p>
-			</div>
-			<div class="col-xl-3 col-4 flex-start">
-				<div>
-					<h6>Pages</h6>
-					<p>About Us</p>
-					<p>Events</p>
-					<p>Our Investors</p>
-					<p>Blog</p>
-					<p>Contact Us</p>
+		<div class="center-element" style="padding-top: 0vh;">
+			<div class="row contacttwo d-xl-none d-flex" style="width: 85%;">
+				<div class="col-xl-3 col-12" style="height: 1vh;">
+					<p style="visibility: hidden;">start</p>
 				</div>
-			</div>
-			<div class="col-xl-3 col-4 flex-start">
-				<div>
-					<h6>Events</h6>
-					<p>Boston: Pitch</p>
-					<p>New York: Workshop</p>
-					<p>DC: Pitch</p>
+				<div class="col-xl-3 col-4 flex-start">
+					<div>
+						<h6>Pages</h6>
+						<p>About Us</p>
+						<p>Events</p>
+						<p>Our Investors</p>
+						<p>Blog</p>
+						<p>Contact Us</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-3 col-4 flex-start">
-				<div>
-					<h6>Social</h6>
-					<p>Facebook</p>
-					<p>Twitter</p>
-					<p>Google+</p>
-					<p>Meetup</p>
-					<p>Eventbrite</p>
+				<div class="col-xl-3 col-4 flex-start">
+					<div>
+						<h6>Events</h6>
+						<p>Boston: Pitch</p>
+						<p>New York: Workshop</p>
+						<p>DC: Pitch</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-4 flex-start">
+					<div>
+						<h6>Social</h6>
+						<p>Facebook</p>
+						<p>Twitter</p>
+						<p>Google+</p>
+						<p>Meetup</p>
+						<p>Eventbrite</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<p class="footer-bottom-text">Pattur Web Design 2020 | All Rights Reserved</a></p>
 	</div>
-	<p class="footer-bottom-text">Pattur Web Design 2020 | All Rights Reserved</a></p>
-</div>
 
 
 	<script src="https://kit.fontawesome.com/e50d821164.js" crossorigin="anonymous"></script>
