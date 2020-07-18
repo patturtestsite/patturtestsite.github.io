@@ -7,8 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="hover.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body>
+	<div class="row" style="position: fixed; width: 100%;">
+		<div class="col-xl-1 d-xl-block d-none">
+		</div>
+		<div class="col-xl-11 col-12">
+			<div class="intro-anim">
+				<svg width="172.003" height="166.403" viewBox="0 0 172.003 166.403" xmlns="http://www.w3.org/2000/svg" class="animate__animated animate__fadeOut animate__delay-3s"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none"><path class="path" d="M 34.2 97.603 L 34.2 166.403 L 0 166.403 L 0 1.603 L 34.2 1.603 L 34.2 17.403 Q 39.2 9.603 48 4.803 A 38.823 38.823 0 0 1 60.674 0.596 A 51.063 51.063 0 0 1 68.6 0.003 Q 82.4 0.003 93.6 7.003 A 47.177 47.177 0 0 1 109.041 22.899 A 58.174 58.174 0 0 1 111.3 27.003 A 60.638 60.638 0 0 1 116.886 44.894 A 79.827 79.827 0 0 1 117.8 57.203 A 77.2 77.2 0 0 1 116.225 73.141 A 59.995 59.995 0 0 1 111.3 87.503 A 52.93 52.93 0 0 1 102.5 100.342 A 45.92 45.92 0 0 1 93.6 107.703 Q 82.4 114.803 68.6 114.803 Q 57 114.803 48.1 110.003 Q 39.2 105.203 34.2 97.603 Z M 83 57.203 A 37.317 37.317 0 0 0 82.161 49.053 Q 80.559 41.894 75.9 37.103 A 23.369 23.369 0 0 0 59.047 29.81 A 29.201 29.201 0 0 0 58.4 29.803 Q 48.2 29.803 41.1 37.203 Q 34.081 44.519 34.001 57.113 A 45.835 45.835 0 0 0 34 57.403 A 37.23 37.23 0 0 0 34.897 65.821 Q 36.397 72.286 40.403 76.844 A 23.578 23.578 0 0 0 41.1 77.603 A 23.018 23.018 0 0 0 57.766 84.996 A 27.725 27.725 0 0 0 58.4 85.003 A 23.16 23.16 0 0 0 75.347 77.965 A 28.946 28.946 0 0 0 75.8 77.503 A 25.08 25.08 0 0 0 82.149 65.377 A 37.139 37.139 0 0 0 83 57.203 Z M 145.047 113.933 A 24.946 24.946 0 0 0 151.8 114.803 A 26.569 26.569 0 0 0 154.999 114.616 A 19.603 19.603 0 0 0 166.3 109.503 Q 172 104.203 172 96.403 A 22.079 22.079 0 0 0 171.993 95.844 A 17.644 17.644 0 0 0 166.3 83.003 A 18.97 18.97 0 0 0 158.673 78.564 A 23.53 23.53 0 0 0 151.8 77.603 A 26.744 26.744 0 0 0 148.02 77.862 A 19.445 19.445 0 0 0 137.1 83.003 A 18.159 18.159 0 0 0 133.056 88.534 A 18.414 18.414 0 0 0 131.4 96.403 A 20.881 20.881 0 0 0 131.413 97.129 A 17.11 17.11 0 0 0 137.1 109.503 A 19.039 19.039 0 0 0 145.047 113.933 Z" vector-effect="non-scaling-stroke"/></g></svg>
+			</div>
+		</div>
+	</div>
 	<div class="row full-menu collapse navbar-collapse" id="navbar">
 		<div class="col-xl-9 col-1">
 		</div>
@@ -82,14 +92,14 @@
 	    </ul>
 	  </div>
 	</div>
-	<div class="row">
+	<div class="row animate__animated animate__fadeIn animate__delay-4s">
 		<div class="col-xl-1 d-xl-block d-none">
 		</div>
 		<div class="col-xl-11 col-12 main-content">
 			<div class="row nav d-lg-flex d-none">
 				<div class="col-3 main-nav">
 					<div class="nav-item">
-						<a href="#" class="hvr-overline-from-left">Location: Home</a>
+						<a href="index.html" class="hvr-overline-from-left">Location: Home</a>
 						<p>Get to know Pattur and what we're all about.</p>
 					</div>
 				</div>
@@ -119,6 +129,8 @@
 			</div>
 			<div class="row mobile-nav d-lg-none d-flex">
 				<button class="btn btn-light menu-mobile" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+			</div>
+			<div class="spacer d-flex d-lg-none">
 			</div>
 			<div class="hero">
 				<div class="row">
@@ -152,7 +164,7 @@
 					</div>
 					<div class="col-xl-5 col-12 side-image">
 						<div class="numbers" style="width: 100%;">
-							<div class="row">
+							<div class="row wow animate__animated animate__fadeInLeft">
 								<div class="col-6 number1">
 									<h3><strong>16</strong></h3>
 									<p>Websites Built</p>
@@ -167,7 +179,7 @@
 								<div class="col-6">
 								</div>
 							</div>
-							<div class="row">
+							<div class="row row wow animate__animated animate__fadeInRight">
 								<div class="col-6">
 								</div>
 								<div class="col-6 number2">
@@ -182,7 +194,7 @@
 								<div class="col-6">
 								</div>
 							</div>
-							<div class="row">
+							<div class="row row wow animate__animated animate__fadeInUp">
 								<div class="col-3">
 								</div>
 								<div class="col-6 number3">
@@ -202,23 +214,23 @@
 				<div class="row">
 					<div class="col-xl-5 d-xl-flex d-none sidepanel">
 						<div style="width: 100%;">
-							<div class="web-example" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
+							<div class="web-example wow animate__animated animate__fadeInLeft" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
 								<h4>Cicero's Pizza</h4>
 								<p>A Celebrated Local Pizzeria</p>
 							</div>
-							<div class="web-example" style="width: 70%; background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
+							<div class="web-example wow animate__animated animate__fadeInLeft" style="width: 70%; background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
 								<h4>Plathacks</h4>
 								<p>A High School Hackathon</p>
 							</div>
-							<div class="web-example" style="width: 80%; background-color: #843b62;" data-trigger="hover" data-toggle="popover" data-img="stac.png">
+							<div class="web-example wow animate__animated animate__fadeInLeft" style="width: 80%; background-color: #843b62;" data-trigger="hover" data-toggle="popover" data-img="stac.png">
 								<h4>STAC Programming</h4>
 								<p>A Programming School</p>
 							</div>
-							<div class="web-example" style="width: 70%; background-color: #251e3e;" data-trigger="hover" data-toggle="popover" data-img="projectfalcon.png">
+							<div class="web-example wow animate__animated animate__fadeInLeft" style="width: 70%; background-color: #251e3e;" data-trigger="hover" data-toggle="popover" data-img="projectfalcon.png">
 								<h4>ETF Project Falcon</h4>
 								<p>A Non-Profit Initiative</p>
 							</div>
-							<div class="web-example" data-trigger="hover" data-toggle="popover" data-img="lynbrookmdc.png">
+							<div class="web-example wow animate__animated animate__fadeInLeft" data-trigger="hover" data-toggle="popover" data-img="lynbrookmdc.png">
 								<h4>Lynbrook MDC</h4>
 								<p>A High School Club</p>
 							</div>
@@ -252,19 +264,19 @@
 					</div>
 					<div class="col-12 d-xl-none d-flex">
 						<div class="row row-website-examples-mobile">
-								<div class="web-example-mobile" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
+								<div class="web-example-mobile wow animate__animated animate__fadeInLeft" data-trigger="hover" data-toggle="popover" data-img="ciceros.png">
 									<h4>Cicero's Pizza</h4>
 									<p>A Celebrated Local Pizzeria</p>
 								</div>
-								<div class="web-example-mobile" style="background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
+								<div class="web-example-mobile wow animate__animated animate__fadeInLeft" style="background-color: #f67e7d;" data-trigger="hover" data-toggle="popover" data-img="plathacks.png">
 									<h4>Plathacks</h4>
 									<p>A High School Hackathon</p>
 								</div>
-								<div class="web-example-mobile" style="background-color: #843b62;" data-trigger="hover" data-toggle="popover" data-img="stac.png">
+								<div class="web-example-mobile wow animate__animated animate__fadeInLeft" style="background-color: #843b62;" data-trigger="hover" data-toggle="popover" data-img="stac.png">
 									<h4>STAC Programming</h4>
 									<p>A Programming School</p>
 								</div>
-								<div class="web-example-mobile" style="background-color: #251e3e;" data-trigger="hover" data-toggle="popover" data-img="projectfalcon.png">
+								<div class="web-example-mobile wow animate__animated animate__fadeInLeft" style="background-color: #251e3e;" data-trigger="hover" data-toggle="popover" data-img="projectfalcon.png">
 									<h4>ETF Project Falcon</h4>
 									<p>A Non-Profit Initiative</p>
 								</div>
@@ -297,7 +309,7 @@
 						<div class="container">
 						    <div class="row">
 						        <div class="col-12">
-						            <div class="tab-content" id="faq-tab-content">
+						            <div class="tab-content wow animate__animated animate__fadeInRight" id="faq-tab-content">
 						                <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
 						                    <div class="accordion" id="accordion-tab-1">
 						                        <div class="card">
@@ -398,7 +410,7 @@
 						</div>
 					</div>
 					<div class="col-xl-7 col-12 sidepanel fulltable" style="overflow-x: scroll;">
-						<div>
+						<div class="wow animate__animated animate__fadeInLeft">
 							<!--Table-->
 							<table id="tablePreview" class="index table">
 							<!--Table head-->
@@ -638,5 +650,9 @@
           }
     }) 
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
