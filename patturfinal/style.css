@@ -241,7 +241,7 @@ button.menu {
 	color: white;
 }
 
-.portion .col-5 {
+.portion .side-image {
 	height: 90vh;
 	display: flex;
 	align-items: center;
@@ -272,4 +272,102 @@ button.menu {
 
 .visibility-hidden {
 	visibility: hidden;
+}
+
+.sidepanel .web-example {
+	border-radius: 10px;
+	background-color: #ffb997;
+	color: black;
+	width: 60%;
+	padding: 10px;
+	padding-top: 20px;
+	margin-top: 15px;
+}
+
+.sidepanel .web-example h4 {
+	font-weight: 900;
+}
+
+.sidepanel .web-example:hover {
+	transform: translateX(-5px);
+	transition-duration: 1s;
+}
+
+.sidepanel .web-example {
+	transition: 1s transform;
+}
+
+.sidepanel {
+	display: flex;
+	align-items: center;
+}
+
+.tab-content .btn-link {
+	color: black;
+}
+
+.space {
+	height: 5vh;
+}
+
+.prices table {
+	background-color: white;
+}
+
+.footer {
+	background-color: black;
+	z-index: 10;
+}
+
+.contact {
+	padding-top: 5%;
+	width: 85%;
+}
+
+.contact h1 {
+	color: white;
+	font-weight: bolder;
+	font-size: 4rem;
+}
+
+.contact h6 {
+	color: gray;
+	font-weight: 600;
+}
+
+.contact h3 {
+	color: #d8d8d8;
+}
+
+.contacttwo p {
+	color: white;
+}
+
+.contacttwo h6 {
+	color: gray;
+	font-weight: 600;
+}
+
+.contacttwo .col-xl-3 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contacttwo .col-xl-3 p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.footer .flex-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer .footer-bottom-text {
+	color: white;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin: 0;
+	font-size: 12px;
 }
