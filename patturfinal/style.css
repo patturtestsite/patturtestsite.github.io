@@ -371,3 +371,14 @@ button.menu {
 	margin: 0;
 	font-size: 12px;
 }
+
+table.index {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.asterisk {
+	color: #d8d8d8;
+	font-size: 10px;
+	font-weight: 100;
+}
