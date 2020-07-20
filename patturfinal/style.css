@@ -358,7 +358,7 @@ button.menu-mobile {
 
 .footer {
 	background-color: black;
-	z-index: 10;
+	z-index: 0;
 }
 
 .contact {
@@ -525,7 +525,20 @@ button.newsletter {
 
 @media (max-width: 1200px) {
 	.portion .side-image {
-		margin-top: 2vh;
+		margin-top: 5vh;
+	}
+}
+
+@media (max-height: 650px) and (min-width: 1200px) {
+	.overflow-sidepanel {
+		overflow-y: scroll;
+		height: 90vh;
+	}
+	.overflow-sidepanel::-webkit-scrollbar {
+	display: none; /*  Hides Scrollbar */
+	}
+	.side-auto-margin {
+		margin: auto;
 	}
 }
 
