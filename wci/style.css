@@ -1,6 +1,7 @@
 body {
 	font-family: Nunito;
 	overflow-x: hidden;
+	background-color: black;
 }
 
 :root {
@@ -15,6 +16,7 @@ nav.main-nav {
 	margin-top: 1vh;
 	padding-left: 2vw;
 	padding-right: 2vw;
+	z-index: 10;
 }
 
 a.navbar-brand h3 {
