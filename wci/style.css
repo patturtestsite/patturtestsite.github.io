@@ -113,7 +113,7 @@ i.fa-times {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 3s linear forwards;
+  animation: dash 5s linear forwards;
   width: 90%;
 }
 
@@ -257,4 +257,160 @@ i.fa-times {
 .socials {
 	display: flex;
 	justify-content: space-between;
+}
+
+.hero {
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("tennisbg.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+.hero1 {
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("impact.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+.hero .row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.hero .col-lg-6 h1 {
+	color: white;
+	font-weight: lighter;
+	font-size: 5rem;
+}
+
+.hero .col-lg-6 h5 {
+	color: #d8d8d8;
+	font-weight: bolder;
+}
+
+
+.events {
+	height: 20vh;
+}
+
+.team-content {
+	width: 85%;
+	margin-left: 7.5%;
+	margin-top: 5%;
+}
+
+.team-content .description h1 span {
+	font-weight: bolder;
+	color: red;
+}
+
+.team-content .description p {
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.team-content .description {
+	display: flex;
+	align-items: center;
+}
+
+.side-image {
+	width: 100%;
+}
+
+.meet-team {
+	width: 85%;
+	margin-left: 7.5%;
+	margin-top: 5%;
+}
+
+.meet-team .row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.member {
+	display: flex;
+	justify-content: center;
+}
+
+.member h5 {
+	font-weight: bold;
+}
+
+.spacer {
+	height: 5vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .member {
+  	margin-top: 2%;
+  }
+  .team-content {
+  	margin-top: 10%;
+  }
+  .meet-team {
+  	width: 100%;
+  	margin-left: 0%;
+  }
+}
+
+.numbers {
+	background-color: #FF6961;
+	text-align: center;
+	padding: 20px;
+	margin-top: 5%;
+	color: black;
+}
+
+.numbers .row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.numbers .col-4 {
+	text-align: center;
+}
+
+.numbers .col h3 {
+	font-weight: 900;
+}
+
+.numbers .col h3 {
+	font-weight: 900;
+}
+
+.numbers h1 span {
+	font-weight: bolder;
+	color: black;
+}
+
+h1.title {
+	color: black;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: lighter;
+}
+
+.alter-width {
+	width: 90%;
+	margin-left: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+  	.numbers .row {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.alter-width {
+		width: 100%;
+		margin-left: 0%;
+	}
 }
