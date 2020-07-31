@@ -1,0 +1,398 @@
+<!--
+  Copyright 2019 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Silence Isn't Strength Test</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="header-text">
+		<h1>View Resources</h1>
+		<h6>Enable your location by entering your zip-code or by using our 'auto-enable location' button.</h6>
+	</div>
+	<div class="row search">
+		<div class="col-6 searchbar">
+			<div>
+				<label for="inputPassword2" class="sr-only">Zip Code</label>
+				<input style="width: 50%; display: inline;" type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
+				<button style="display: inline; margin-top: 4px;" class="btn btn-primary mb-2" onclick="initMapZip()">Enter</button>
+			</div>
+		</div>
+		<div class="col-6 searchauto">
+			<button id="button" class="btn btn-primary mb-2">Auto-Enable Location</button>
+		</div>
+	</div>
+	<div class="row map-info">
+		<div class="col-5 map">
+			<h3>Find</h3>
+			<h6>Lorem ipsum dolor sit amet, consectetur lorem</h6>
+			<img id="temp-img" class="temp-img" src="examplemap.png">
+			<div id="map"></div>
+		</div>
+		<div class="col-3 panel">
+			<div class="info-text">
+				<h3>Info</h3>
+				<h6>Lorem ipsum dolor sit amet</h6><br id="temp-br">
+				<h6 id="temp-text"></h6>
+			</div>
+			<div id="panel"></div>
+		</div>
+		<div class="col-3 numbers">
+			<h3>Numbers</h3>
+			<h6 style="margin-bottom: 1.5vh;">Lorem Ipsum Dior Figma</h6>
+			<div id="phoneNumbers">
+				<div class="title">
+					<h4><em>Hotlines</em></h4>
+				</div>
+				<div class="number">
+					<h5>+1(800)662-4357</h5>
+					<p>SAMHSA National Helpline</p>
+				</div>
+				<div class="number">
+					<h5>+1(800)273-8255</h5>
+					<p>National Suicide Prevention Hotline</p>
+				</div>
+				<div class="number">
+					<h5>+1(877)968-8491</h5>
+					<p>YouthLine</p>
+				</div>
+				<div class="number">
+					<h5>+1(800)448-3000</h5>
+					<p>Boys Town National Hotline</p>
+				</div>
+				<div class="number">
+					<h5>+1(800)985-5990</h5>
+					<p>Disaster Distress Helpline</p>
+				</div>
+				<div class="number">
+					<h5>+1(800)950-6264</h5>
+					<p>National Alliance on Mental Illness (NAMI)</p>
+				</div>
+				<div class="title">
+					<h4><em>Clinics</em></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+  	<!-- TODO: Step 4A2: Add a generic sidebar -->
+	<!-- The slide-out panel for showing place details -->
+
+ 	<!-- Map appears here -->
+
+  	<!-- TODO: Step 1B, Add a map -->
+  	<script>
+    /* Note: This example requires that you consent to location sharing when
+     * prompted by your browser. If you see the error "Geolocation permission
+     * denied.", it means you probably did not give permission for the browser * to locate you. */
+
+    	/* TODO: Step 2, Geolocate your user
+    	* Replace the code from here to the END TODO comment with this code
+   	 	* from codelab instructions. */
+		let pos;
+		let map;
+		let bounds;
+		let infoWindow;
+		let currentInfoWindow;
+		let service;
+		let infoPane;
+		let numbersPane;
+		document.getElementById('button').onclick = function initMap() {
+		    // Initialize variables
+		    bounds = new google.maps.LatLngBounds();
+		    infoWindow = new google.maps.InfoWindow;
+		    currentInfoWindow = infoWindow;
+		    /* TODO: Step 4A3: Add a generic sidebar */
+			infoPane = document.getElementById('panel');
+			numbersPane = document.getElementById('phoneNumbers')
+		    // Try HTML5 geolocation
+		    if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(position => {
+		        pos = {
+		        lat: position.coords.latitude,
+		        lng: position.coords.longitude
+		        };
+		        map = new google.maps.Map(document.getElementById('map'), {
+		        center: pos,
+		        zoom: 15
+		        });
+		        bounds.extend(pos);
+
+		        infoWindow.setPosition(pos);
+		        infoWindow.setContent('Location found.');
+		        infoWindow.open(map);
+		        map.setCenter(pos);
+
+		        /* TODO: Step 3B2, Call the Places Nearby Search */
+				// Call Places Nearby Search on user's location
+				getNearbyPlaces(pos);
+		    }, () => {
+		        // Browser supports geolocation, but user has denied permission
+		        handleLocationError(true, infoWindow);
+		    });
+		    } else {
+		    // Browser doesn't support geolocation
+		    handleLocationError(false, infoWindow);
+		    }
+		    document.getElementById("map").style.display = "block";
+			document.getElementById("temp-img").style.display = "none";
+		}
+
+		let geocoder;
+		let address;
+		function initMapZip() {
+			// Initialize variables
+		    bounds = new google.maps.LatLngBounds();
+		    infoWindow = new google.maps.InfoWindow;
+		    currentInfoWindow = infoWindow;
+		    /* TODO: Step 4A3: Add a generic sidebar */
+			infoPane = document.getElementById('panel');
+			numbersPane = document.getElementById('phoneNumbers')
+
+			geocoder = new google.maps.Geocoder();
+			address = document.getElementById('zip').value;
+			let pos;
+			geocoder.geocode( { 'address': address}, function(results, status) {
+		      if (status == google.maps.GeocoderStatus.OK) {
+		        console.log(results); // all results
+		        console.log(results[0].geometry.location); // "first" location
+		        pos = results[0].geometry.location;
+		        map = new google.maps.Map(document.getElementById('map'), {
+		        center: pos,
+		        zoom: 15
+		        });
+		        bounds.extend(pos);
+
+		        infoWindow.setPosition(pos);
+		        infoWindow.setContent('Location found.');
+		        infoWindow.open(map);
+		        map.setCenter(pos);
+
+		        /* TODO: Step 3B2, Call the Places Nearby Search */
+				// Call Places Nearby Search on user's location
+				getNearbyPlaces(pos);
+				document.getElementById("map").style.display = "block";
+			document.getElementById("temp-img").style.display = "none";
+		      } else {
+		        alert("Geocode was not successful for the following reason: " + status);
+		      }
+		    });
+		}
+
+		// Handle a geolocation error
+		function handleLocationError(browserHasGeolocation, infoWindow) {
+		    // Set default location to San Jose, California
+		    pos = {lat: 37.3382, lng: -121.8863};
+		    map = new google.maps.Map(document.getElementById('map'), {
+		    center: pos,
+		    zoom: 15
+		    });
+
+		    // Display an InfoWindow at the map center
+		    infoWindow.setPosition(pos);
+		    infoWindow.setContent(browserHasGeolocation ?
+		    'You have denied the use of geolocation. We are using the default location - San Jose.' :
+		    'Error: Your browser doesn\'t support geolocation.');
+		    infoWindow.open(map);
+		    currentInfoWindow = infoWindow;
+
+		    /* TODO: Step 3B3, Call the Places Nearby Search */
+			// Call Places Nearby Search on the default location
+			getNearbyPlaces(pos);
+		}
+		/* END TODO: Step 2, Geolocate your user */
+		/* TODO: Step 3B1, Call the Places Nearby Search */
+		// Perform a Places Nearby Search Request
+		function getNearbyPlaces(position) {
+		    let request = {
+		    location: position,
+		    rankBy: google.maps.places.RankBy.DISTANCE,
+		    keyword: 'mental health'
+		    };
+
+		    service = new google.maps.places.PlacesService(map);
+		    service.nearbySearch(request, nearbyCallback);
+		}
+
+		// Handle the results (up to 20) of the Nearby Search
+		function nearbyCallback(results, status) {
+		    if (status == google.maps.places.PlacesServiceStatus.OK) {
+		    createMarkers(results);
+		    printMarkers(results);
+		    }
+		}
+
+		/* TODO: Step 3C, Generate markers for search results */
+			// Set markers at the location of each place result
+			function createMarkers(places) {
+			    places.forEach(place => {
+			    let marker = new google.maps.Marker({
+			        position: place.geometry.location,
+			        map: map,
+			        title: place.name
+			    });
+			    /* TODO: Step 4B: Add click listeners to the markers */
+				// Add click listener to each marker
+				google.maps.event.addListener(marker, 'click', () => {
+					document.getElementById("temp-text").style.display = "none";
+					document.getElementById("temp-br").style.display = "none";
+					document.getElementById("panel").style.display = "block";
+				    let request = {
+				    placeId: place.place_id,
+				    fields: ['name', 'formatted_address', 'geometry', 'rating',
+				        'website', 'photos', 'formatted_phone_number']
+				    };
+
+				    /* Only fetch the details of a place when the user clicks on a marker.
+				    * If we fetch the details for all place results as soon as we get
+				    * the search response, we will hit API rate limits. */
+				    service.getDetails(request, (placeResult, status) => {
+				    showDetails(placeResult, marker, status)
+				    });
+				});
+
+			    // Adjust the map bounds to include the location of this marker
+			    bounds.extend(place.geometry.location);
+			    });
+			    /* Once all the markers have been placed, adjust the bounds of the map to
+			    * show all the markers within the visible area. */
+			    map.fitBounds(bounds);
+			}
+
+			/* TODO: Step 4C: Show place details in an info window */
+			// Builds an InfoWindow to display details above the marker
+			function showDetails(placeResult, marker, status) {
+			    if (status == google.maps.places.PlacesServiceStatus.OK) {
+			    let placeInfowindow = new google.maps.InfoWindow();
+			    placeInfowindow.setContent('<div><strong>' + placeResult.name +
+			        '</strong><br>' + 'Rating: ' + placeResult.rating + '</div>');
+			    placeInfowindow.open(marker.map, marker);
+			    currentInfoWindow.close();
+			    currentInfoWindow = placeInfowindow;
+			    showPanel(placeResult);
+			    console.log(placeResult);
+			    } else {
+			    console.log('showDetails failed: ' + status);
+			    }
+			}
+
+			function printMarkers(places) {
+			    places.forEach(place => {
+			    	console.log(place.name);
+			    	var request = { reference: place.reference };
+			    	service.getDetails(request, function(details, status) {
+			        	console.log(details.formatted_phone_number);
+			        	if(details.formatted_phone_number) {
+			        		let numberDiv = document.createElement('div');
+			    			numberDiv.className = "number"
+			    			numbersPane.append(numberDiv);
+				        	let phoneNumber = document.createElement('h5');
+				        	phoneNumber.append(details.formatted_phone_number);
+				        	numberDiv.append(phoneNumber);
+				        	let placeName = document.createElement('p');
+				    		placeName.append(place.name);
+				    		numberDiv.append(placeName);
+			    		}
+			    	});
+				});
+				document.getElementById("phoneNumbers").style.visibility = "visible"
+			}
+
+			/* TODO: Step 4D: Load place details in a sidebar */
+			// Displays place details in a sidebar
+			function showPanel(placeResult) {
+			    // If infoPane is already open, close it
+			    if (infoPane.classList.contains("open")) {
+			    infoPane.classList.remove("open");
+			    }
+
+			    // Clear the previous details
+			    while (infoPane.lastChild) {
+			    infoPane.removeChild(infoPane.lastChild);
+			    }
+
+			    /* TODO: Step 4E: Display a Place Photo with the Place Details */
+				// Add the primary photo, if there is one
+				if (placeResult.photos != null) {
+				    let firstPhoto = placeResult.photos[0];
+				    let photo = document.createElement('img');
+				    photo.classList.add('hero');
+				    photo.src = firstPhoto.getUrl();
+				    console.log(photo)
+				    infoPane.appendChild(photo);
+				}
+				else
+				{
+					let photo = document.createElement('img');
+					photo.classList.add('hero')
+					photo.src = 'logo.png'
+					infoPane.appendChild(photo);
+				}
+
+			    // Add place details with text formatting
+			    let name = document.createElement('h1');
+			    name.classList.add('place');
+			    name.textContent = placeResult.name;
+			    infoPane.appendChild(name);
+			    if (placeResult.rating != null) {
+			    let rating = document.createElement('p');
+			    rating.classList.add('details');
+			    rating.textContent = `Rating: ${placeResult.rating} \u272e`;
+			    infoPane.appendChild(rating);
+			    }
+			    let address = document.createElement('p');
+			    address.classList.add('details');
+			    address.textContent = placeResult.formatted_address;
+			    infoPane.appendChild(address);
+			    if (placeResult.formatted_phone_number) {
+			    let phonePara = document.createElement('p');
+			    let phoneNumber = document.createTextNode(placeResult.formatted_phone_number);
+			    phonePara.appendChild(phoneNumber);
+			    infoPane.appendChild(phonePara);
+			    }
+			    if (placeResult.website) {
+			    let websitePara = document.createElement('p');
+			    let websiteLink = document.createElement('a');
+			    let websiteUrl = document.createTextNode(placeResult.website);
+			    websiteLink.appendChild(websiteUrl);
+			    websiteLink.title = placeResult.website;
+			    websiteLink.href = placeResult.website;
+			    websitePara.appendChild(websiteLink);
+			    infoPane.appendChild(websitePara);
+			    }
+
+			    // Open the infoPane
+			    infoPane.classList.add("open");
+			}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- TODO: Step 1C, Get an API key -->
+	<!-- TODO: Step 3A, Load the Places Library -->
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?&fields=name,rating,formatted_phone_number&key=AIzaSyAWKyYyQgGstPoADmE2DxKmzoGRtKkllss&libraries=places&callback=initMap">
+	</script>
+</body>
+
+</html>
