@@ -213,3 +213,16 @@ a {
 	font-family: manropethin;
 	margin-top: 2vh;
 }
+
+@media only screen and (max-width: 1200px) {
+	.panel, .map, .numbers, .list {
+	border-radius: 10px;
+	border: 1px solid #d8d8d8;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 2%;
+	}
+	.searchbarbar {
+		width: 100%;
+	}
+}
