@@ -29,17 +29,17 @@
 	<div class="local-resource-tool">
 		<div class="header-text">
 			<h1>View Resources</h1>
-			<h6>Enable your location <span class="d-lg-inline d-none">by entering your zip-code or</span> by using the 'auto-enable location' button.</h6>
+			<h6>Enable your location <span class="d-lg-inline d-none">by using the 'auto-enable location' button or</span> by entering your zip-code.</h6>
 		</div>
 		<div class="row search">
-			<div class="col-lg-6 d-lg-flex d-none col-12 searchbar">
+			<div class="col-lg-6 d-lg-flex d-flex col-12 searchbar">
 				<div class="searchbarbar">
 					<label for="inputPassword2" class="sr-only">Zip Code</label>
 					<input style="width: 50%; display: inline;" type="text" class="form-control" id="zip" placeholder="Zip Code">
 					<button style="display: inline; margin-top: 4px;" class="btn btn-primary mb-2" onclick="initMapZip()">Enter</button>
 				</div>
 			</div>
-			<div class="col-lg-6 col-12 searchauto">
+			<div class="col-lg-6 col-12 searchauto d-none d-lg-flex">
 				<button id="button" class="btn btn-primary mb-2">Auto-Enable Location</button>
 			</div>
 		</div>
@@ -67,6 +67,7 @@
 		</div>
 		<p class="designed">Designed by <a href="">Pattur Web Design</a></p>
 	</div>
+	
   	<script>
 		let pos;
 		let map;
@@ -156,12 +157,10 @@
 
 		    infoWindow.setPosition(pos);
 		    infoWindow.setContent(browserHasGeolocation ?
-		    'You have denied the use of geolocation. We are using the default location - San Jose.' :
+		    'You have denied the use of geolocation. Please click \'allow\' or enter your ZIP Code instead.' :
 		    'Error: Your browser doesn\'t support geolocation.');
 		    infoWindow.open(map);
-		    currentInfoWindow = infoWindow;
-
-			getNearbyPlaces(pos);
+		    currentInfoWindow = infoWindow;		
 		}
 
 		function getNearbyPlaces(position) {
