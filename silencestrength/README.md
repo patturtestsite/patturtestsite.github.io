@@ -1,33 +1,7 @@
-Build a Nearby Business Search service with Google Maps Platform
+Mental Health Resource Navigator
 ============
 
-Learn to use Google Maps Platform’s Maps and Places APIs to build a local business search, which geolocates the user and shows interesting places around them. The app integrates location, place details, place photos, and more.
-
-This is the code referenced in the [Build a Nearby Business Search service with Google Maps Platform](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/) code lab from Google.
-
-What You'll Learn
-------------
-* How to create a customizable map
-* How to geolocate the user
-* How to search for nearby places and display the results
-* How to fetch and display details about a place
-
-What You'll Need
---------------
-* A web browser
-* Your favorite text or code editor
-* Basic knowledge of HTML, CSS, and JavaScript
-
-Support
--------
-
-- Stack Overflow: https://stackoverflow.com/questions/tagged/google-maps
-
-If you've found an error in this sample, please file an issue:
-https://github.com/googlecodelabs/google-maps-nearby-search-js/issues
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub.
+Using Google Map's Platform API, this program searches for nearby mental health clinics and crisis hotlines. It then returns their numbers in an easy-to-read fashion. It also displays additional details about nearby clinic's including their ratings, address and website.
 
 License
 -------
@@ -48,3 +22,5 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+
+Implemented by Pattur Web Design.
