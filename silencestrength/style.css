@@ -28,27 +28,31 @@
   src: url(manropethin.otf);
 }
 
-body {
+.local-resource-tool {
 	font-family: manrope;
+	background-color: #ffcdc3;
+	width: 100%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
-::-webkit-scrollbar {
+#phoneNumbers::-webkit-scrollbar, #panel::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+#phoneNumbers::-webkit-scrollbar-track, #panel::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+#phoneNumbers::-webkit-scrollbar-thumb, #panel::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 5px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+#phoneNumbers::-webkit-scrollbar-thumb:hover, #panel::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -128,6 +132,7 @@ a {
 	border: 1px solid #d8d8d8;
 	width: 95%;
 	margin-left: 2.5%;
+	background-color: white;
 }
 
 .map {
@@ -214,15 +219,60 @@ a {
 	margin-top: 2vh;
 }
 
+.designed {
+	width: 90%;
+	margin-left: 5%;
+	font-size: 10px;
+	font-family: manropelight;
+}
+
 @media only screen and (max-width: 1200px) {
 	.panel, .map, .numbers, .list {
 	border-radius: 10px;
 	border: 1px solid #d8d8d8;
 	width: 98%;
-	margin-left: 1%;
+	margin-left: 0%;
 	margin-top: 2%;
 	}
 	.searchbarbar {
 		width: 100%;
 	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+	.panel {
+		margin-left: 7.33%;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.searchbar {
+		display: flex; 
+		justify-content: center;
+		width: 100%;
+	}
+	.searchauto {
+		display: flex; 
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+.btn-primary {
+	background-color: white;
+	color: black;
+	border: none;
+}
+
+.btn-primary:active {
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: black;
+	color: white;
+	border: none;
 }
