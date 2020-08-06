@@ -1,0 +1,524 @@
+@font-face {
+  font-family: manropebold;
+  src: url(manropebold.otf);
+}
+
+@font-face {
+  font-family: manropelight;
+  src: url(manropelight.otf);
+}
+
+@font-face {
+  font-family: manropemedium;
+  src: url(manropemedium.otf);
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(manroperegular.otf);
+}
+
+@font-face {
+  font-family: manropesemibold;
+  src: url(manropesemibold.otf);
+}
+
+@font-face {
+  font-family: manropethin;
+  src: url(manropethin.otf);
+}
+
+.navbar {
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+  z-index: 10;
+}
+
+.fa-bars:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: #000080;
+  border: none;
+}
+
+body {
+  font-family: manrope;
+  overflow-x: hidden;
+}
+
+#navigation {
+  width: 100vw;
+  height: 100vh;
+  background-color: #152238;
+  display: none;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+
+#navigation .naved {
+  display: flex;
+}
+
+#navigation h1 {
+  color: #d8d8d8;
+  font-family: manropebold;
+  font-size: 4rem;
+  margin-top: 10px;
+}
+
+#navigation h1:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#navigation .row {
+  width: 90%; margin-left: 5%; margin-right: 5%;
+}
+
+@keyframes menu-intro {
+    0% { clip-path: circle(20.7% at 50% 00%); }
+    50% { clip-path: circle(130% at 50% 00%); }
+    100% { clip-path: none; }
+  }
+
+  @keyframes menu-out {
+    0% { clip-path:  circle(130% at 50% 00%);}
+    90% { clip-path: circle(0% at 50% 00%); }
+    100% { display: none; }
+  }
+
+#menu-leaver {
+  display: none;
+  position: absolute;
+  color: white;
+}
+
+#menu-leaver:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#navigation .contact-nav {
+  color: white;
+}
+
+#navigation .contact-nav h3 {
+  font-family: manropebold;
+}
+
+#navigation .contact-nav h6 {
+  font-family: manropethin;
+  text-decoration: underline;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('http://maskingadifference.com/img/donation2.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-clip-path: circle(77.7% at 90% 24%);
+  clip-path: circle(77.7% at 90% 24%);
+  z-index: -1;
+}
+
+#hero .row h1 {
+  color: #000080;
+  font-family: manropebold;
+}
+
+#hero .inHero {
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#hero .content {
+  width: 90%;
+  margin-left: 10%;
+}
+
+#hero .content .bynumbers {
+  margin-top: 10vh;
+}
+
+.numbers h6 {
+  font-family: manropethin;
+  border-top: 1px solid black;
+  padding-top: 2px;
+  width: 70%;
+}
+
+.numbers h3 {
+  font-family: Merriweather;
+  font-weight: 900;
+}
+
+#mission {
+  background-color: #152238;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#mission h1 {
+  font-size: 5rem;
+  width: 80%;
+  margin-left: 5%;
+  font-family: manropebold;
+  font-weight: 900;
+  color: white;
+}
+
+h1.ready {
+  display: none;
+}
+
+.location {
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.location .col-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location .loc-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom-loc {
+  padding-top: 5vh;
+}
+
+.impact-header, .impact-header2 {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  font-family: manropebold;
+  font-size: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) { 
+  .impact-header, .impact-header2 {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  font-family: manropebold;
+  font-size: 3rem;
+  text-align: center;
+  }
+  #mission h1 {
+    font-size: 4rem;
+  }
+  .hero2 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('http://maskingadifference.com/img/donation2.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  animation: leave 3s;
+  z-index: -1;
+  }
+  @keyframes leave {
+    0% { clip-path: circle(77.7% at 90% 24%); }
+    50% { clip-path: circle(120% at 90% 24%); }
+    100% { clip-path: none; }
+  }
+  #hero .row h1 {
+    color: white;
+  }
+  .numbers h6 {
+  font-family: manropethin;
+  border-top: 1px solid #d8d8d8;
+  color: white;
+  padding-top: 2px;
+  width: 70%;
+  }
+  .numbers h3 {
+  font-family: Merriweather;
+  font-weight: 900;
+  color: white;
+  }
+  .menu {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-nav {
+    display: none;
+  }
+  #navigation h1 {
+  color: #d8d8d8;
+  font-family: manropebold;
+  font-size: 3.5rem;
+  margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 900px) { 
+  .impact-header, .impact-header2 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-family: manropebold;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  }
+  #mission h1 {
+    font-size: 2.5rem;
+  }
+  .hero2 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('http://maskingadifference.com/img/donation2.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  animation: leave 3s;
+  z-index: -1;
+  }
+  @keyframes leave {
+    0% { clip-path: circle(77.7% at 90% 24%); }
+    50% { clip-path: circle(120% at 90% 24%); }
+    100% { clip-path: none; }
+  }
+  #hero .row h1 {
+    color: white;
+  }
+  .numbers h6 {
+  font-family: manropethin;
+  border-top: 1px solid #d8d8d8;
+  color: white;
+  padding-top: 2px;
+  width: 70%;
+  }
+  .numbers h3 {
+  font-family: Merriweather;
+  font-weight: 900;
+  color: white;
+  }
+}
+
+.location h6 {
+  font-family: manropethin;
+  color: #000080;
+}
+
+.location h2 {
+  font-family: manropesemibold;
+  color: black;
+}
+
+#partners {
+  background-color: #152238;
+  margin-top: -1px;
+  padding-bottom: 5vh;
+}
+
+.impact-header2 {
+  padding-top: 2vh;
+  color: white;
+}
+
+.partner {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#partners .row .col-xl-2 {
+  display: flex;
+  justify-content: center;
+}
+
+#partners .row .col-xl-2 img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+#partners .row .col-xl-2 img.white {
+    filter: brightness(0) invert(1);
+}
+
+.row-partners {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.hi img {
+  filter: grayscale(100%);
+}
+
+#extra-about {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -10vh;
+  padding-bottom: 10vh;
+}
+
+#extra-about .row {
+  padding-top: 10vh;
+}
+
+#extra-about .join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#extra-about .join img {
+  width: 80%;
+}
+
+#extra-about h1 {
+  font-family: manropebold;
+}
+
+#extra-about p {
+  font-family: manropelight;
+  font-size: 20px;
+}
+
+#footer {
+  background-color: #152238;
+  padding-top: 15vh;
+}
+
+#footer .logo {
+  width: 100%;
+}
+
+#footer .row {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#footer .right h3, #footer .right h6 {
+  color: white;
+  font-family: manropebold;
+}
+
+#footer .right p {
+  color: gray;
+  font-family: manropethin;
+}
+
+#footer .left h1 {
+  color: white;
+  font-family: manropebold;
+}
+
+#footer .bottom-contact {
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+#footer .thing h5 {
+  font-family: manropesemibold;
+  color: white;
+}
+
+#footer .thing p {
+  font-family: manropethin;
+  color: gray;
+}
+
+#footer .thing .fab {
+  font-size: 20px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .thing .col {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#help {
+  padding-bottom: 10vh;
+}
+
+.helprow {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.helpind {
+  padding: 5%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.helpind i {
+  font-size: 30px;
+  color: #000080;
+}
+
+.helpind h3 {
+  font-family: manropebold;
+  padding-top: 5px;
+}
+
+.helpind p {
+  font-family: manropethin;
+}
+
+@media screen and (max-width: 900px) {
+  .helpind {
+    border: none;
+    border-top: 1px solid black;
+  }
+}
+
+.bottom-logo {
+  width: 50%;
+  filter: brightness(0) invert(1);
+}
