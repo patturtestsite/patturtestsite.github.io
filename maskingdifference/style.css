@@ -117,7 +117,7 @@ body {
 
 #menu-leaver {
   display: none;
-  position: absolute;
+  position: fixed;
   color: white;
 }
 

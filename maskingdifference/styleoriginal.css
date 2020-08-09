@@ -1,0 +1,111 @@
+body {
+	overflow-x: hidden;
+}
+
+.navbars {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #c5d8e6;
+	font-family: Playfair Display;
+	font-weight: bold;
+}
+
+.logoh {
+	padding: 0;
+}
+
+.logo {
+	width: 100%;
+	object-fit: cover;
+}
+
+.nav-link {
+	padding-right: 20px;
+	font-style: italic;
+	color: black;
+}
+
+.link-active {
+	background-color: #5dbcd2;
+	color: black;
+}
+
+.nav-link:hover {
+	background-color: #5dbcd2;
+	color: black;
+}
+
+.socials {
+	margin-top: 10px;
+}
+
+.fab {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.fa-youtube {
+	margin-right: 20px;
+}
+
+.link-width {
+	border-bottom: 4px solid black;
+	margin-right: 5px;
+}
+
+.hero-o {
+	height: 80vh;
+	background-color: #bfe7f2;
+}
+
+.hero-o .out {
+	background-color: #57cad9;
+	height: 80vh;
+}
+
+.hero-o .in {
+	background-color: #5dbcd2;
+	height: 80vh;
+}
+
+.hero-o {
+	font-family: Montserrat;
+}
+
+.hero-o h1 {
+	text-align: center;
+}
+
+.hero-o .logobody {
+	width: 100%;
+}
+
+h1.fancy {
+	font-family: Playfair Display;
+	font-style: italic;
+	color: #5dbcd2;
+}
+
+.outside h1 {
+	margin-top: 5vh;
+	font-weight: normal;
+	font-size: 2rem;
+	color: white;
+}
+
+.outside h6 {
+	text-align: center;
+	color: white;
+}
+
+ul {
+	font-size: 12px;
+	color: white;
+	list-style-type: none;
+}
+
+.hero-o h5 {
+	color: black;
+	font-weight: bolder;
+}
