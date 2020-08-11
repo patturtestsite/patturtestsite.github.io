@@ -88,6 +88,22 @@ body {
 	color: white;
 }
 
+@media only screen and (max-width: 900px) {
+	.hero .text {
+		width: 90%;
+		margin-left: 5%;
+		height: 95%;
+	}
+	.hero .text h1 {
+		width: 90%;
+		margin-left: 5%;
+		text-align: center
+		font-weight: bolder;
+		font-size: 2rem;
+		color: white;
+	}
+}
+
 .info .mentors {
 	background-color: #006d77;
 	color: white;
@@ -119,6 +135,22 @@ body {
 	text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+	.about .text-top {
+		padding-top: 10vh;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.about .text-top h1 {
+		font-weight: bolder;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.about p {
+		font-size: 15px;
+	}
+}
+
 .about .text-top h1 span {
 	color: white;
 	-webkit-text-stroke-width: 1px;
@@ -138,6 +170,15 @@ body {
 	margin-bottom: 10vh;
 	width: 40%;
 	margin-left: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+	.about .video {
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		width: 100%;
+		margin-left: 0%;
+	}
 }
 
 .about .video img {
@@ -268,4 +309,9 @@ body {
 
 .bottom p {
 	margin-bottom: 0;
+}
+
+.spacer {
+	height: 2vh;
+	visibility: hidden;
 }
