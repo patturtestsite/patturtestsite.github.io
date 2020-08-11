@@ -1,0 +1,271 @@
+body {
+	overflow-x: hidden;
+	font-family: Poppins;
+	width: 100vw;
+}
+
+@font-face {
+  font-family: boldfont;
+  src: url(big_john.otf);
+}
+
+.row {
+	margin: 0;
+}
+
+.socials {
+	background-color: #000080;
+	position: fixed;
+	height: 7rem;
+	width: 4rem;
+	color: white;
+	margin-top: 40vh;
+	right: 0%;
+	z-index: 10;
+}
+
+.socials i {
+	font-size: 20px;
+}
+
+.navbar {
+	height: 10vh;
+	background-color: rgba(10, 10, 10, 0.8);
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	z-index: 10;
+}
+
+.navbar .nav-in a {
+	margin-right: 10px;
+	font-weight: lighter;
+	color: white;
+}
+
+.navbar .nav-in a:hover {
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.navbar .nav-in a.last {
+	margin-right: 0px;
+}
+
+.navbar .navlogo {
+	position: absolute;
+	left: 5%;
+}
+
+.navbar .navlogo h6 {
+	font-weight: bolder;
+	color: white;
+	font-size: 1.7rem;
+}
+
+.hero {
+	height: 90vh;
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('hands.jpg');
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	z-index: -1;
+}
+
+.hero .text {
+	width: 70%;
+	margin-left: 15%;
+	height: 80%;
+}
+
+.hero .text h1 {
+	width: 70%;
+	margin-left: 30%;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 3.5rem;
+	color: white;
+}
+
+.info .mentors {
+	background-color: #006d77;
+	color: white;
+}
+
+.info .mission {
+	background-color: #ed7f61;
+	color: white;
+}
+
+.info .text {
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+}
+
+.info .text h1 {
+	font-weight: bolder;
+}
+
+.about .text-top {
+	padding-top: 10vh;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.about .text-top h1 {
+	font-weight: bolder;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.about .text-top h1 span {
+	color: white;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+}
+
+.btn-outline-dark {
+	border-width: 3px;
+	border-radius: 0px;
+	font-weight: bold;
+}
+
+.about .video {
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10vh;
+	width: 40%;
+	margin-left: 30%;
+}
+
+.about .video img {
+	width: 100%;
+}
+
+.selection {
+	background-color: #006d77;
+}
+
+.selection h2 {
+	padding-top: 5vh;
+	font-weight: bold;
+	color: white;
+}
+
+.selection .row {
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.selection .row i {
+	color: white;
+	border-radius: 50%;
+	border: 7px solid white;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+.selection .icon {
+	display: flex;
+	justify-content: center;
+}
+
+.selection .icon h6 {
+	color: white;
+	margin-top: 2vh;
+	font-family: boldfont;
+	text-align: center;
+}
+
+.news .text {
+	margin-top: 10vh;
+	width: 60%;
+	margin-left: 20%;
+	color: black;
+	margin-bottom: 5vh;
+}
+
+.news .text h1 {
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+.events .row {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.events .row .img-bg {
+	background-image: url('college.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.events .row .text-portion {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	background-color: #ed7f61;
+	color: white;
+}
+
+.events .text h1 {
+	font-weight: bolder;
+}
+
+.events .row .text {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.press {
+	margin-top: 10vh;
+}
+
+.press .row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.press h1 {
+	font-weight: bolder;
+	font-size: 3.5rem;
+}
+
+.press .press-img {
+	height: 30vh;
+	object-fit: cover;
+}
+
+.footer {
+	padding-top: 15vh;
+}
+
+.footer .footers {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer .footers a {
+	color: black;
+}
+
+.bottom {
+	background-color: #006d77;
+	color: white;
+	margin: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.bottom p {
+	margin-bottom: 0;
+}
