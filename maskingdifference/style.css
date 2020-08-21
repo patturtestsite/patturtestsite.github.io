@@ -64,7 +64,7 @@
 .btn-primary {
   border-radius: 20px;
   margin-left: 10px;
-  background-color: #000080;
+  background-color:  #3f939e;
   border: none;
 }
 
@@ -73,10 +73,12 @@ body {
   overflow-x: hidden;
 }
 
+/*#3f939e  #3f939e*/
+
 #navigation {
   width: 100vw;
   height: 100vh;
-  background-color: #152238;
+  background-color: #3f939e;
   display: none;
   align-items: center;
   position: fixed;
@@ -88,7 +90,7 @@ body {
 }
 
 #navigation h1 {
-  color: #d8d8d8;
+  color: white;
   font-family: manropebold;
   font-size: 4rem;
   margin-top: 10px;
@@ -118,11 +120,11 @@ body {
 #menu-leaver {
   display: none;
   position: fixed;
-  color: white;
+  color: black;
 }
 
 #menu-leaver:hover {
-  color: gray;
+  filter: opacity(0.8);
   cursor: pointer;
 }
 
@@ -152,7 +154,7 @@ body {
 }
 
 #hero .row h1 {
-  color: #000080;
+  color:  #3f939e;
   font-family: manropebold;
 }
 
@@ -185,7 +187,7 @@ body {
 }
 
 #mission {
-  background-color: #152238;
+  background-color: #3f939e;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -340,7 +342,7 @@ h1.ready {
 
 .location h6 {
   font-family: manropethin;
-  color: #000080;
+  color:  #3f939e;
 }
 
 .location h2 {
@@ -349,7 +351,7 @@ h1.ready {
 }
 
 #partners {
-  background-color: #152238;
+  background-color: #3f939e;
   margin-top: -1px;
   padding-bottom: 5vh;
 }
@@ -388,6 +390,64 @@ h1.ready {
   margin-left: 10%;
 }
 
+#who {
+  background-color: #3f939e;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: white;
+}
+
+#who h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-family: manropebold;
+}
+
+#who .who-cols {
+  padding-right: 2.5%;
+}
+
+#who h5 {
+  padding-bottom: 2vh;
+  font-family: manropethin;
+}
+
+#who .who-list {
+  overflow-y: scroll;
+}
+
+
+
+#who .location {
+  color: white;
+  border-color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.who-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.who-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.who-list::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.who-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+#who .location h2 {
+  color: white;
+}
+
 .hi img {
   filter: grayscale(100%);
 }
@@ -423,7 +483,7 @@ h1.ready {
 }
 
 #footer {
-  background-color: #152238;
+  background-color: #3f939e;
   padding-top: 15vh;
 }
 
@@ -467,7 +527,7 @@ h1.ready {
 
 #footer .thing p {
   font-family: manropethin;
-  color: gray;
+  color: white;
 }
 
 #footer .thing .fab {
@@ -499,7 +559,7 @@ h1.ready {
 
 .helpind i {
   font-size: 30px;
-  color: #000080;
+  color:  #3f939e;
 }
 
 .helpind h3 {
@@ -518,7 +578,19 @@ h1.ready {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  #who .who-list {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+}
+
 .bottom-logo {
   width: 50%;
   filter: brightness(0) invert(1);
+}
+
+.btn-primary:hover {
+  background-color:  #3f939e;
+  filter: opacity(0.8);
 }
