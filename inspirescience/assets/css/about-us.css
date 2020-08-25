@@ -1,0 +1,12 @@
+section {
+    margin: 5% auto;
+}
+
+.content img {
+    max-width: 85vw;
+    object-fit: contain;
+}
+
+.row .col {
+    margin: 10px;
+}
