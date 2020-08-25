@@ -63,6 +63,28 @@ body {
 	font-size: 1.7rem;
 }
 
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .dropdown:hover .dropdown-content {display: block;}
+
 .hero {
 	height: 90vh;
 	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('hands.jpg');
@@ -123,6 +145,16 @@ body {
 	font-weight: bolder;
 }
 
+.info .text a {
+	color: white;
+	font-weight: bolder;
+}
+
+.info .text a:hover {
+	color: #d8d8d8;
+	text-decoration: none;
+}
+
 .about .text-top {
 	padding-top: 10vh;
 	width: 60%;
@@ -181,7 +213,7 @@ body {
 	}
 }
 
-.about .video img {
+.about .video video {
 	width: 100%;
 }
 
@@ -314,4 +346,180 @@ body {
 .spacer {
 	height: 2vh;
 	visibility: hidden;
+}
+
+.about-programs h1 {
+	background-color: #006d77;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	width: 100%;
+	font-weight: bolder;
+	font-size: 4rem;
+	color: white;
+}
+
+.about-programs p {
+	width: 60%;
+	margin-left: 20%;
+	font-weight: 200;
+}
+
+.inara-programs {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	margin-top: 10vh;
+}
+
+.inara-programs .inner {
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+
+.inara-programs .program-img {
+	width: 60%;
+}
+
+.inara-programs .text h1 {
+	font-weight: bolder;
+}
+
+.inara-programs .one {
+	background-color: #ffddd2;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.inara-programs .two {
+	background-color: #d8d8d8;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+h1.title {
+	font-weight: bolde
+	font-size: 4rem;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	text-align: center;
+}
+
+h2.special {
+	width: 60%;
+	margin-left: 20%;
+	color: #006d77;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+.team-rows {
+	width: 70%;
+	margin-left: 15%;
+	display: flex;
+	justify-content: center;
+}
+
+.team-rows .individual img {
+	height: 40vh;
+	object-fit: cover;
+	border-radius: 0px;
+}
+
+.team-rows .individual {
+	text-align: center;
+	border: none;
+	border-radius: 0px;
+	margin-top: 5vh;
+}
+
+.team-rows .individual h3 {
+	padding-top: 2vh;
+	font-weight: 300;
+	color: #006d77;
+}
+
+.team-rows .individual h5 {
+	font-weight: bolder;
+	color: #2a9df4;
+}
+
+h1.title {
+	font-size: 4rem;
+	font-weight: bolder;
+}
+
+.contact-help {
+	height: 100vh;
+}
+
+.contact-help h1 {
+	font-weight: bolder;
+}
+
+.contact-help h1, .contact-help p {
+	text-align: center;
+}
+
+.contact-help .side-img {
+	width: 100%;
+	object-fit: cover;
+	padding: 0;
+}
+
+.workshops .workshop {
+	width: 60%; 
+	margin-left: 20%;
+	height: 45vh;
+	margin-top: 5vh;
+	border: 1px solid #d8d8d8;
+}
+
+.workshops .workshop .content {
+	background-color: #ed7f61;
+}
+
+.workshops .workshop .text {
+	background-color: white;
+	text-align: center;
+}
+
+.workshops .workshop .text h1 {
+	font-weight: normal;
+}
+.workshops .workshop .text h4 {
+	font-weight: 200;
+}
+
+.btn-primary {
+	background-color: #006d77;
+	border: none;
+}
+
+.workshop-partners {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.workshop-partners img {
+	width: 80%;
+	object-fit: cover;
+}
+
+.carousel {
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 20px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	height: 50vh;
+	background-color: #d8d8d8;
+}
+
+.carousel img {
+	height: 50vh;
+	object-fit: contain;
 }
