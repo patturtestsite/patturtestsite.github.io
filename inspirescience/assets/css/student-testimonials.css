@@ -1,0 +1,27 @@
+/* Jumbotron */
+#testimonials-jumbotron {
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    background-image: url("../images/DNA_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+@media screen and (max-width: 1024px){
+    #testimonials-jumbotron {
+        max-height: 300px;
+    }
+}
+
+#testimonials-jumbotron h2 {
+    font-weight: 900;
+    font-size: 10vmin;
+    letter-spacing: 1px !important;
+}
+
+/* Blockquotes */
+.blockquote p {
+    font-style: italic;
+}

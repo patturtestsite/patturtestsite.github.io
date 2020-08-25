@@ -1,0 +1,58 @@
+/* Navbar */
+.nav-item {
+    margin-right: 25px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: solid 1px;
+}
+
+/* Divider */
+
+.divider {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    margin: 50px auto;
+}
+
+/* Misc */
+
+.primary-jumbotron h1, h2, .content p {
+    font-family: "Montserrat" !important;
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+/* Primary Jumbotron */
+.primary-jumbotron {
+    height: 202px;
+    color: white;
+    background-color: #272c3b;
+}
+
+.primary-jumbotron .container {
+    height: 100%;
+}
+
+.primary-jumbotron h1 {
+    color: rgb(213, 213, 213);
+    font-size: xxx-large;
+    font-weight: 700 !important;
+    letter-spacing: 0px !important;
+}
+
+.primary-jumbotron h1 span {
+    color: rgb(248, 201, 28);
+}
+
+/* Content */
+.content p {
+    color: #818181;
+}

@@ -1,0 +1,58 @@
+/* Jumbotron */
+#blog-jumbotron {
+    width: 100%;
+    height: 80vh;
+    max-height: 800px;
+    background-image: url("../images/DNA_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+@media screen and (max-width: 1024px){
+    #blog-jumbotron {
+        max-height: 300px;
+    }
+}
+
+#blog-jumbotron h2 {
+    font-weight: 900;
+    font-size: 10vmin;
+    letter-spacing: 1px !important;
+}
+
+/* Contents */
+.blog-header {
+    padding: 20px auto;
+    margin: 20px auto;
+}
+
+.blog-date, .blog-comments {
+    margin-right: 30px;
+    color: rgba(0,0,0,0.6);
+}
+
+.blog-comments {
+    text-decoration: underline;
+}
+
+.blog-comments:hover {
+    opacity: 0.2;
+    color: inherit;
+}
+
+p {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Carousel */
+.carousel {
+    height: 425px;
+    object-fit: contain;
+    background-color: rgba(0, 99, 180, 0.6);
+}
+
+img {
+    max-height: 425px;
+    object-fit: contain;
+  }
