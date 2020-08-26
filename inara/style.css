@@ -85,6 +85,18 @@ body {
 
 .navbar .dropdown:hover .dropdown-content {display: block;}
 
+.nav-collapse {
+	position: fixed; margin-top: 10vh; width: 100%; z-index: 10;
+}
+
+.nav-collapse .card {
+	border-radius: 0px; background-color: rgba(10, 10, 10, 0.8); color: white;
+}
+
+.nav-collapse .card a {
+	color: white;
+}
+
 .hero {
 	height: 90vh;
 	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('hands.jpg');
@@ -200,21 +212,10 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 10vh;
-	width: 40%;
-	margin-left: 30%;
-}
-
-@media only screen and (max-width: 900px) {
-	.about .video {
-		margin-top: 10vh;
-		margin-bottom: 10vh;
-		width: 100%;
-		margin-left: 0%;
-	}
 }
 
 .about .video video {
-	width: 100%;
+	width: 50%;
 }
 
 .selection {
@@ -314,7 +315,13 @@ body {
 }
 
 .press .press-img {
-	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.press .press-img img {
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -368,7 +375,7 @@ body {
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	margin-top: 10vh;
+	margin-top: 5vh;
 }
 
 .inara-programs .inner {
@@ -424,7 +431,7 @@ h2.special {
 }
 
 .team-rows .individual img {
-	height: 40vh;
+	height: 50vh;
 	object-fit: cover;
 	border-radius: 0px;
 }
@@ -509,6 +516,10 @@ h1.title {
 	object-fit: cover;
 }
 
+.footer form {
+	width: 100%;
+}
+
 .carousel {
 	width: 70%;
 	margin-left: 15%;
@@ -522,4 +533,145 @@ h1.title {
 .carousel img {
 	height: 50vh;
 	object-fit: contain;
+}
+
+@media only screen and (max-width: 900px) {
+	.about .video {
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		width: 100%;	
+	}
+	.events .row {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.footer .footers {
+		border-bottom: 1px solid #d8d8d8;
+	}
+	.about .video video {
+		width: 90%;
+	}
+	h2.special {
+		width: 90%;
+		margin-left: 5%;
+		color: #006d77;
+		font-weight: normal;
+		text-align: center;
+		padding-top: 5vh;
+	}
+	.about-programs p {
+		width: 90%;
+		margin-left: 5%;
+		font-weight: 200;
+	}
+	.inara-programs .one {
+		background-color: #ffddd2;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.inara-programs .two {
+		background-color: #d8d8d8;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+	.inara-programs {
+		height: 100%;
+	}
+	.workshops .workshop {
+		width: 90%; 
+		margin-left: 5%;
+		height: 100%;
+		margin-top: 5vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		border: 1px solid #d8d8d8;
+	}
+	.workshop-partners {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.about-programs h1 {
+		background-color: #006d77;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		width: 100%;
+		font-weight: bolder;
+		font-size: 3rem;
+		color: white;
+	}
+	.carousel {
+		width: 90%;
+		margin-left: 5%;
+		border-radius: 20px;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		height: 100%;
+		background-color: #d8d8d8;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 990px) {
+	.workshops .workshop {
+		width: 90%; 
+		margin-left: 5%;
+		height: 100%;
+		margin-top: 5vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		border: 1px solid #d8d8d8;
+	}
+}
+
+.individual-overlay {
+  position: relative;
+}
+
+.individual-overlay .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.individual-overlay .team-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.individual-overlay:hover .team-overlay {
+  opacity: 1;
+}
+
+.individual-overlay .text {
+  color: white;
+  font-size: 15px;
+  width: 95%;
+  margin-left: 2.5%;
+  position: absolute;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+	.individual-overlay .text {
+	  color: white;
+	  font-size: 10px;
+	  width: 95%;
+	  margin-left: 2.5%;
+	  position: absolute;
+	  text-align: center;
+	}
 }
