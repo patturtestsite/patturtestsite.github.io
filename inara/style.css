@@ -273,8 +273,7 @@ body {
 }
 
 .events .row {
-	width: 95%;
-	margin-left: 2.5%;
+	width: 100%;
 }
 
 .events .row .img-bg {
@@ -431,7 +430,7 @@ h2.special {
 }
 
 .team-rows .individual img {
-	height: 50vh;
+	height: 55vh;
 	object-fit: cover;
 	border-radius: 0px;
 }
@@ -451,7 +450,7 @@ h2.special {
 
 .team-rows .individual h5 {
 	font-weight: bolder;
-	color: #2a9df4;
+	color: #83c5be;
 }
 
 h1.title {
@@ -527,7 +526,7 @@ h1.title {
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 	height: 50vh;
-	background-color: #d8d8d8;
+	background-color: white;
 }
 
 .carousel img {
@@ -659,8 +658,8 @@ h1.title {
 .individual-overlay .text {
   color: white;
   font-size: 15px;
-  width: 95%;
-  margin-left: 2.5%;
+  width: 80%;
+  margin-left: 10%;
   position: absolute;
   text-align: center;
 }
@@ -674,4 +673,38 @@ h1.title {
 	  position: absolute;
 	  text-align: center;
 	}
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.partner-logo-bg {
+	background-position: center; background-size: contain; background-repeat: no-repeat;
+}
+
+.partner-logo-bg a {
+	color: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
 }
