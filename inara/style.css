@@ -9,6 +9,15 @@ body {
   src: url(big_john.otf);
 }
 
+@font-face {
+	font-family: avenir;
+	src: url(avenir.otf);
+}
+
+p, a {
+	font-family: avenir;
+}
+
 .row {
 	margin: 0;
 }
@@ -38,7 +47,7 @@ body {
 }
 
 .navbar .nav-in a {
-	margin-right: 10px;
+	margin-right: 25px;
 	font-weight: lighter;
 	color: white;
 }
@@ -118,6 +127,7 @@ body {
 	margin-left: 30%;
 	text-align: right;
 	font-weight: bolder;
+	font-family: Poppins;
 	font-size: 3.5rem;
 	color: white;
 }
@@ -154,6 +164,7 @@ body {
 }
 
 .info .text h1 {
+	font-family: poppins;
 	font-weight: bolder;
 }
 
@@ -699,12 +710,14 @@ h1.title {
 .carousel-control-next-icon:after
 {
   content: '>';
+  font-family: poppins;
   font-size: 55px;
   color: black;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
+  font-family: poppins;
   font-size: 55px;
   color: black;
 }
