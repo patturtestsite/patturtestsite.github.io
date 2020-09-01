@@ -1,0 +1,313 @@
+@font-face {
+  font-family: slimfont;
+  src: url(slim_joe.otf);
+}
+
+@font-face {
+  font-family: boldfont;
+  src: url(big_john.otf);
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: EB Garamond;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 10;
+  padding: 35px 10px;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  font-family: slimfont;
+  font-weight: 600;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.navbar-brand {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  margin-left: 5%;
+}
+
+.media-breakpoint {
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.collapse .links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.collapse .links a {
+  color: black;
+}
+
+.collapse .links a:hover {
+  color: gray;
+}
+
+.hero {
+  margin-top: 100px;
+  height: 60vh;
+  background-color: #0c1930;
+  width: 100%;
+}
+
+.hero-events {
+  margin-top: 100px;
+  height: 90vh;
+  background-color: #0c1930;
+  width: 100%;
+}
+
+
+.hero .row, .hero-events .row {
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.hero h1{
+  font-family: Playfair Display;
+  font-weight: 600;
+  color: white;
+  font-size: 4rem;
+}
+
+.hero img, .hero-events img {
+  width: 100%;
+}
+
+.mission {
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.mission h2, .description h2 {
+  font-weight: 600;
+  padding-bottom: 4vh;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.mission p, .description p {
+  font-size: 20px;
+  padding-top: 4vh;
+}
+
+.description {
+  margin-top: 10vh;
+}
+
+.description .row {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.description img {
+  width: 100%;
+}
+
+.btn-dark {
+  background-color: black;
+  font-family: boldfont;
+  border-radius: 0px;
+  margin-top: 3vh;
+  font-weight: bolder;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.donations {
+  background-color: #0c1930;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+  color: white;
+}
+
+.donations .inner {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.donations .inner p {
+  font-size: 2.5rem;
+}
+
+.donations .inner h2 {
+  font-size: 2.5rem;
+}
+
+.donations .row {
+  margin-top: 5vh;
+}
+
+.bottom-spacer {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-family: Raleway;
+  border-top: 1px solid #d8d8d8;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+@media only screen and (max-width: 992px) {
+  .collapse .links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hero h1 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+  }
+  .mission {
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .donations .inner p {
+    font-size: 1.3rem;
+  }
+  .media-breakpoint {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .hero {
+    margin-top: 70px;
+    height: 60vh;
+    background-color: #0c1930;
+    width: 100%;
+  }
+  .hero-events {
+    margin-top: 70px;
+    height: 90vh;
+    background-color: #0c1930;
+    width: 100%;
+  }
+}
+
+.hero-events h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.hero-events h6 {
+  color: white;
+  color: #d8d8d8;
+  margin-top: 5vh;
+  font-size: 1.8rem;
+}
+
+.events .event {
+  margin-top: 5vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid #d8d8d8; 
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.events .event-title {
+  margin-bottom: 7vh;
+  font-weight: 600;
+}
+
+.events img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.other {
+  background-color: #0c1930;
+  padding-top: 7vh;
+  padding-bottom: 10vh;
+  color: white;
+}
+
+.other .inner {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.other .inner h1 {
+  font-weight: 600;
+}
+
+.btn-light {
+  border-radius: 0px;
+  font-weight: bolder;
+  font-family: boldfont;
+}
+
+.blog-sub {
+  width: 40%;
+  color: white;
+  margin-left: 30%;
+}
+
+.blogs {
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.blogs .row {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.blogs h5 {
+  color: gray;
+}
+
+.contact-help {
+  margin-top: 25px;
+  height: 100vh;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.contact-help h1 {
+  font-weight: 600;
+}
+
+.leadership-team {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.leadership-team .member {
+  margin-top: 5vh;
+}
+
+.leadership-team .member img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.leadership-team .team-part {
+  margin-top: 5vh;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 5vh;
+}
