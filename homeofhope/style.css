@@ -304,10 +304,54 @@ body {
 .leadership-team .member img {
   width: 100%;
   object-fit: contain;
+  border-radius: 51%;
+  border: 7.5px solid #0c1930;
 }
 
 .leadership-team .team-part {
   margin-top: 5vh;
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 5vh;
+}
+
+.chapters {
+  width: 99%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.chapters .chapter {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin: 10px;
+  background-color: #0c1930;
+  color: white;
+  border-radius: 10px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.chapters .chapter:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.advisors {
+  background-color: #0c1930;
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.advisors img {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+
 }
