@@ -299,6 +299,7 @@ body {
 
 .leadership-team .member {
   margin-top: 5vh;
+  height: 100%;
 }
 
 .leadership-team .member img {
@@ -339,7 +340,7 @@ body {
 .advisors {
   background-color: #0c1930;
   color: white;
-  padding-top: 10vh;
+  padding-top: 7vh;
   padding-bottom: 10vh;
 }
 
