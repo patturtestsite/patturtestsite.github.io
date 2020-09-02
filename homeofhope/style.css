@@ -315,7 +315,7 @@ body {
 }
 
 .chapters {
-  width: 99%;
+  width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -327,9 +327,8 @@ body {
   margin: 10px;
   background-color: #0c1930;
   color: white;
-  border-radius: 10px;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .chapters .chapter:hover {
