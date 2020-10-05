@@ -26,7 +26,7 @@
 				<div class="contact-nav">
 					<h3>Say Hi</h3>
 					<h6>+1(888)888-8888</h6>
-					<h6>hello@maskingadifference.com</h6>
+					<h6>maskingadifference2020@gmail.com</h6>
 					<h6>1234 Main St, San Jose, CA 95129</h6>
 				</div>
 			</div>
@@ -48,7 +48,8 @@
 					    Locations
 					  </button>
 					  <div class="dropdown-menu">
-					    <a class="dropdown-item" href="southbay.html">South Bay</a>
+					    <a class="dropdown-item" href="southbay.html">South Bay (North)</a>
+					    <a class="dropdown-item" href="southbaysouth.html">South Bay (South)</a>
 					    <a class="dropdown-item" href="eastbay.html">East Bay</a>
 					    <a class="dropdown-item" href="sanjoaquin.html">San Joaquin</a>
 					    <a class="dropdown-item" href="orangecounty.html">Orange County</a>
@@ -280,12 +281,12 @@
 	<div id="maps" style="margin-bottom: 10vh;">
 		<h1 class="impact-header">Our Locations</h1>
 		<div class="local-resource-tool">
-		<div class="row map-info">
-			<div class="col-xl-12 col-lg-12 col-12 map" style="border: none;">
-				<div id="map"></div>
+			<div class="row map-info">
+				<div class="col-xl-12 col-lg-12 col-12 map" style="border: none;">
+					<div id="map"></div>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 	<div id="footer">
@@ -308,7 +309,7 @@
 				<div class="row bottom-contact justify-content-start">
 					<div class="col-xl-4 col-lg-6 col-12 thing">
 						<h5>Get In Touch</h5>
-						<p>hello@ maskingadifference.com</p>
+						<p>maskingadifference2020@gmail.com</p>
 						<p>+1(888)888-1234</p>
 					</div>
 					<div class="col-xl-4 col-lg-6 col-12 thing">
@@ -356,8 +357,9 @@
 	boundsNew = new google.maps.LatLngBounds( swNew, neNew );
 	map .fitBounds(boundsNew);
 
-	var n1 = {position: {lat: 34.2437, lng: -118.2}, name: "California (South Bay)", website: "south.html"};
-	var n2 = {position: {lat: 40.2437, lng: -122.2}, name: "California (East Bay)", website: "east.html"};
+	var n1 = {position: {lat: 37.3382, lng: -121.8863}, name: "South Bay (North)", website: "southbay.html"};
+	var n16 = {position: {lat: 34.2437, lng: -118.2}, name: "South Bay (South)", website: "southbaysouth.html"};
+	var n2 = {position: {lat: 40.2437, lng: -122.2}, name: "East Bay", website: "eastbay.html"};
 	var n3 = {position: {lat: 37.9176, lng: -121.1710}, name: "San Joaquin", website: "sanjoaquin.html"};
 	var n4 = {position: {lat: 33.7437, lng: -117.8}, name: "Orange County", website: "orangecounty.html"};
 	var n5 = {position: {lat: 47.6062, lng: -122.332}, name: "Seattle", website: "seattle.html"};
@@ -372,7 +374,7 @@
 	var n14 = {position: {lat: 24.814, lng: 120.978}, name: "Hsinchu", website: "hsinchu.html"};
 	var n15 = {position: {lat: 13.7602, lng: 100.5018}, name: "Bangkok", website: "bangkok.html"};
 
-	var locations = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15];
+	var locations = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16];
 
 	createMarkers(locations);
 
