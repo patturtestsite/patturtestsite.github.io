@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="stylesheet" type="text/css" href="filter.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
@@ -96,37 +97,79 @@
 
 	<h1 class="impact-header" style="margin-bottom: 0;">Executive Board</h1>
 
-	<div class="exec-row">
+<div style="padding-top: 10px; position: sticky; top: 0; z-index: 10; background-color: rgba(255, 255, 255, 0.9);">
+	<div class="scrollbtn" style="overflow-x: scroll; width: 95%; margin-left: 2.5%;">
+		<div id="myBtnContainer" class="filter">
+				<button class="btn active" onclick="filterSelection('all')"> Show All</button>
+				<button class="btn" onclick="filterSelection('southbaynorth')"> South Bay (North)</button>
+				<button class="btn" onclick="filterSelection('southbaysouth')"> South Bay (South)</button>
+				<button class="btn" onclick="filterSelection('eastbay')"> East Bay</button>
+				<button class="btn" onclick="filterSelection('sanjoaquin')"> San Joaquin</button>
+				<button class="btn" onclick="filterSelection('orangecounty')"> Orange County</button>
+				<button class="btn" onclick="filterSelection('seattle')"> Seattle</button>
+				<button class="btn" onclick="filterSelection('cary')"> Cary</button>
+				<button class="btn" onclick="filterSelection('aurora')"> Aurora</button>
+				<button class="btn" onclick="filterSelection('austin')"> Austin</button>
+				<button class="btn" onclick="filterSelection('chandler')"> Chandler</button>
+				<button class="btn" onclick="filterSelection('forsyth')"> Forsyth</button>
+				<button class="btn" onclick="filterSelection('longisland')"> Long Island</button>
+				<button class="btn" onclick="filterSelection('browardcounty')"> Broward County</button>
+				<button class="btn" onclick="filterSelection('bangalore')"> Bangalore</button>
+				<button class="btn" onclick="filterSelection('hsinchu')"> Hsinchu</button>
+				<button class="btn" onclick="filterSelection('bangkok')"> Bangkok</button>
+		</div>
+	</div>
+</div>
+
+	<div class="filterDiv southbaynorth exec-row">
 		<div class="row">
-			<div class="col-lg-2 col-12 d-flex align-items-center justify-content-center">
+			<div class="col-12 d-flex align-items-center justify-content-center">
 				<div class="title-name">
-					<h1>Fundraising Team</h1>
+					<h1>South Bay (North) Executive Team</h1>
 				</div>
 			</div>
-			<div class="col-lg-10 col-12">
+			<div class="col-12">
 				<div class="row">
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
 				</div>
@@ -134,25 +177,839 @@
 		</div>
 	</div>
 
-	<div class="exec-row">
+	<div class="filterDiv southbaysouth exec-row">
 		<div class="row">
-			<div class="col-lg-2 col-12 d-flex align-items-center justify-content-center">
+			<div class="col-12 d-flex align-items-center justify-content-center">
 				<div class="title-name">
-					<h1>Fundraising Team</h1>
+					<h1>South Bay (South) Executive Team</h1>
 				</div>
 			</div>
-			<div class="col-lg-10 col-12">
+			<div class="col-12">
 				<div class="row">
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-md-4 col-12">
 						<div class="individual">
 							<img src="default.jpg">
 							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv eastbay exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>East Bay Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv sanjoaquin exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>San Joaquin Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv orangecounty exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Orange County Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv seattle exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Seattle Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv cary exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Cary Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv aurora exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Aurora Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv austin exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Austin Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv chandler exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Chandler Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv forsyth exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Forsyth Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv longisland exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Long Island Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv browardcounty exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Broward County Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv bangalore exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Bangalore Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv hsinchu exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Hsinchu Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filterDiv bangkok exec-row">
+		<div class="row">
+			<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="title-name">
+					<h1>Bangkok Executive Team</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="individual">
+							<img src="default.jpg">
+							<h6>Karissa Ning</h6>
+							<p>Position Title</p>
 						</div>
 					</div>
 				</div>
@@ -162,68 +1019,99 @@
 
 	<div class="volunteers">
 		<h1 class="impact-header">Our Volunteers</h1>
-		<div class="row">
-			<div class="col-lg-4 col-12">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaynorth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaysouth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaynorth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv eastbay">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaynorth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaysouth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv eastbay">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv southbaysouth">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
 				<h6>Karissa Ning</h6>
 				<p>Mask Ambassador</p>
 			</div>
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv eastbay">
+				<div class="d-flex justify-content-center">
+					<img src="default.jpg">
+				</div>
+				<h6>Karissa Ning</h6>
+				<p>Mask Ambassador</p>
+			</div>
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv seattle">
+				<div class="d-flex justify-content-center">
+					<img src="default.jpg">
+				</div>
+				<h6>Karissa Ning</h6>
+				<p>Mask Ambassador</p>
+			</div>
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv cary">
+				<div class="d-flex justify-content-center">
+					<img src="default.jpg">
+				</div>
+				<h6>Karissa Ning</h6>
+				<p>Mask Ambassador</p>
+			</div>
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv seattle">
+				<div class="d-flex justify-content-center">
+					<img src="default.jpg">
+				</div>
+				<h6>Karissa Ning</h6>
+				<p>Mask Ambassador</p>
+			</div>
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv forsyth">
+				<div class="d-flex justify-content-center">
+					<img src="default.jpg">
+				</div>
+				<h6>Karissa Ning</h6>
+				<p>Mask Ambassador</p>
+			</div>
+			<div class="col-lg-4 col-12 volunteer-individual filterDiv sanjoaquin">
 				<div class="d-flex justify-content-center">
 					<img src="default.jpg">
 				</div>
@@ -299,6 +1187,50 @@
 				menu.style.display = "flex";
 				navigation.style.display = "none";
 		}
+	</script>
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("filterDiv");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+	    w3RemoveClass(x[i], "show");
+	    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    while (arr1.indexOf(arr2[i]) > -1) {
+	      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+	    }
+	  }
+	  element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function(){
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
 	</script>
 	<script src="lightbox.js"></script>
 </body>
