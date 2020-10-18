@@ -496,6 +496,21 @@
 				navigation.style.display = "none";
 		}
 	</script>
+	 <script>
+	var images=new Array('donation1.jpg','donation2.jpg', 'donation4.jpg');
+	var nextimage=0;
+	doSlideshow();
+
+	function doSlideshow(){
+	    if(nextimage>=images.length){nextimage=0;}
+	    $('.hero')
+	    .css('background','linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("'+images[nextimage++]+'")')
+	    .css('background-size', 'cover')
+	    .fadeIn(500,function(){
+	        setTimeout(doSlideshow,4000);
+	    });
+	}
+	</script>
 	<script src="lightbox.js"></script>
 </body>
 </html>
