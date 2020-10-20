@@ -173,6 +173,7 @@ h1 span {
 	border: 0px;
 }
 
+/* Footer */
 #footer .row {
 	width: 90%;
 	margin-left: 5%;
@@ -202,13 +203,21 @@ h1 span {
 	display: block;
 }
 
-.python {
+/* General Spacing */
+.python, .team, .project-v-stem {
 	width: 80%;
 	margin-left: 10%;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
 
+h1.title {
+	text-align: center;
+	padding-top: 10vh;
+	font-weight: bolder;
+}
+
+/* Python */
 .python .col-xl-8 {
 	display: flex;
 	align-items: center;
@@ -232,19 +241,7 @@ h1 span {
 	width: 80%;
 }
 
-h1.title {
-	text-align: center;
-	padding-top: 10vh;
-	font-weight: bolder;
-}
-
-.team {
-	width: 80%;
-	margin-left: 10%;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
+/* Team */
 .team .col-5 {
 	display: flex;
 	justify-content: center;
@@ -274,6 +271,7 @@ h1.title {
 	border-radius: 10px;
 }
 
+/* Instructors */
 .instructors .card h5 {
 	font-weight: bolder;
 }
@@ -287,6 +285,7 @@ h1.title {
 	font-weight: 300;
 }
 
+/* Programs */
 .programs {
 	width: 80%;
 	margin-left: 10%;
@@ -296,6 +295,44 @@ h1.title {
 	font-weight: bolder;
 }
 
+/* Project vSTEM */
+.project-v-stem-instructables {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	background-image: linear-gradient(white,  #192841);
+}
+
+.project-v-stem-instructables td {
+	color: white;
+}
+
+.project-v-stem #carousel-project-v-stem {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	background-color: black;
+}
+
+.project-v-stem #carousel-project-v-stem img {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 75% !important;
+	min-height: 300px !important;
+	object-fit: contain;
+}
+
+.project-v-stem-team {
+	margin-top: 50px;
+	background-color: #192841;
+	min-height: 600px;
+}
+
+.project-v-stem-team .title {
+	color: white;
+}
 
 @media (min-width: 1200px) {
 	.courses {
@@ -306,6 +343,9 @@ h1.title {
 		padding-left: 5vh;
 		display: flex;
 		align-items: center;
+	}
+	.project-v-stem .faq {
+		margin-left: 30px;
 	}
 }
 
