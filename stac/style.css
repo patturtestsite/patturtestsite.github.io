@@ -370,7 +370,7 @@ h1.title {
 .project-v-stem-team .profile {
 	display: block;
 	margin-bottom: 15px;
-	width: 250px;
+	width: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -400,6 +400,13 @@ h1.title {
 	}
 	.project-v-stem .faq {
 		margin-left: 30px;
+	}
+	.project-v-stem-team .profile {
+		display: block;
+		margin-bottom: 15px;
+		width: 275px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.project-v-stem-links .card{
 		margin: 20px auto;
