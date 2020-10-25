@@ -388,6 +388,12 @@ h1.title {
 	color: rgba(216, 215, 215, 0.781);
 }
 
+@media (max-width: 500px) {
+	.project-v-stem-team .row{
+		padding: 3px 1rem;
+	}
+}
+
 @media (min-width: 1200px) {
 	.courses {
 		border-right: 1px solid #d8d8d8;
