@@ -298,6 +298,10 @@ h1.title {
 /* Project vSTEM */
 .project-v-stem {
 	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
 
 .project-v-stem #carousel-project-v-stem {
