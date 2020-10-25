@@ -204,7 +204,7 @@ h1 span {
 }
 
 /* General Spacing */
-.python, .team, .project-v-stem {
+.python, .team {
 	width: 80%;
 	margin-left: 10%;
 	padding-top: 5vh;
@@ -296,10 +296,18 @@ h1.title {
 }
 
 /* Project vSTEM */
+.project-v-stem {
+	text-align: center;
+	width: 85%;
+	margin-left: 10%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
 .project-v-stem #carousel-project-v-stem {
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
+	width: 100%;
 	background-color: black;
 	border-radius: 35px;
 	overflow: hidden;
@@ -313,13 +321,15 @@ h1.title {
 	object-fit: contain;
 }
 
-.project-v-stem .section-head {
+.section-head {
 	border: solid 4px black;
 	border-radius: 10px;
 	padding: 15px 0;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
-.project-v-stem .section-head h3 {
+.section-head h3 {
 	margin-bottom: 0;
 }
 
@@ -341,8 +351,8 @@ h1.title {
 
 .project-v-stem-links .card{
 	margin: 20px auto;
-	width: 30rem;
-	border-radius: 15px;
+	width: 15rem;
+	border-radius: 30px;
 }
 
 .project-v-stem-team {
@@ -390,6 +400,11 @@ h1.title {
 	}
 	.project-v-stem .faq {
 		margin-left: 30px;
+	}
+	.project-v-stem-links .card{
+		margin: 20px auto;
+		width: 30rem;
+		border-radius: 40px;
 	}
 }
 
