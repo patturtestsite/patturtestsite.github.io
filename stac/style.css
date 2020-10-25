@@ -296,24 +296,13 @@ h1.title {
 }
 
 /* Project vSTEM */
-.project-v-stem-instructables {
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-	background-image: linear-gradient(white,  #192841);
-}
-
-.project-v-stem-instructables td {
-	color: white;
-}
-
 .project-v-stem #carousel-project-v-stem {
-	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
 	background-color: black;
+	border-radius: 35px;
+	overflow: hidden;
 }
 
 .project-v-stem #carousel-project-v-stem img {
@@ -324,14 +313,60 @@ h1.title {
 	object-fit: contain;
 }
 
+.project-v-stem .section-head {
+	border: solid 4px black;
+	border-radius: 10px;
+	padding: 15px 0;
+}
+
+.project-v-stem .about-the-project div, .project-v-stem .faq div {
+	margin-bottom: 30px;
+}
+
+.project-v-stem-instructables {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.project-v-stem-links .card{
+	margin: 20px auto;
+	width: 30rem;
+	border-radius: 15px;
+}
+
 .project-v-stem-team {
 	margin-top: 50px;
+	margin-bottom: -5vh;
 	background-color: #192841;
 	min-height: 600px;
+	color: grey;
 }
 
 .project-v-stem-team .title {
 	color: white;
+}
+
+.project-v-stem-team .profile {
+	display: block;
+	margin-bottom: 15px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-v-stem-team .row{
+	padding: 15px 5rem;
+}
+
+.project-v-stem-team h5 {
+	font-weight: bold;
+	color: rgba(163, 162, 162, 0.5);
+}
+
+.project-v-stem-team h6 {
+	color: rgba(247, 230, 214, 0.5);
 }
 
 @media (min-width: 1200px) {
