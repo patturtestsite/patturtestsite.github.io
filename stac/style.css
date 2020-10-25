@@ -299,7 +299,7 @@ h1.title {
 .project-v-stem {
 	text-align: center;
 	width: 85%;
-	margin-left: 10%;
+	margin: 0 auto;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
