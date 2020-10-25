@@ -298,7 +298,7 @@ h1.title {
 /* Project vSTEM */
 .project-v-stem {
 	text-align: center;
-	width: 80%;
+	width: 85%;
 	margin-left: 10%;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
@@ -326,6 +326,7 @@ h1.title {
 	border-radius: 10px;
 	padding: 15px 0;
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .section-head h3 {
@@ -351,7 +352,7 @@ h1.title {
 .project-v-stem-links .card{
 	margin: 20px auto;
 	width: 15rem;
-	border-radius: 15px;
+	border-radius: 30px;
 }
 
 .project-v-stem-team {
@@ -403,7 +404,7 @@ h1.title {
 	.project-v-stem-links .card{
 		margin: 20px auto;
 		width: 30rem;
-		border-radius: 15px;
+		border-radius: 40px;
 	}
 }
 
