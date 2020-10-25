@@ -204,7 +204,7 @@ h1 span {
 }
 
 /* General Spacing */
-.python, .team, .project-v-stem {
+.python, .team {
 	width: 80%;
 	margin-left: 10%;
 	padding-top: 5vh;
@@ -296,10 +296,14 @@ h1.title {
 }
 
 /* Project vSTEM */
+.project-v-stem {
+	text-align: center;
+}
+
 .project-v-stem #carousel-project-v-stem {
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
+	width: 100%;
 	background-color: black;
 	border-radius: 35px;
 	overflow: hidden;
@@ -341,7 +345,7 @@ h1.title {
 
 .project-v-stem-links .card{
 	margin: 20px auto;
-	width: 30rem;
+	width: 15rem;
 	border-radius: 15px;
 }
 
@@ -390,6 +394,11 @@ h1.title {
 	}
 	.project-v-stem .faq {
 		margin-left: 30px;
+	}
+	.project-v-stem-links .card{
+		margin: 20px auto;
+		width: 30rem;
+		border-radius: 15px;
 	}
 }
 
