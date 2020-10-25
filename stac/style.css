@@ -173,6 +173,7 @@ h1 span {
 	border: 0px;
 }
 
+/* Footer */
 #footer .row {
 	width: 90%;
 	margin-left: 5%;
@@ -202,13 +203,21 @@ h1 span {
 	display: block;
 }
 
-.python {
+/* General Spacing */
+.python, .team, .project-v-stem {
 	width: 80%;
 	margin-left: 10%;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
 
+h1.title {
+	text-align: center;
+	padding-top: 10vh;
+	font-weight: bolder;
+}
+
+/* Python */
 .python .col-xl-8 {
 	display: flex;
 	align-items: center;
@@ -232,19 +241,7 @@ h1 span {
 	width: 80%;
 }
 
-h1.title {
-	text-align: center;
-	padding-top: 10vh;
-	font-weight: bolder;
-}
-
-.team {
-	width: 80%;
-	margin-left: 10%;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
+/* Team */
 .team .col-5 {
 	display: flex;
 	justify-content: center;
@@ -274,6 +271,7 @@ h1.title {
 	border-radius: 10px;
 }
 
+/* Instructors */
 .instructors .card h5 {
 	font-weight: bolder;
 }
@@ -287,6 +285,7 @@ h1.title {
 	font-weight: 300;
 }
 
+/* Programs */
 .programs {
 	width: 80%;
 	margin-left: 10%;
@@ -296,6 +295,88 @@ h1.title {
 	font-weight: bolder;
 }
 
+/* Project vSTEM */
+.project-v-stem #carousel-project-v-stem {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	background-color: black;
+	border-radius: 35px;
+	overflow: hidden;
+}
+
+.project-v-stem #carousel-project-v-stem img {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 75% !important;
+	min-height: 300px !important;
+	object-fit: contain;
+}
+
+.project-v-stem .section-head {
+	border: solid 4px black;
+	border-radius: 10px;
+	padding: 15px 0;
+}
+
+.project-v-stem .section-head h3 {
+	margin-bottom: 0;
+}
+
+.project-v-stem .about-the-project div, .project-v-stem .faq div {
+	margin-bottom: 30px;
+}
+
+.project-v-stem-instructables {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.project-v-stem-links {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.project-v-stem-links .card{
+	margin: 20px auto;
+	width: 30rem;
+	border-radius: 15px;
+}
+
+.project-v-stem-team {
+	margin-top: 50px;
+	margin-bottom: -5vh;
+	background-color: #192841;
+	min-height: 600px;
+	color: grey;
+}
+
+.project-v-stem-team .title {
+	color: white;
+}
+
+.project-v-stem-team .profile {
+	display: block;
+	margin-bottom: 15px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-v-stem-team .row{
+	padding: 15px 5rem;
+}
+
+.project-v-stem-team h5 {
+	font-weight: bold;
+	color: white;
+}
+
+.project-v-stem-team h6 {
+	color: rgba(216, 215, 215, 0.781);
+}
 
 @media (min-width: 1200px) {
 	.courses {
@@ -306,6 +387,9 @@ h1.title {
 		padding-left: 5vh;
 		display: flex;
 		align-items: center;
+	}
+	.project-v-stem .faq {
+		margin-left: 30px;
 	}
 }
 
