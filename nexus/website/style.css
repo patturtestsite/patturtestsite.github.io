@@ -1,0 +1,270 @@
+body {
+	font-family: Raleway;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.center-element {
+	display: flex;
+	justify-content: center;
+}
+
+nav.top {
+	background-color: white;
+	width: 100%;
+}
+
+img.navbar-brand {
+	width: 20%;
+}
+img.top-img {
+	width: 45px;
+}
+
+ul.hidden {
+	visibility: hidden;
+}
+
+ul {
+	font-size: 20px;
+}
+
+ul a.nav-link {
+	color: black;
+}
+
+a.nav-link:hover {
+	color: gray;
+}
+
+.hero {
+	width: 85%;
+	margin-left: 7.5%;
+	height: 80vh;
+	display: flex;
+	align-items: flex-end;
+	object-position: top;
+}
+
+.hero h1 {
+	font-weight: bolder;
+	font-size: 3.5rem;
+	margin-bottom: 2vh;
+}
+
+.hero p {
+	margin-top: 2vh;
+	font-size: 18px;
+}
+.hero {
+	display: flex;
+	align-items: flex-end;
+}
+
+.hero .col-lg-5 {
+	display: flex;
+	align-items: flex-end;
+}
+
+.hero .col-7 img {
+	width: 100%;
+}
+
+h1 span {
+	color: #152238;
+}
+
+.raise {
+	width: 85%;
+	background-color: #d8d8d8;
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+	z-index: 0;
+}
+
+.card-info {
+	background-color: #d8d8d8;
+}
+
+.raise h1 {
+	font-weight: bold;
+}
+
+.raise .row {
+	padding: 4%;
+}
+
+
+.raise .col-4 .card-body {
+	padding: 10%;
+}
+
+.raise .card-testimonial {
+	background-color: #152238;
+	color: white;
+}
+
+.card-title {
+	font-weight: 600;
+}
+
+.card-text {
+	font-weight: 400;
+}
+
+.row-info p {
+	font-size: 15px;
+}
+
+.row-info h6 {
+	font-weight: 600;
+}
+
+.raise .col-xl-1 {
+	visibility: hidden;
+}
+
+.stories h1 {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.stories {
+	width: 85%;
+	margin-top: 10vh;
+}
+
+.stories .row {
+	display: flex;
+	align-items: center;
+	margin-top: 5vh;
+}
+
+.events {
+	width: 85%;
+	margin-top: 10vh;
+}
+
+.events .intro {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.events .intro h1, .intro p span {
+	font-weight: bold;
+}
+
+.events .intro h1, .events .intro p {
+	text-align: center;
+}
+
+.main-event {
+	background-image: url('conference.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 95%;
+	margin-top: 2.5%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.main-event .card {
+	display: flex;
+	align-items: center;
+}
+
+.blog {
+	width: 85%;
+	background-color: #d8d8d8;
+	margin-top: 10vh;
+}
+
+.blog h1 {
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.blog-posts {
+	padding: 4%;
+}
+
+p.date {
+	color: gray;
+}
+
+.blog .card {
+	transition: 1s transform;
+	height: 100%;
+	display: flex;
+}
+
+.blog .card:hover {
+    transform: translateY(-1rem);
+}
+
+.blog .card-body {
+	display: flex;
+	align-items: center;
+}
+
+.blog .col-xl-4 {
+	margin-top: 1.5rem;
+}
+
+.events .col-5 .card-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.contact {
+	padding-top: 5%;
+}
+
+.contact h1 {
+	color: white;
+	font-weight: bolder;
+	font-size: 4rem;
+}
+
+.contact h6 {
+	color: gray;
+	font-weight: 600;
+}
+
+.contact h3 {
+	color: #d8d8d8;
+}
+
+.contacttwo p {
+	color: white;
+}
+
+.contacttwo h6 {
+	color: gray;
+	font-weight: 600;
+}
+
+.contacttwo .col-xl-3 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contacttwo .col-xl-3 p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.btn-primary {
+	background-color: #152238;
+	border: none;
+}
