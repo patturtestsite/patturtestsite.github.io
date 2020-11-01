@@ -605,3 +605,7 @@ h1.ready {
   background-color:  #3f939e;
   filter: opacity(0.8);
 }
+
+.btn-primary a {
+  color: white;
+}
