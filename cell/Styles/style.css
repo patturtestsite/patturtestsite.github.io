@@ -43,14 +43,29 @@ body {
 	filter: invert(100%);
 }
 
-.main .home .hamburger-logo img {
-	margin: 10px;
-	margin-top: 20px;
-	width: 50px;
-	right: 0%;
-	position: fixed;
+.main .home .hamburger-logo {
+	height: 10vh;
+	width: 100%;
+	right: 1%;
+	position: absolute;
 	z-index: 10;
-	filter: invert(90%);
+}
+
+.main .home .hamburger-logo .navsection {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 10;
+}
+
+.main .home .hamburger-logo .navsection a {
+	color: white;
+	font-family: fat;
+}
+
+.main .home .hamburger-logo .navsection a:hover {
+	text-decoration: none;
+	color: #d8d8d8;
 }
 
 .main .home .hamburger-logo img:hover {

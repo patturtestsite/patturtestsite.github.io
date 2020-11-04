@@ -1,0 +1,132 @@
+@font-face {
+  font-family: reg;
+  src: url('Fonts/manroperegular.otf');
+}
+
+@font-face {
+  font-family: skinny;
+  src: url(Fonts/manropelight.otf);
+}
+
+@font-face {
+  font-family: fat;
+  src: url(Fonts/manropebold.otf);
+}
+
+body {
+	overflow-x: hidden;
+	font-family: reg;
+}
+
+.main .home .top-logo img {
+	margin: 10px;
+	width: 50px;
+	position: fixed;
+	z-index: 10;
+	filter: invert(100%);
+}
+
+.home .main-content .blurb {
+	height: 50vh;
+	color: white;
+	background-color: #08376B;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 2vh;
+	border: 1px solid white;
+	border-top: 0px;
+}
+
+.home .main-content .blurb p, .home .main-content .blurb h2 {
+	padding: 2vh;
+	padding-left: 5vh;
+	padding-right: 5vh;
+	font-family: skinny;
+}
+
+.home .main-content .number {
+	height: 50vh;
+	background-color: #08376B;
+	color: white;
+	border: 1px solid white;
+	border-top: 0px;
+	border-left: 0px;
+}
+
+.home .main-content .number h1 {
+	font-size: 4.5rem;
+}
+
+.home .main-content .newsletter {
+	height: 50vh;
+	background-color: #08376B;
+	padding: 1vh;
+	padding-left: 7vh;
+	padding-right: 7vh;
+	color: white;
+	border: 1px solid white;
+	border-top: 0px;
+}
+
+.home .main-content .newsletter form label {
+	font-family: reg;
+	color: #d8d8d8;
+}
+
+.home .main-content .navsection {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #08376B;
+	height: 10vh;
+	border: 1px solid white;
+	border-left: 0px;
+	border-top: 0px;
+}
+
+.home .main-content .navsection a {
+	color: white;
+	font-family: fat;
+}
+
+.home .main-content .navsection a:hover {
+	text-decoration: none;
+	color: #d8d8d8;
+}
+
+.team-member {
+	height: 45vh;
+	background-color: #08376B;
+	border: 1px solid white;
+	border-left: 0px;
+	border-top: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.team {
+	margin: 0px;
+	height: 90vh;
+	overflow-y: scroll;
+}
+
+.team-member img {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.team::-webkit-scrollbar {
+  width: 0px;
+}
+
+.team::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.team::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.team::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
