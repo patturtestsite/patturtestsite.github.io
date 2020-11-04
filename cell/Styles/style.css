@@ -1,0 +1,338 @@
+@font-face {
+  font-family: reg;
+  src: url('Fonts/manroperegular.otf');
+}
+
+@font-face {
+  font-family: skinny;
+  src: url(Fonts/manropelight.otf);
+}
+
+@font-face {
+  font-family: fat;
+  src: url(Fonts/manropebold.otf);
+}
+
+body {
+	overflow-x: hidden;
+	font-family: reg;
+}
+
+.intro-animation {
+	width: 100vw;
+	height: 100vh;
+	background-color: #08376B;
+	position: fixed;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: leave 3s;
+}
+@keyframes leave {
+  to {
+   display: none;
+  }
+}
+
+.main .home .top-logo img {
+	margin: 10px;
+	width: 50px;
+	position: fixed;
+	z-index: 10;
+	filter: invert(100%);
+}
+
+.main .home .hamburger-logo img {
+	margin: 10px;
+	margin-top: 20px;
+	width: 50px;
+	right: 0%;
+	position: fixed;
+	z-index: 10;
+	filter: invert(90%);
+}
+
+.main .home .hamburger-logo img:hover {
+	filter: invert(0%);
+	cursor: pointer;
+}
+
+
+.main {
+	padding-right: 0px;
+}
+
+.home {
+	height: 100vh;
+	background-color: #08376B;
+	display: none;
+}
+
+.home .featured svg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 30vh;
+	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.1) ), url('https://img.sunset02.com/sites/default/files/styles/marquee_large_2x/public/image/2017/04/main/el-capitan-getty-0517.jpg?itok=vuJS4hXh');
+	color: transparent;
+}
+
+.home .featured .text {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	color: white;
+	padding-top: 15vh;
+}
+
+.home .featured .text h6 {
+	color: #33C0ED;
+}
+
+.home .featured .text h5 {
+	font-family: skinny;
+}
+
+.home .featured .text h2 {
+	font-family: fat;
+}
+
+.home .blogs {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 40vh;
+}
+
+.home .blogs .blog-item img {
+	width: 100%;
+	border-radius: 10px;
+	height: 20vh;
+	object-fit: cover;
+	margin-top: 1vh;
+	filter: brightness(50%);
+	margin-bottom: 2vh;
+}
+
+.home .blogs .blog-item .blog-titles {
+	font-family: fat;
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	margin-left: 1vw;
+	z-index: 1;
+}
+
+.home .blogs .blog-item .blog-titles a {
+	color: white;
+}
+
+.home .blogs .main-title {
+	margin-top: 25vh;
+	padding-left: 2vw;
+	color: white;
+}
+
+.home .blogs .main-title h1 {
+	font-size: 4rem;
+	font-family: fat;
+}
+
+.home .blogs .main-title h5 {
+	font-family: skinny;
+}
+
+.blogs .all-blogs {
+	height: 100vh;
+	overflow-y: scroll;
+	z-index: 10;
+}
+
+.blogs .btn-readblogs {
+	margin-bottom: 3vh;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.all-blogs::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.all-blogs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.all-blogs::-webkit-scrollbar-thumb {
+  background: #33C0ED;
+  border-radius: 10px;
+}
+
+.all-blogs::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+svg.backgrounddots {
+	margin-top: -1px;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}
+
+.about {
+	z-index: -1;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}
+
+.about .text {
+	width: 60%;
+	margin-left: 20%;
+	color: black;
+}
+
+.about .text h1 {
+	font-family: fat;
+	font-size: 3rem;
+	padding-bottom: 2vh;
+	margin-bottom: 2vh;
+}
+
+.about .text h5 {
+	font-family: skinny;
+}
+
+.all-testimonials {
+	width: 400vh;
+	overflow-x: scroll;
+}
+
+.testimonials {
+	color: black;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+	padding-bottom: 15vh;
+}
+
+.testimonials .testimonial {
+	width: 95%;
+}
+
+.testimonials h1 {
+	font-family: fat;
+	font-size: 3rem;
+	color: black;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.testimonials .testimonial h4 {
+	font-family: fat;
+	color: #08376B;
+	padding-top: 1vh;
+}
+
+.testimonials .testimonial h6.quote {
+	padding-bottom: 3vh;
+}
+
+.testimonials .testimonial .name {
+	font-family: skinny;
+	color: #08376B;
+	padding-bottom: 7vh;
+}
+
+.testimonials .horizontal-scroller {
+	overflow-x: scroll;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.testimonials .horizontal-scroller::-webkit-scrollbar {
+  width: 0px;
+}
+
+.testimonials .horizontal-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.testimonials .horizontal-scroller::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+.testimonials .horizontal-scroller::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.testimonials .arrows {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.testimonials .arrows a {
+	color: black;
+}
+
+.testimonials .arrows span {
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.testimonials .arrows span:hover {
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+.footer {
+	background-color: #08376B;
+	color: white;
+}
+
+.footer .inner {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+}
+
+.footer .inner .top h1 {
+	padding-bottom: 5vh;
+	font-family: fat;
+}
+
+.footer .inner .description h4 {
+	padding-bottom: 5vh;
+	font-family: skinny;
+}
+
+.footer .inner .contact {
+	padding-bottom: 5vh;
+}
+
+.footer .inner .pages .page {
+	padding-bottom: 5vh;
+	border-top: 5px solid #33C0ED;
+	padding-top: 2.5vh;
+}
+
+.footer .pages .page h4 {
+	font-family: fat;
+}
+
+.footer .pages .page h6 {
+	font-family: skinny;
+}
+
+.footer .social i {
+	font-size: 30px;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 5vh;
+	color: #33C0ED;;
+}
