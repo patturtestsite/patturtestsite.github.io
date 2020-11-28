@@ -27,11 +27,30 @@ body {
 }
 
 .mobile img {
-	width: 70%;
 	margin-top: 10vh;
+	width: 70%;
 }
 
 .mobile h1 {
+	width: 70%;
+	font-family: fat;
+	margin-left: 15%;
+	margin-top: 5vh;
+}
+
+.under-construction {
+	height: 100vh;
+	width: 100vw;
+	z-index: 99;
+	background-color: #08376B;
+	color: white;
+}
+
+.under-construction img {
+	width: 50%;
+}
+
+.under-construction h1 {
 	width: 70%;
 	font-family: fat;
 	margin-left: 15%;
@@ -221,7 +240,7 @@ svg.backgrounddots {
 	font-family: skinny;
 }
 
-.team, .articles, .contacts {
+.team, .articles, .contacts, .submit {
 	color: black;
 	background-image: radial-gradient(gray 1%, transparent 5%);
 	background-position: 0 0, 50px 50px;
@@ -235,6 +254,26 @@ svg.backgrounddots {
 	width: 80%;
 	margin-left: 10%;
 	margin-top: 5vh;
+}
+
+.submit h1 {
+	font-family: fat;
+	font-size: 3rem;
+	color: black;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 10vh;
+}
+
+.submit-buttons {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+}
+
+.submit-buttons button {
+	padding: 2vh;
+	font-family: fat;
 }
 
 .team .team-members {
@@ -272,6 +311,14 @@ svg.backgrounddots {
 
 .articles .article {
 	margin-top: 5vh;
+}
+
+.articles .article .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.articles .article a {
+	color: black;
 }
 
 .articles .article h6 {
