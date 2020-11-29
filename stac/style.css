@@ -97,6 +97,13 @@ h1 span {
 	object-fit: cover;
 }
 
+#reviews img.members {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
 #reviews .students {
 	display: flex;
 	justify-content: center;
