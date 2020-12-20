@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="Styles/style2.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<body style="background-color: #08376B;">
+<body>
 	<div class="mobile d-flex align-items-center d-lg-none">
 		<div>
 			<div class="d-flex justify-content-center">
@@ -15,7 +15,23 @@
 			<h1 class="text-center">Oops! Please view our site on a larger screen.</h1>
 		</div>
 	</div>
-	<div class="everything row d-lg-block d-none">
+	<div class="under-construction d-flex align-items-center justify-content-center d-lg-flex">
+		<div>
+			<div class="d-flex justify-content-center">
+				<img src="Images/serverDown.svg">
+			</div>
+			<h1 class="text-center">Page Still Under Construction</h1>
+			<div class="row submit-buttons">
+				<div class="col-6">
+					<button class="btn btn-block btn-primary" onclick="goBack()">Go Back</button>
+				</div>
+				<div class="col-6">
+					<button class="btn btn-block btn-primary">Join <em>The Cell</em></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="everything row d-lg-block d-none" style="filter: opacity(20%);">
 		<div class="col-lg-12 col-12 main">
 			<div id="home" class="home" style="display: block;">
 				<div class="top-logo">
@@ -35,28 +51,14 @@
 							<a href="about.html">ABOUT</a>
 						</div>
 						<div>
+							<a href="submit.html">SUBMIT</a>
+						</div>
+						<div>
 							<a href="contact.html">CONTACT</a>
 						</div>
 					</div>
 				</div>
-				<div class="under-construction d-flex align-items-center justify-content-center d-lg-flex">
-					<div>
-						<div class="d-flex justify-content-center">
-							<img src="Images/serverDown.svg">
-						</div>
-						<h1 class="text-center">Site Still Under Construction</h1>
-						<h1 class="text-center">Want To Join Our Team?</h1>
-						<div class="row submit-buttons">
-							<div class="col-6">
-								<button class="btn btn-block btn-primary">Join <em>The Cell</em></button>
-							</div>
-							<div class="col-6">
-								<button class="btn btn-block btn-primary">Submit Your Articles</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="featured d-none">
+				<div class="featured">
 					<div class="text row">
 						<div class="col-lg-12 col-12">
 							<h2 class="animate__animated animate__fadeIn text-center">Hi! We're <em>The Cell.</em></h2>
@@ -75,7 +77,7 @@
 					</svg>
 				</div>
 			</div>
-			<svg class="wave backgrounddots d-none" style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<svg class="wave backgrounddots" style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path fill="#08376B" fill-opacity="1" d="M0,128L40,138.7C80,149,160,171,240,192C320,213,400,235,480,213.3C560,192,640,128,720,96C800,64,880,64,960,80C1040,96,1120,128,1200,117.3C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
 				<defs>
 				    <filter id="f1" x="0" y="0">
@@ -84,7 +86,7 @@
 				</defs>
 				<path fill="#08376B" fill-opacity="1" d="M0,128L40,138.7C80,149,160,171,240,192C320,213,400,235,480,213.3C560,192,640,128,720,96C800,64,880,64,960,80C1040,96,1120,128,1200,117.3C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" filter="url(#f1)" /></path>
 			</svg>
-			<div id="team" class="team d-none">
+			<div id="team" class="team">
 				<h1 class="text-center">Our Team</h1>
 				<div class="row team-members d-flex justify-content-center">
 					<div class="col-lg-4 member d-flex justify-content-center">
@@ -161,7 +163,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="submit" class="submit d-none">
+			<div id="submit" class="submit">
 				<h1 class="text-center">Want To Join Our Team?</h1>
 				<div class="row submit-buttons">
 					<div class="col-6">
@@ -172,7 +174,7 @@
 					</div>
 				</div>
 			</div>
-			<svg class="wave backgrounddots d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<svg class="wave backgrounddots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 					<path fill="#08376B" fill-opacity="1" d="M0,128L40,138.7C80,149,160,171,240,192C320,213,400,235,480,213.3C560,192,640,128,720,96C800,64,880,64,960,80C1040,96,1120,128,1200,117.3C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
 					<defs>
 					    <filter id="f1" x="0" y="0">
@@ -181,7 +183,7 @@
 					</defs>
 					<path fill="#08376B" fill-opacity="1" d="M0,128L40,138.7C80,149,160,171,240,192C320,213,400,235,480,213.3C560,192,640,128,720,96C800,64,880,64,960,80C1040,96,1120,128,1200,117.3C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" filter="url(#f1)" /></path>
 			</svg>
-			<div class="footer d-none" id="footer">
+			<div class="footer" id="footer">
 				<div class="row inner">
 					<div class="col-10">
 						<div class="row top">
@@ -253,6 +255,11 @@
 		    $(".horizontal-scroller").scrollLeft($(".horizontal-scroller").scrollLeft() - 100)
 		  });
 		});
-</script>
+	</script>
+	<script>
+	function goBack() {
+	  window.history.back();
+	}
+	</script>
 </body>
 </html>

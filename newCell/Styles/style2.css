@@ -39,8 +39,12 @@ body {
 }
 
 .under-construction {
-	height: 100vh;
-	width: 100vw;
+	height: 80vh;
+	position: fixed;
+	border-radius: 10px;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	width: 80vw;
 	z-index: 99;
 	background-color: #08376B;
 	color: white;
@@ -410,4 +414,14 @@ svg.backgrounddots {
 
 .footer .social i:hover {
 	color: #d8d8d8;
+}
+
+h3.paragraph {
+	padding-top: 5vh; padding-bottom: 5vh; width: 70%; margin-left: 15%;
+}
+
+.outer-p {
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
 }
