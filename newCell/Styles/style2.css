@@ -262,7 +262,7 @@ svg.backgrounddots {
 
 .submit h1 {
 	font-family: fat;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	color: black;
 	width: 80%;
 	margin-left: 10%;
@@ -275,9 +275,10 @@ svg.backgrounddots {
 	padding-top: 5vh;
 }
 
-.submit-buttons button {
+.submit-buttons button.submit-page {
 	padding: 2vh;
 	font-family: fat;
+	font-size: 2.25rem;
 }
 
 .team .team-members {
