@@ -332,6 +332,26 @@ svg.backgrounddots {
 	font-size: 11px;
 }
 
+.articles .article .card-body {
+	height: 20vh;
+	position: relative;
+}
+
+.articles .article .card-title {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	right: 0%;
+	left: 0%;
+}
+
+.articles .article .card-content {
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	left: 2%;
+}
+
 .contacts h1 {
 	font-family: fat;
 	color: white;

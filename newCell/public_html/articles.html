@@ -100,11 +100,10 @@
 							<div class="card" style="width: 80%">
 								<img class="card-img-top" src="Images/michael-longmire-L9EV3OogLh0-unsplash.jpg" />
 								<div class="card-body">
-									<h5 class="card-title">
-										<a href="cre-lox-recombination.html"><strong>Cre-Lox Recombination</strong></a>
+									<h5 class="card-title animate_animated animate_fadeIn text-center">
+										<a href="Articles/cre-lox-recombination.html"><strong class="cardtitlestrong">Cre-Lox Recombination</strong></a> 
 									</h5>
-									<br />
-									<div class="row">
+									<div class="row card-content">
 										<div class="col-6 d-flex justify-content-start">
 											<h6> </h6>
 											<h6> </h6>
@@ -112,7 +111,7 @@
 											<h6>By Clarence Un</h6>
 										</div>
 										<div class="col-6 d-flex justify-content-end">
-											<h6>February  24, 2020</h6>
+											<h6>February  24, 2021</h6>
 										</div>
 									</div>
 								</div>
@@ -120,94 +119,20 @@
 						</div>
 						<div class="col-lg-4 article d-flex justify-content-center cms-repeatable">
 							<div class="card" style="width: 80%">
-								<img class="card-img-top" src="Images/default.jpg" />
+								<img class="card-img-top" src="Images/cdc-QEU-QgIOJKA-unsplash.jpg" />
 								<div class="card-body">
-									<h5 class="card-title">
-										<strong><a>Card title</a></strong>
+									<h5 class=" card-title animate__animated animate__fadeIn text-center">
+										<a href="bacteriophages-as-therapeutic-agents.html"><strong class="cardtitlestrong">Bacteriophages as Therapeutic Agents</strong></a>
 									</h5>
-									<br />
-									<div class="row">
+									<div class="row card-content">
 										<div class="col-6 d-flex justify-content-start">
-											<h6>By Aditya Suresh</h6>
+											<h6> </h6>
+											<h6> </h6>
+											<h6> </h6>
+											<h6>By Yiyi Chen</h6>
 										</div>
 										<div class="col-6 d-flex justify-content-end">
-											<h6>November 22, 0</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 article d-flex justify-content-center cms-repeatable">
-							<div class="card" style="width: 80%">
-								<img class="card-img-top" src="Images/default.jpg" />
-								<div class="card-body">
-									<h5 class="card-title">
-										<strong><a>Card title</a></strong>
-									</h5>
-									<br />
-									<div class="row">
-										<div class="col-6 d-flex justify-content-start">
-											<h6>By Aditya Suresh</h6>
-										</div>
-										<div class="col-6 d-flex justify-content-end">
-											<h6>November 22, 2020</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 article d-flex justify-content-center cms-repeatable">
-							<div class="card" style="width: 80%">
-								<img class="card-img-top" src="Images/default.jpg" />
-								<div class="card-body">
-									<h5 class="card-title">
-										<strong><a>Card title</a></strong>
-									</h5>
-									<br />
-									<div class="row">
-										<div class="col-6 d-flex justify-content-start">
-											<h6>By Aditya Suresh</h6>
-										</div>
-										<div class="col-6 d-flex justify-content-end">
-											<h6>November 22, 2020</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 article d-flex justify-content-center cms-repeatable">
-							<div class="card" style="width: 80%">
-								<img class="card-img-top" src="Images/default.jpg" />
-								<div class="card-body">
-									<h5 class="card-title">
-										<strong><a>Card title</a></strong>
-									</h5>
-									<br />
-									<div class="row">
-										<div class="col-6 d-flex justify-content-start">
-											<h6>By Aditya Suresh</h6>
-										</div>
-										<div class="col-6 d-flex justify-content-end">
-											<h6>November 22, 2020</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 article d-flex justify-content-center cms-repeatable">
-							<div class="card" style="width: 80%">
-								<img class="card-img-top" src="Images/default.jpg" />
-								<div class="card-body">
-									<h5 class="card-title">
-										<strong><a>Card title</a></strong>
-									</h5>
-									<br />
-									<div class="row">
-										<div class="col-6 d-flex justify-content-start">
-											<h6>By Aditya Suresh</h6>
-										</div>
-										<div class="col-6 d-flex justify-content-end">
-											<h6>November 22, 2020</h6>
+											<h6>March 17, 2021</h6>
 										</div>
 									</div>
 								</div>
@@ -315,6 +240,15 @@
 					$('.horizontal-scroller').scrollLeft($('.horizontal-scroller').scrollLeft() - 100);
 				});
 			});
+		</script>
+		<script type="text/javascript">
+			var charNum = document.getElementsByClassName("cardtitlestrong");
+			for (var i = 0; i < charNum.length; i++) {
+				if (charNum[i].textContent.length > 53) {
+					charNum[i].textContent = charNum[i].textContent.slice(0, 50);
+					charNum[i].textContent = charNum[i].textContent.concat("...");
+				}
+			}
 		</script>
 	</body>
 </html>
