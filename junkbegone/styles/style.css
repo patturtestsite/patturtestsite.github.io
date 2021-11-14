@@ -1,0 +1,151 @@
+body {
+	overflow-x: hidden;
+	font-family: Red Hat Display;
+}
+
+.hero {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+}
+
+.navbar {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.navbar .logo {
+	font-family: Bungee Inline;
+}
+
+.navbar .menu button {
+	background-color: white;
+}
+
+.navbar .extras a {
+	color: black;
+	background-color: #fcd404;
+	text-decoration: none;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 30px;
+	margin: 5px;
+	font-family: Red Hat Display;
+}
+
+.navbar .extras a:hover {
+	color: black;
+	opacity: 0.8;
+}
+
+.description {
+	width: 80%;
+	margin-left: 10%;
+	font-family: Red Hat Display;
+	color: white;
+}
+
+.description h1 {
+	color: #fcd404;
+	font-weight: bolder;
+	font-family: Red Hat Display;
+	font-size: 4rem;
+}
+
+.description h5 {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.about {
+	font-family: Red Hat Display;
+	background-color: #e5e5e5;
+	color: black;
+}
+
+.about img {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 7.5vh;
+	margin-bottom: 7.5vh;
+	height: 55vh;
+	object-position: center;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.about a {
+	color: black;
+	background-color: #fcd404;
+	text-decoration: none;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 30px;
+	margin: 0px;
+	font-family: Red Hat Display;
+	font-weight: 700;
+}
+
+.about a:hover {
+	color: black;
+	opacity: 0.8;
+}
+
+.gallery h1 {
+	font-family: Red Hat Display;
+	font-weight: bolder;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-size: 3rem;
+}
+
+.gallery img {
+	width: 80%;
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 5vh;
+	border-radius: 10px;
+	height: 40vh;
+}
+
+.testimonials {
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+	background-color: #fcd404;
+}
+
+.testimonials .row {
+	width: 90%;
+	margin-left: 5%;
+	color: black;
+	font-family: Red Hat Display;
+	margin-bottom: 50vh;
+}
+
+.testimonials .all-testimony {
+	margin-top: 15vh;
+	margin-bottom: 5vh;
+}
+
+.testimonials .all-testimony .testimony {
+	background-color: white; 
+	padding: 20px;
+}
+
+.footer {
+	font-family: Red Hat Display;
+	background-color: black;
+	color: white;
+	padding-top: 10vh;
+	padding-bottom: 2.5vh;
+}
+
+.footer i {
+	color: #fcd404;
+}

@@ -1,0 +1,449 @@
+@font-face {
+  font-family: reg;
+  src: url('Fonts/manroperegular.otf');
+}
+
+@font-face {
+  font-family: skinny;
+  src: url(Fonts/manropelight.otf);
+}
+
+@font-face {
+  font-family: fat;
+  src: url(Fonts/manropebold.otf);
+}
+
+body {
+	overflow-x: hidden;
+	font-family: reg;
+}
+
+.mobile {
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+	background-color: #08376B;
+	color: white;
+}
+
+.mobile img {
+	margin-top: 10vh;
+	width: 70%;
+}
+
+.mobile h1 {
+	width: 70%;
+	font-family: fat;
+	margin-left: 15%;
+	margin-top: 5vh;
+}
+
+.under-construction {
+	height: 80vh;
+	position: fixed;
+	border-radius: 10px;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	width: 80vw;
+	z-index: 99;
+	background-color: #08376B;
+	color: white;
+}
+
+.under-construction img {
+	width: 50%;
+}
+
+.under-construction h1 {
+	width: 70%;
+	font-family: fat;
+	margin-left: 15%;
+	margin-top: 5vh;
+}
+
+.main .home .top-logo img {
+	margin: 10px;
+	width: 50px;
+	position: fixed;
+	z-index: 11;
+	filter: invert(100%);
+}
+
+.main .home .hamburger-logo {
+	height: 10vh;
+	width: 100%;
+	right: 1%;
+	position: absolute;
+	z-index: 11;
+}
+
+.main .home .hamburger-logo .navsection {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 11;
+}
+
+.main .home .hamburger-logo .navsection a {
+	color: white;
+	font-family: fat;
+}
+
+.main .home .hamburger-logo .navsection a:hover {
+	text-decoration: none;
+	color: #d8d8d8;
+}
+
+.main .home .hamburger-logo img:hover {
+	filter: invert(0%);
+	cursor: pointer;
+}
+
+
+.main {
+	padding-right: 0px;
+}
+
+.home {
+	height: 40vh;
+	background-color: #08376B;
+	display: none;
+}
+
+.home .featured .text {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	color: white;
+	padding-top: 20vh;
+	z-index: 10;
+}
+
+.home .featured .text h6 {
+	color: #33C0ED;
+}
+
+.home .featured .text h5 {
+	font-family: skinny;
+	width: 70%;
+	margin-left: 15%;
+	color: #e5e5e5;
+}
+
+.home .featured .text h2 {
+	font-family: fat;
+	font-size: 3.5rem;
+	color: white;
+}
+
+.home .blogs {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 40vh;
+}
+
+.home .blogs .blog-item img {
+	width: 100%;
+	border-radius: 10px;
+	height: 20vh;
+	object-fit: cover;
+	margin-top: 1vh;
+	filter: brightness(50%);
+	margin-bottom: 2vh;
+}
+
+.home .blogs .blog-item .blog-titles {
+	font-family: fat;
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	margin-left: 1vw;
+	z-index: 1;
+}
+
+.home .blogs .blog-item .blog-titles a {
+	color: white;
+}
+
+.home .blogs .main-title {
+	margin-top: 25vh;
+	padding-left: 2vw;
+	color: white;
+}
+
+.home .blogs .main-title h1 {
+	font-size: 4rem;
+	font-family: fat;
+}
+
+.home .blogs .main-title h5 {
+	font-family: skinny;
+}
+
+.blogs .all-blogs {
+	height: 100vh;
+	overflow-y: scroll;
+	z-index: 10;
+}
+
+.blogs .btn-readblogs {
+	margin-bottom: 3vh;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.all-blogs::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.all-blogs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.all-blogs::-webkit-scrollbar-thumb {
+  background: #33C0ED;
+  border-radius: 10px;
+}
+
+.all-blogs::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+svg.backgrounddots {
+	margin-top: -1px;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}
+
+.about {
+	z-index: -1;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}
+
+.about .text {
+	width: 60%;
+	margin-left: 20%;
+	color: black;
+}
+
+.about .text h1 {
+	font-family: fat;
+	font-size: 3rem;
+	padding-bottom: 2vh;
+	margin-bottom: 2vh;
+}
+
+.about .text h5 {
+	font-family: skinny;
+}
+
+.team, .articles, .contacts, .submit {
+	color: black;
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}
+
+.team h1 {
+	font-family: fat;
+	font-size: 3rem;
+	color: black;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5vh;
+}
+
+.submit h1 {
+	font-family: fat;
+	font-size: 3.5rem;
+	color: black;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 10vh;
+}
+
+.submit-buttons {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+}
+
+.submit-buttons button.submit-page {
+	padding: 2vh;
+	font-family: fat;
+	font-size: 2.25rem;
+}
+
+.team .team-members {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.team .team-members .member {
+	padding-top: 2.5vh;
+	border-top: 0px solid #d8d8d8;
+}
+
+.team .team-members .member img {
+	width: 30vh;
+	height: 30vh;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.team .team-members .member h2 {
+	font-family: fat;
+	margin-top: 2vh;
+}
+
+.all-articles {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.articles .article img {
+	width: 100%;
+	object-fit: cover;
+	height: 34vh;
+}
+
+.articles .article {
+	margin-top: 5vh;
+}
+
+.articles .article .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.articles .article a {
+	color: black;
+}
+
+.articles .article h6 {
+	font-family: skinny;
+	font-size: 11px;
+}
+
+.articles .article .card-body {
+	height: 20vh;
+	position: relative;
+}
+
+.articles .article .card-title {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	right: 0%;
+	left: 0%;
+}
+
+.articles .article .card-content {
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	left: 2%;
+}
+
+.contacts h1 {
+	font-family: fat;
+	color: white;
+}
+
+.contacts .contact-row {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.contacts .contact-row h2 {
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+	border-top: 1px solid black;
+	color: black;
+	font-family: skinny;
+}
+
+.contacts .contact-row form {
+	background-color: #08376B;
+	padding: 4vh;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+	background-color: #08376B;
+	color: white;
+}
+
+.footer .inner {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5vh;
+}
+
+.footer .inner .top h1 {
+	padding-bottom: 5vh;
+	font-family: fat;
+}
+
+.footer .inner .description h4 {
+	padding-bottom: 5vh;
+	font-family: skinny;
+}
+
+.footer .inner .contact {
+	padding-bottom: 5vh;
+}
+
+.footer .inner .pages .page {
+	padding-bottom: 5vh;
+	border-top: 5px solid #33C0ED;
+	padding-top: 2.5vh;
+}
+
+.footer .pages .page a {
+	color: white;
+}
+
+.footer .pages .page a:hover {
+	text-decoration: none;
+	color: #d8d8d8;
+}
+
+.footer .pages .page h4 {
+	font-family: fat;
+}
+
+.footer .pages .page h6 {
+	font-family: skinny;
+}
+
+.footer .social i {
+	font-size: 30px;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 5vh;
+	color: #33C0ED;
+}
+
+.footer .social i:hover {
+	color: #d8d8d8;
+}
+
+h3.paragraph {
+	padding-top: 5vh; padding-bottom: 5vh; width: 70%; margin-left: 15%;
+}
+
+.outer-p {
+	background-image: radial-gradient(gray 1%, transparent 5%);
+	background-position: 0 0, 50px 50px;
+	background-size: 50px 50px;
+}

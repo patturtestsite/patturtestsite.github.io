@@ -360,3 +360,11 @@ a.btn-primary:hover {
 	width: 80%;
 	margin-left: 10%;
 }
+
+#attendeePoints{
+	width:50%; 
+	margin-top:2%; 
+	margin-bottom:2%; 
+	height:600px;
+    margin-left:25%;
+}

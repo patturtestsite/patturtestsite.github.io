@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masking A Difference</title>
+	<link rel="icon" type="image/png" href="masklogo.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<link href="lightbox.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body class="animate__animated animate__fadeIn">
+	<div id="navigation">
+		<div class="row" >
+			<div class="col-lg-6 col-12 naved justify-content-center align-items-center">
+				<div>
+					<a href="index.html"><h1>Home</h1></a>
+					<a href="about.html"><h1>About</h1></a>
+					<a href="team.html"><h1>Team</h1></a>
+					<a href="volunteer.html"><h1>Volunteer Info</h1></a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12 naved justify-content-center align-items-center">
+				<div class="contact-nav">
+					<h3>Say Hi</h3>
+					<h6>+1(888)888-8888</h6>
+					<h6>maskingadifference2020@gmail.com</h6>
+					<h6>1234 Main St, San Jose, CA 95129</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar">
+		<div class="row">
+			<div class="col d-xl-flex image">
+				<img class="d-none d-xl-flex" src="logo.png" style="width: 40%;">
+				<img class="d-flex d-xl-none white bottom-logo" src="masklogo.png" style="width: 50px;">
+			</div>
+			<div class="col d-xl-flex d-flex menu">
+				<i id="menu-getter" class="fas fa-bars"></i>
+				<i id="menu-leaver" class="fas fa-times"></i>
+			</div>
+			<div class="col d-xl-flex d-none more">
+				<div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Locations
+					  </button>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="southbay.html">South Bay (North)</a>
+					    <a class="dropdown-item" href="southbaysouth.html">South Bay (South)</a>
+					    <a class="dropdown-item" href="eastbay.html">East Bay</a>
+					    <a class="dropdown-item" href="sanjoaquin.html">San Joaquin</a>
+					    <a class="dropdown-item" href="orangecounty.html">Orange County</a>
+					    <a class="dropdown-item" href="seattle.html">Seattle</a>
+					    <a class="dropdown-item" href="cary.html">Cary</a>
+					    <a class="dropdown-item" href="aurora.html">Aurora</a>
+					    <a class="dropdown-item" href="austin.html">Austin</a>
+					    <a class="dropdown-item" href="chandler.html">Chandler</a>
+					    <a class="dropdown-item" href="forsyth.html">Forsyth</a>
+					    <a class="dropdown-item" href="longisland.html">Long Island</a>
+					    <a class="dropdown-item" href="browardcounty.html">Broward County</a>
+					    <a class="dropdown-item" href="bangalore.html">Bangalore</a>
+					    <a class="dropdown-item" href="hsinchu.html">Hsinchu</a>
+					    <a class="dropdown-item" href="bangkok.html">Bangkok</a>
+					  </div>
+					</div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    More
+					  </button>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="donors.html">Donors</a>
+					    <a class="dropdown-item" href="contact.html">Contact</a>
+					    <a class="dropdown-item" href="newsletter.html">Newsletter</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="hero">
+		<div class="row">
+			<div class="col-xl-6 col-12 inHero hero2">
+				<div class="content">
+					<h1 class="main">Fostering community efforts around the world to help those who need it.</h1>
+					<div class="row bynumbers">
+						<div class="col-4 numbers">
+							<h6>Masks Made</h6>
+							<h3><span class="counter">6500</span>+</h3>
+						</div>
+						<div class="col-4 numbers">
+							<h6>Cards Made</h6>
+							<h3><span class="counter">1500</span>+</h3>
+						</div>
+						<div class="col-4 numbers">
+							<h6>Money Raised</h6>
+							<h3><span class="counter">3400</span>+</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 d-xl-block d-none hero inHero">
+			</div>
+		</div>
+	</div>
+	<div id="mission">
+		<div>
+			<h1 class="ready wow animate_animated animate__fadeInUp">We hope to bring the community together and provide PPE (protective personal equipment)to those who need it.</h1>
+		</div>
+		<span id="visiblespan"></span> 
+	</div>
+	<div id="impact">
+		<div class="row">
+			<div class="col-1">
+			</div>
+			<div class="col-10">
+				<h1 class="impact-header">What We've Done So Far</h1>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>South Bay (North), CA</h2>
+						<a href="https://www.instagram.com/maskingadifference/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="southbay.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/southbayn1.png" data-lightbox="southbay" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/southbayn2.png" data-lightbox="southbay">Image #1</a></li>
+									<li><a href="images/southbayn3.png" data-lightbox="southbay">Image #2</a></li>
+									<li><a href="images/southbayn4.png" data-lightbox="southbay">Image #3</a></li>
+									<li><a href="images/southbayn5.png" data-lightbox="southbay">Image #4</a></li>
+									<li><a href="images/southbayn6.png" data-lightbox="southbay">Image #5</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="southbay.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>South Bay (South), CA</h2>
+						<a href="https://www.instagram.com/maskingadifferencesouthbay/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="southbaysouth.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/southbay1.png" data-lightbox="southbaysouth" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/southbay2.png" data-lightbox="southbaysouth">Image #1</a></li>
+									<li><a href="images/southbay3.png" data-lightbox="southbaysouth">Image #2</a></li>
+									<li><a href="images/southbay4.png" data-lightbox="southbaysouth">Image #3</a></li>
+									<li><a href="images/southbay5.png" data-lightbox="southbaysouth">Image #4</a></li>
+									<li><a href="images/southbay6.png" data-lightbox="southbaysouth">Image #5</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="southbaysouth.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>Orange County, CA</h2>
+						<a href="https://www.instagram.com/maskingadifferenceoc/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="orangecounty.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/orangecounty1.jpg" data-lightbox="orangecounty" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/orangecounty2.jpg" data-lightbox="orangecounty">Image #1</a></li>
+									<li><a href="images/orangecounty3.jpg" data-lightbox="orangecounty">Image #2</a></li>
+									<li><a href="images/orangecounty4.jpg" data-lightbox="orangecounty">Image #3</a></li>
+									<li><a href="images/orangecounty5.jpg" data-lightbox="orangecounty">Image #4</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="orangecounty.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>Aurora, IL</h2>
+						<a href="https://www.instagram.com/maskingadifference_aurora_il/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="aurora.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/aurora1.JPG" data-lightbox="aurora" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/aurora2.JPG" data-lightbox="aurora">Image #1</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="aurora.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>Seattle, WA</h2>
+						<a href="https://www.instagram.com/maskingadifferencewa/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="seattle.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/seattle4.jpg" data-lightbox="seattle" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/seattle1.jpg" data-lightbox="seattle">Image #1</a></li>
+									<li><a href="images/seattle2.jpg" data-lightbox="seattle">Image #1</a></li>
+									<li><a href="images/seattle3.jpg" data-lightbox="seattle">Image #1</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="seattle.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location row wow animate__animated animate__fadeInUp">
+					<div class="col-3 d-lg-flex d-none col-logo">
+						<img class="loc-logo" src="default.jpg">
+					</div>
+					<div class="col-lg-9 col-12">
+						<h2>Austin, TX</h2>
+						<a href="https://www.instagram.com/maskingadifferencetx/" target="_blank"><h6>Follow Us On Instagram</h6></a>
+						<div class="row bottom-loc">
+							<div class="col d-flex justify-content-start">
+								<a href="austin.html"><h6>Contribute</h6></a>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<a href="images/austin1.jpg" data-lightbox="austin" ><h6>Gallery</h6></a>
+								<ul class="d-none">
+									<li><a href="images/austin2.jpg" data-lightbox="austin">Image #1</a></li>
+									<li><a href="images/austin3.jpg" data-lightbox="austin">Image #1</a></li>
+									<li><a href="images/austin4.jpg" data-lightbox="austin">Image #1</a></li>
+									<li><a href="images/austin5.png" data-lightbox="austin">Image #1</a></li>
+									<li><a href="images/austin6.png" data-lightbox="austin">Image #1</a></li>
+								</ul>
+							</div>
+							<div class="col d-flex justify-content-end">
+								<a href="austin.html"><h6>&#8594;</h6></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1">
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3f939e" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	<div id="partners">
+		<h1 class="impact-header2">Thanks To Our Partners!</h1>
+		<div class="row row-partners">
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="cusd.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="ascension.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="bayside.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="sundara.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="covenant.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="texas.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="caring.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="austin.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="austindis.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="fesco.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="gilead.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="health.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="stanford.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="westvalley.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="bwc.png">
+			</div>
+			<div class="col-xl-2 col col-partner">
+				<img class="img-partner white" src="redcross.png">
+			</div>
+		</div>
+		<!-- <div class="row row-partners hi">
+			<div class="col-xl-2 col-partner">
+				<img class="img-partner" src="fire.png">
+			</div>
+			<div class="col-xl-2 col-partner">
+				<img class="img-partner" src="sherrif.png">
+			</div>
+			<div class="col-xl-2 col-partner">
+				<img class="img-partner" src="santa.png">
+			</div>
+			<div class="col-xl-2 col-partner">
+				<img class="img-partner" src="fremont.png">
+			</div>
+		</div> -->
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="transform: rotate(180deg); margin-top: -1px;"><path fill="#3f939e" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+	<div id="extra-about">
+		<div class="row">
+			<div class="col-xl-6 col-12 join wow animate__animated animate__fadeInLeft">
+				<div>
+					<h1>Why Join?</h1>
+					<p>Many citizens feel a lack of motivation to head out to purchase materials to make their own masks. Through our donations, we will be able to supply all volunteers with the materials they need to help out. This is also a community effort, bringing together individuals that are already making masks, to collectively and consistently supply a large number of PPE to hospitals, shelters, and MORE.</p>
+					<button class="btn btn-primary btn-block" style="margin: 0;"><a href="about.html">Learn More</a></button>
+				</div>
+			</div>
+			<div class="col-xl-6 col-12 join justify-content-end-xl d-xl-flex d-none wow animate__animated animate__fadeInRight">
+				<img src="team.svg">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-6 col-12 join justify-content-start d-xl-flex d-none wow animate__animated animate__fadeInLeft">
+				<img src="presidents.png">
+			</div>
+			<div class="col-xl-6 col-12 join wow animate__animated animate__fadeInRight">
+				<div>
+					<h1>Presidential Award</h1>
+					<p>This is a great way to earn recognition for all the hard work and hours you are putting into helping the heroes and the vulnerable during these tough times. This would be an example of an award to include in college apps, resumes, etc. You will be receiving a certificate for your hours (award type and the number of hours vary). For more information please click on the "Learn More" button.</p>
+					<button class="btn btn-primary btn-block" style="margin: 0;"><a href="https://presidentialserviceawards.org/eligibility" target="_blank">Learn More</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="help">
+		<h1 class="impact-header">How Can You Help?</h1>
+		<h6 class="text-center" style="padding-bottom: 5vh;">Here are a few ways to "ma(s)k a difference!"</h6>
+		<div class="row helprow">
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="border-left: none;">
+				<i class="fas fa-money-check-alt"></i>
+				<h3>Donate!</h3>
+				<p>If you have materials or money that you feel would support our program, please donate!</p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+				<i class="fas fa-head-side-mask"></i>
+				<h3>Sew Masks!</h3>
+				<p>If you are interested in sewing or you're looking for something to do in your free time, this is a great task to take on!</p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+				<i class="fas fa-hand-holding-heart"></i>
+				<h3>Make cards!</h3>
+				<p>This is an easy, quick, and fun way to make change. Use your creativity to make someone's day!</p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+		</div>
+		<div class="row helprow">
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="border-bottom: none; border-left: none;">
+				<i class="fas fa-chart-line"></i>
+				<h3>Fundraising Coordinator</h3>
+				<p>This role is a great way to contribute by reaching out to people you know to collect donations and funds. You can apply to be a coordinator on the executive team. </p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="border-bottom: none;" style="animation-delay: 0.2s;">
+				<i class="fas fa-mobile"></i>
+				<h3>PR Video Editor/ Social Media Management!</h3>
+				<p>This role is perfect for you if you have interest in video editing, making flyers, and staying active on social media. Apply to be on the executive team!</p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+			<div class="col-lg-4 col-12 helpind wow animate__animated animate__fadeInUp" style="border-bottom: none;" style="animation-delay: 0.4s;">
+				<i class="fas fa-file-image"></i>
+				<h3>Lend Equipment!</h3>
+				<p>Some of our volunteers are masters at sewing by hand or know how to use a sewing machine but they do not have one or it is broken! Lending materials would be amazing!</p>
+				<button class="btn btn-primary btn-block" style="margin: 0;"><a href="volunteer.html">See More Details</a></button>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="row d-xl-flex d-none">
+			<div class="col-2 right">
+				<img class="white bottom-logo" src="masklogo.png">
+			</div>
+			<div class="col-10 left">
+			</div>
+		</div>
+		<div class="row" style="padding-top: 5vh;">
+			<div class="col-xl-2 d-xl-block d-none right">
+				<h6>Lorem Ipsum Dior.</h6>
+				<p style="color: white;">Copyright Masking A Difference, All Rights Reserved</p>
+			</div>
+			<div class="col-xl-1 d-xl-flex d-none">
+			</div>
+			<div class="col-xl-9 col-12 left">
+				<h1>Have any questions or comments? Let us know!</h1>
+				<div class="row bottom-contact justify-content-start">
+					<div class="col-xl-4 col-lg-6 col-12 thing">
+						<h5>Get In Touch</h5>
+						<p>maskingadifference2020@gmail.com</p>
+						<p>+1(888)888-1234</p>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-12 thing">
+						<h5>Social</h5>
+						<p>Instagram</p>
+						<p>Facebook</p>
+						<p>YouTube</p>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-12 thing">
+						<h5>Legal</h5>
+						<p>Terms & Service</p>
+						<p>Privacy Policy</p>
+					</div>
+				</div>
+				<p class="text-center d-block d-xl-none" style="color: white; font-family: manropethin; font-size: 10px;">Copyright Masking A Difference, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/e50d821164.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+        new WOW().init();
+    </script>
+	<script>
+		$(window).scroll(function() {
+		    if ($('#visiblespan').is(':visible')) {
+		        setTimeout(function(){ 
+				  $('.ready').delay(300).slideDown('slow');
+				});
+		    }
+		});
+		$('.counter').each(function () {
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 2000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		});
+	</script>
+	<script type="text/javascript">
+		var hero2 = document.getElementsByClassName('hero2');
+		hero2
+	</script>
+	<script type="text/javascript">
+		var menu = document.getElementById('menu-getter');
+		var menu2 = document.getElementById('menu-leaver');
+		var navigation = document.getElementById('navigation');
+		menu.addEventListener("click", open)
+		function open() {
+				navigation.style.animation = "menu-intro 4s";
+				navigation.style.display = "flex";
+				menu.style.display = "none";
+				menu2.style.display = "flex";
+		}
+		menu2.addEventListener("click", close)
+		function close() {
+				menu2.style.display = "none";
+				menu.style.display = "flex";
+				navigation.style.display = "none";
+		}
+	</script>
+	 <script>
+	var images=new Array('donation1.jpg','donation2.jpg', 'donation4.jpg');
+	var nextimage=0;
+	doSlideshow();
+
+	function doSlideshow(){
+	    if(nextimage>=images.length){nextimage=0;}
+	    $('.hero')
+	    .css('background','linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("'+images[nextimage++]+'")')
+	    .css('background-size', 'cover')
+	    .fadeIn(500,function(){
+	        setTimeout(doSlideshow,5000);
+	    });
+	}
+	</script>
+	<script src="lightbox.js"></script>
+</body>
+</html>

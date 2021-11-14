@@ -1,0 +1,723 @@
+body {
+	overflow-x: hidden;
+	font-family: Poppins;
+	width: 100vw;
+}
+
+@font-face {
+  font-family: boldfont;
+  src: url(big_john.otf);
+}
+
+@font-face {
+	font-family: avenir;
+	src: url(avenir.otf);
+}
+
+p, a {
+	font-family: avenir;
+}
+
+.row {
+	margin: 0;
+}
+
+.socials {
+	background-color: #000080;
+	position: fixed;
+	height: 7rem;
+	width: 4rem;
+	color: white;
+	margin-top: 40vh;
+	right: 0%;
+	z-index: 10;
+}
+
+.socials i {
+	font-size: 20px;
+}
+
+.navbar {
+	height: 10vh;
+	background-color: rgba(10, 10, 10, 0.8);
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	z-index: 10;
+}
+
+.navbar .nav-in a {
+	margin-right: 25px;
+	font-weight: lighter;
+	color: white;
+}
+
+.navbar .nav-in a:hover {
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.navbar .nav-in a.last {
+	margin-right: 0px;
+}
+
+.navbar .navlogo {
+	position: absolute;
+	left: 5%;
+}
+
+.navbar .navlogo h6 {
+	font-weight: bolder;
+	color: white;
+	font-size: 1.7rem;
+}
+
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .dropdown:hover .dropdown-content {display: block;}
+
+.nav-collapse {
+	position: fixed; margin-top: 10vh; width: 100%; z-index: 10;
+}
+
+.nav-collapse .card {
+	border-radius: 0px; background-color: rgba(10, 10, 10, 0.8); color: white;
+}
+
+.nav-collapse .card a {
+	color: white;
+}
+
+.hero {
+	height: 90vh;
+	background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('hands.jpg');
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	z-index: -1;
+}
+
+.hero .text {
+	width: 70%;
+	margin-left: 15%;
+	height: 80%;
+}
+
+.hero .text h1 {
+	width: 70%;
+	margin-left: 30%;
+	text-align: right;
+	font-weight: bolder;
+	font-family: Poppins;
+	font-size: 3.5rem;
+	color: white;
+}
+
+@media only screen and (max-width: 900px) {
+	.hero .text {
+		width: 90%;
+		margin-left: 5%;
+		height: 95%;
+	}
+	.hero .text h1 {
+		width: 90%;
+		margin-left: 5%;
+		text-align: center
+		font-weight: bolder;
+		font-size: 2rem;
+		color: white;
+	}
+}
+
+.info .mentors {
+	background-color: #006d77;
+	color: white;
+}
+
+.info .mission {
+	background-color: #ed7f61;
+	color: white;
+}
+
+.info .text {
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+}
+
+.info .text h1 {
+	font-family: poppins;
+	font-weight: bolder;
+}
+
+.info .text a {
+	color: white;
+	font-weight: bolder;
+}
+
+.info .text a:hover {
+	color: #d8d8d8;
+	text-decoration: none;
+}
+
+.about .text-top {
+	padding-top: 10vh;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.about .text-top h1 {
+	font-weight: bolder;
+	font-size: 4rem;
+	text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	.about .text-top {
+		padding-top: 10vh;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.about .text-top h1 {
+		font-weight: bolder;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.about p {
+		font-size: 15px;
+	}
+}
+
+.about .text-top h1 span {
+	color: white;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+}
+
+.btn-outline-dark {
+	border-width: 3px;
+	border-radius: 0px;
+	font-weight: bold;
+}
+
+.about .video {
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10vh;
+}
+
+.about .video video {
+	width: 50%;
+}
+
+.selection {
+	background-color: #006d77;
+}
+
+.selection h2 {
+	padding-top: 5vh;
+	font-weight: bold;
+	color: white;
+}
+
+.selection .row {
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.selection .row i {
+	color: white;
+	border-radius: 50%;
+	border: 7px solid white;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+.selection .icon {
+	display: flex;
+	justify-content: center;
+}
+
+.selection .icon h6 {
+	color: white;
+	margin-top: 2vh;
+	font-family: boldfont;
+	text-align: center;
+}
+
+.news .text {
+	margin-top: 10vh;
+	width: 60%;
+	margin-left: 20%;
+	color: black;
+	margin-bottom: 5vh;
+}
+
+.news .text h1 {
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+.events .row {
+	width: 100%;
+}
+
+.events .row .img-bg {
+	background-image: url('college.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.events .row .text-portion {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	background-color: #ed7f61;
+	color: white;
+}
+
+.events .text h1 {
+	font-weight: bolder;
+}
+
+.events .row .text {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.press {
+	margin-top: 10vh;
+}
+
+.press .row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.press h1 {
+	font-weight: bolder;
+	font-size: 3.5rem;
+}
+
+.press .press-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.press .press-img img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.footer {
+	padding-top: 15vh;
+}
+
+.footer .footers {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer .footers a {
+	color: black;
+}
+
+.bottom {
+	background-color: #006d77;
+	color: white;
+	margin: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.bottom p {
+	margin-bottom: 0;
+}
+
+.spacer {
+	height: 2vh;
+	visibility: hidden;
+}
+
+.about-programs h1 {
+	background-color: #006d77;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	width: 100%;
+	font-weight: bolder;
+	font-size: 4rem;
+	color: white;
+}
+
+.about-programs p {
+	width: 60%;
+	margin-left: 20%;
+	font-weight: 200;
+}
+
+.inara-programs {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	margin-top: 5vh;
+}
+
+.inara-programs .inner {
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+
+.inara-programs .program-img {
+	width: 60%;
+}
+
+.inara-programs .text h1 {
+	font-weight: bolder;
+}
+
+.inara-programs .one {
+	background-color: #ffddd2;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.inara-programs .two {
+	background-color: #d8d8d8;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+h1.title {
+	font-weight: bolde
+	font-size: 4rem;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	text-align: center;
+}
+
+h2.special {
+	width: 60%;
+	margin-left: 20%;
+	color: #006d77;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+.team-rows {
+	width: 70%;
+	margin-left: 15%;
+	display: flex;
+	justify-content: center;
+}
+
+.team-rows .individual img {
+	height: 55vh;
+	object-fit: cover;
+	border-radius: 0px;
+}
+
+.team-rows .individual {
+	text-align: center;
+	border: none;
+	border-radius: 0px;
+	margin-top: 5vh;
+}
+
+.team-rows .individual h3 {
+	padding-top: 2vh;
+	font-weight: 300;
+	color: #006d77;
+}
+
+.team-rows .individual h5 {
+	font-weight: bolder;
+	color: #83c5be;
+}
+
+h1.title {
+	font-size: 4rem;
+	font-weight: bolder;
+}
+
+.contact-help {
+	height: 100vh;
+}
+
+.contact-help h1 {
+	font-weight: bolder;
+}
+
+.contact-help h1, .contact-help p {
+	text-align: center;
+}
+
+.contact-help .side-img {
+	width: 100%;
+	object-fit: cover;
+	padding: 0;
+}
+
+.workshops .workshop {
+	width: 60%; 
+	margin-left: 20%;
+	height: 45vh;
+	margin-top: 5vh;
+	border: 1px solid #d8d8d8;
+}
+
+.workshops .workshop .content {
+	background-color: #ed7f61;
+}
+
+.workshops .workshop .text {
+	background-color: white;
+	text-align: center;
+}
+
+.workshops .workshop .text h1 {
+	font-weight: normal;
+}
+.workshops .workshop .text h4 {
+	font-weight: 200;
+}
+
+.btn-primary {
+	background-color: #006d77;
+	border: none;
+}
+
+.workshop-partners {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.workshop-partners img {
+	width: 80%;
+	object-fit: cover;
+}
+
+.footer form {
+	width: 100%;
+}
+
+.carousel {
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 20px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	height: 50vh;
+	background-color: white;
+}
+
+.carousel img {
+	height: 50vh;
+	object-fit: contain;
+}
+
+@media only screen and (max-width: 900px) {
+	.about .video {
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		width: 100%;	
+	}
+	.events .row {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.footer .footers {
+		border-bottom: 1px solid #d8d8d8;
+	}
+	.about .video video {
+		width: 90%;
+	}
+	h2.special {
+		width: 90%;
+		margin-left: 5%;
+		color: #006d77;
+		font-weight: normal;
+		text-align: center;
+		padding-top: 5vh;
+	}
+	.about-programs p {
+		width: 90%;
+		margin-left: 5%;
+		font-weight: 200;
+	}
+	.inara-programs .one {
+		background-color: #ffddd2;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+
+	.inara-programs .two {
+		background-color: #d8d8d8;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
+	.inara-programs {
+		height: 100%;
+	}
+	.workshops .workshop {
+		width: 90%; 
+		margin-left: 5%;
+		height: 100%;
+		margin-top: 5vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		border: 1px solid #d8d8d8;
+	}
+	.workshop-partners {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.about-programs h1 {
+		background-color: #006d77;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		width: 100%;
+		font-weight: bolder;
+		font-size: 3rem;
+		color: white;
+	}
+	.carousel {
+		width: 90%;
+		margin-left: 5%;
+		border-radius: 20px;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		height: 100%;
+		background-color: #d8d8d8;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 990px) {
+	.workshops .workshop {
+		width: 90%; 
+		margin-left: 5%;
+		height: 100%;
+		margin-top: 5vh;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		border: 1px solid #d8d8d8;
+	}
+}
+
+.individual-overlay {
+  position: relative;
+}
+
+.individual-overlay .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.individual-overlay .team-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.individual-overlay:hover .team-overlay {
+  opacity: 1;
+}
+
+.individual-overlay .text {
+  color: white;
+  font-size: 15px;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+	.individual-overlay .text {
+	  color: white;
+	  font-size: 10px;
+	  width: 95%;
+	  margin-left: 2.5%;
+	  position: absolute;
+	  text-align: center;
+	}
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.partner-logo-bg {
+	background-position: center; background-size: contain; background-repeat: no-repeat;
+}
+
+.partner-logo-bg a {
+	color: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-family: poppins;
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-family: poppins;
+  font-size: 55px;
+  color: black;
+}
