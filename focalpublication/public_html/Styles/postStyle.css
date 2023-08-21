@@ -1,0 +1,71 @@
+.home .featured {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 0vh;
+	padding-bottom: 5vh;
+	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.1) ), url('https://img.sunset02.com/sites/default/files/styles/marquee_large_2x/public/image/2017/04/main/el-capitan-getty-0517.jpg?itok=vuJS4hXh');
+	color: transparent;
+}
+
+.home .featured .text {
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	color: white;
+	padding-top: 15vh;
+	z-index: 10;
+}
+
+.home .featured .text h6 {
+	color: #33C0ED;
+}
+
+.home .featured .text h5 {
+	font-family: skinny;
+	width: 70%;
+	margin-left: 15%;
+	color: #e5e5e5;
+}
+
+.home .featured .text h2 {
+	font-family: fat;
+	font-size: 3.5rem;
+	color: white;
+}
+
+.post {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.post .subtitle {
+	padding-top: 20vh;
+	font-family: fat;
+}
+
+.post p {
+	font-family: skinny;
+}
+
+.post .postImg {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.image {
+	border: 1px solid #d8d8d8;
+	border-radius: 10px;
+	margin-bottom: 3vh;
+}
+
+.image .imageCaption {
+	font-size: 11px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
